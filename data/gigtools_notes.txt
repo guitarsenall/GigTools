@@ -1,0 +1,154 @@
+S:\will\documents\OneDrive\2024\gigtools\data\gigtools_notes.txt
+
+                                                Tuesday, May 7, 2024 (11:58 AM)
+OBJECTIVES:
+    Refresh Python skills by creating some tools to help process my
+    gig data.
+        * Bigger goals:
+            Prioritize songs for rehearsals
+            Prioritize songs for repeat gigs
+                (e.g., don't play what I played last month)
+            Notify me when a guitar needs new strings
+        * Baby steps:
+            Script to reverse the song list since it comes
+                backwards from OneNote
+            Match mis-spelled song titles
+                Idea: matching 2-character sequences exceeding
+                a percentage threshold.
+            Get gig data from Outlook and/or OneNote
+
++   Get python working again.
+
+    *   Update PyScripter
+        -   The update  REQUIRES that I install Python 3.7 or above.
+            It is also 32-bit. After some researching, I think I want
+            to go with 64-bit (default download).
+        -   Download 64-bit PyScripter
+                https://sourceforge.net/projects/pyscripter/
+                PyScripter-4.3.4-x64-Setup.exe
+            Don't install yet. First install Python.
+        -   Download latest 64-bit version of Python from
+                https://www.python.org/downloads/
+                python-3.12.3-amd64.exe
+            Install. Default.
+            Verify at command prompt:
+                >py
+            Gives:
+                Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45)
+                [MSC v.1900 32 bit (Intel)] on win32
+            That is an old version installed before.
+            Where is it installed? Google. Here:
+                C:\Users\Owner\AppData\Local\Programs\Python\Python312\
+            Verify in command window:
+                C:\Users\Owner>cd C:\Users\Owner\AppData\Local\Programs
+                        \Python\Python312
+                C:\Users\Owner\AppData\Local\Programs\Python\Python312>python
+                Python 3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25)
+                    [MSC v.1938 64 bit (AMD64)] on win32
+                Type "help", "copyright", "credits" or "license" for more
+                    information.
+            Looks good.
+        -   Now install
+                PyScripter-4.3.4-x64-Setup.exe
+            It found Python 3.12.3 and runs with it automatically.
+
+                                            Thursday, May 9, 2024 (10:21 AM)
+    *   Simple task: reverse and print a list of songs.
+        -   scratch.py
+            >   This works:
+                    songs.reverse()
+                    print(*songs, sep='\n')
+                So does
+                    print('\n'.join(songs))
+        -   Can I get it to read from a file?
+            It works!
+            >   How can I make this callable from command prompt
+                :   Take clues from
+                        S:\will\documents\OneDrive\2018\fitfiles
+                            \fitfileanalyses.bat
+                    The command line is
+                        c:\python27\python %base%\fitfileanalyses.py %1
+                    where %base% is the folder containing fitfileanalyses.py
+                    and %1 is the data file. So the command should look
+                    something like
+                        <path>python <path>reverse_song_list.py songlist.txt
+                :   Get more clues from
+                        S:\will\documents\OneDrive\2018\fitfiles
+                            \fitfileanalyses.py
+                    about getting command-line arguments.
+                    And more from
+                        https://www.tutorialspoint.com/python
+                            /python_command_line_arguments.htm
+                :   Problem: the 'python' command points to v2.7.
+                    But I don't want to change this.
+                    This works:
+                        ...>py reverse_songlist.py songlist.txt
+                    because 'py' brings v3.6.
+                        https://docs.python.org/3/using
+                            /windows.html#configuring-python
+                    Why doesn't 3.12 come up?
+                    Can't I just create a windows command (like python312)
+                    that refers to the one I want?
+                        https://stackoverflow.com/questions/5181709
+                            /custom-commands-in-windows-command-prompt
+                    suggest a batch file is the best option. Try it.
+                    Got this working:
+                        S:\...\gigtools>reverse_songlist songlist.txt
+                    which calls reverse_songlist.py on the file songlist.txt.
+                :   Make an EditPlus tool I can call from the song-list file:
+                        reverse_songlist_editplus_a.png
+                    it works!!! It even captures the output in the output
+                    window so I don't need to hold a command window open.
+
+                                                Friday, May 10, 2024 (9:27 AM)
+    *   Time to get this project under version control with GIT. Follow
+                S:\will\documents\OneDrive\2018\fitfiles\data
+                    \analysis_notes.txt
+        for techniques.
+        -   Right-click in the main folder and select "about". Update
+            TortoiseGit from 2.7.0.0 to 2.16.0.0.
+            >   It has trouble shutting down other applications then complains
+                about some .cab file being corrupt. Reboot. TortoiseGit
+                is gone from the context menu. Go to
+                    https://tortoisegit.org/
+                    TortoiseGit-2.16.0.0-64bit.msi
+            >   Do I need to update Git? Will it tell me?
+                Yes, my version is old and unsupported. It prompts me to
+                open the git website.
+                    https://gitforwindows.org/
+                    Git-2.45.0-64-bit.exe
+                Cancel the TortoiseGit installation and install Git 2.45.
+                Use defaults.
+                    Removing Git 2.22
+                Odd, I thought 2.22 was what TortoiseGit wanted.
+            >   Install TortoiseGit 2.16.0
+                It asks if I want to modify, repair, or remove. Try repair.
+                It appears to work now.
+        -   Right-click in the main folder and select "create GIT repository
+            here."
+        -   Create the new repository on GitHub. No license, public, no readme,
+            no .gitignore
+                    https://github.com/guitarsenall/GigTools.git
+        -   Link the two together.
+            >   I will need README.md. Clone one from
+                    S:\will\documents\OneDrive\2018\notesparser
+                        \notesparser\README.md
+            >   Add the files I have, including README.md.
+
+
+================================================================================
+
++   TO DO:
+    *   Make module to read, reverse, and print songlist.txt
+        -   Make this callable from command prompt
+        -   Call from EditPlus tool
+    *   Read from OneNote
+            https://stackoverflow.com/questions/34622471
+                /how-to-access-download-onenote-notebook-with-python
+            https://www.quora.com/Can-you-read-OneNote-data-with-Python
+    *   Song database
+        -   in SQL?
+        -   track plays
+        -   Match titles
+
+
