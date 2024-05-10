@@ -128,12 +128,130 @@ OBJECTIVES:
             here."
         -   Create the new repository on GitHub. No license, public, no readme,
             no .gitignore
+                The site is at
+                    https://github.com/guitarsenall/GigTools
+                The repository URL is
                     https://github.com/guitarsenall/GigTools.git
         -   Link the two together.
             >   I will need README.md. Clone one from
                     S:\will\documents\OneDrive\2018\notesparser
                         \notesparser\README.md
             >   Add the files I have, including README.md.
+            >   commit.
+            >   At this point, I can probably do a push. Try it.
+                Select manage under remote. Enter the URL in the field.
+                    tortoise_git_push_a.png
+                This is a little different. With FitFiles, I used the
+                Arbitrary URL field, but remote seems more appropriate.
+                    Authentication failed
+                I think Git forgot about my password. Settings dialog.
+                Can't find where to enter it. Google. Nothing.
+                Try push again. It prompted me for username and password
+                but failed again.
+                Try push again. It launched a dialog that let me authenticate
+                through the browser, and IT WORKED!! And the files are on
+                GitHub.
+                Weird.
+
+    *   Another simple task: compare strings for partial match.
+        OneNote OCR often misspells song titles that I have to fix manually.
+        If I have a reference of correct titles, perhaps I can detect which
+        song a misspelling refers to, correct it, and detect the match.
+        -   A basis for detecting a partial match:
+                https://note.nkmk.me/en/python-str-compare/
+        -   Define the correct titles.
+            >   Let's start by doing this right: Export The Repertwaar to
+                        music_performance_repertoire.csv
+                :   I will need to strip the '*' for instrumental titles.
+                    Or leave it in since I only need a partial match?
+                :   How do I read a CSV file in python?
+                    Python comes with a CSV library:
+                        https://docs.python.org/3/library/csv.html
+                    May as well start there.
+                    A tutorial is at
+                        https://www.analyticsvidhya.com/blog/2021/08
+                            /python-tutorial-working-with-csv-file
+                            -for-data-science/
+                :   Error: some fields have quotes that give it problems.
+                    Found this:
+                        https://stackoverflow.com/questions/21527057
+                            /python-parse-csv-ignoring-comma-with-double-quotes
+                    which uses,
+                        csv.reader(lines, quotechar='"', delimiter=',',
+                            quoting=csv.QUOTE_ALL, skipinitialspace=True):
+                    No luck.
+                    Copy to junk.csv and remove most lines. It works. I don't
+                    know which line is giving it trouble. Continue for now.
+                :   I really want to use csv.DictReader().
+                :   If I want to read in energy as a numeric, I might
+                    have to switch the Pandas method.
+                    But I don't have Pandas. Better get it.
+                        https://pandas.pydata.org/docs/getting_started
+                            /install.html
+                    But this says,
+                        For users that are new to Python, the easiest way to
+                        install Python, pandas, and the packages that make up
+                        the PyData stack (SciPy, NumPy, Matplotlib, and more) is
+                        with Anaconda, a cross-platform (Linux, macOS, Windows)
+                        Python distribution for data analytics and scientific
+                        computing. Installation instructions for Anaconda can be
+                        found here.
+                    It looks like getting Pandas is going to complicated and
+                    require decisions. Perhaps, for now, I should convert the
+                    energy string to a float:
+                        >>> float(row['energy'])
+                            1.0
+                :   The offending title is
+                        Del’s Bells
+                    The apostrophe is a special character. Replace them in
+                    music_performance_repertoire files with the single
+                    quote, "'".
+                :   I now have a list of dictionaries:
+                        >>> len(songs)
+                        83
+                        >>> songs[79]['title']
+                        'The Power Of Love'
+                        >>> songs[79]['energy']
+                        8.0
+                        >>> songs[79]['data']
+                        {'artist': 'Huey Lewis',
+                         'energy': '8',
+                         'genre': 'classic hits',
+                         'guitar': '618e',
+                         'song': 'The Power Of Love',
+                         'technique': 'strum',
+                         'type': 'loop w FX',
+                         'unplugged': 'yes'}
+        -   Now I can import songlist.txt, which contains some misspelled
+            titles, and get the corresponding songs.
+            >   Start with one: 'Addisonls Walk'
+            >   Expand. scratch.py now has a snippet that reads in the
+                repertwaar as well as songlist.txt, loops through songlist,
+                matches with titles in repertwaar, and prints the best score
+                and the next-best score:
+                    partial_match_title_a.png
+                All matching scores are 70%, and all next-best scores are
+                zero.  But does zero make sense? I am only testing for the
+                occurrence of two characters.
+                    >>> match_score('Time After Time', 'Time In A Bottle')
+                        35.714285714285715
+                Some nonzero LastScore values should occur.
+                Oops, found the bug. Try again:
+                    partial_match_title_b.png
+                The best false match is 57.1% (for The Wind & The Wheat),
+                and the worst true match is 78.6% for Addison's Walk.
+                But is it really right? I had better capture the false-match
+                song.
+                    partial_match_title_c.png
+                OK, now I can see that all of the matches are correct even
+                though some false matches score pretty high.
+                Is that important? I can cut the search off if I find a
+                score exceeding a threshold of, say, 70%. Or I can let it find
+                the best. The number of iterations is the number of songs
+                played in a gig times the number in the repertoire.
+                I don't see this exceeding about 50*100 = 5,000. No big deal.
+                Find the best.
+
 
 
 ================================================================================
