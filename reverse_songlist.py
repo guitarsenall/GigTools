@@ -32,6 +32,7 @@ FileName = sys.argv[1]
 
 # read the Repertwaar CSV file into repertwaar, a list of dictionaries
 import csv
+import math
 repertwaar   = []    # a list of dictionaries
 with open('music_performance_repertoire.csv', 'r') as file:
     csvreader = csv.DictReader(file, quotechar='"', delimiter=',',
@@ -44,8 +45,9 @@ with open('music_performance_repertoire.csv', 'r') as file:
                     'energy'    : float(row['energy'])  ,
                     'data'      : row                   }
         repertwaar.append(song)
-songs   = []
+gig_songs   = []
 ScoreThreshold  = 70.0
+SqrEnergy       = 0.0
 with open(FileName, 'r') as file:
     lines = []
     for line in file.readlines():
@@ -63,11 +65,14 @@ with open(FileName, 'r') as file:
         #print( line.strip(), ';', ThisSong['title'], ';', ThisScore, ';',
         #        LastScore,   ';', LastSong['title'],  )
         if ThisScore >= ScoreThreshold:
-            songs.append(ThisSong)
+            SqrEnergy   = SqrEnergy + ThisSong['energy']**2
+            gig_songs.append(ThisSong)
         else:
             print('Unmatched line: ' + line.strip() )
-print( str(len(songs)) + ' songs found:')
-songs.reverse()
-for song in songs:
-    print(song['title'].removesuffix('*'))
+GigRMSEnergy    = math.sqrt( SqrEnergy / len(gig_songs) )
+print('Gig Energy Index = ' + str(GigRMSEnergy))
+print( str(len(gig_songs)) + ' songs found:')
+gig_songs.reverse()
+#for song in gig_songs:
+#    print(song['title'].removesuffix('*'))
 

@@ -15,6 +15,7 @@ def match_score(title, line):
 
 # read the Repertwaar CSV file into repertwaar, a list of dictionaries
 import csv
+import math
 repertwaar   = []    # a list of dictionaries
 with open('music_performance_repertoire.csv', 'r') as file:
     csvreader = csv.DictReader(file, quotechar='"', delimiter=',',
@@ -27,7 +28,7 @@ with open('music_performance_repertoire.csv', 'r') as file:
                     'energy'    : float(row['energy'])  ,
                     'data'      : row                   }
         repertwaar.append(song)
-songs   = []
+gig_songs   = []
 ScoreThreshold  = 70.0
 with open('songlist.txt', 'r') as file:
     lines = []
@@ -46,13 +47,31 @@ with open('songlist.txt', 'r') as file:
         #print( line.strip(), ';', ThisSong['title'], ';', ThisScore, ';',
         #        LastScore,   ';', LastSong['title'],  )
         if ThisScore >= ScoreThreshold:
-            songs.append(ThisSong)
+            gig_songs.append(ThisSong)
         else:
             print('Unmatched line: ' + line.strip() )
-print( str(len(songs)) + ' songs found:')
-songs.reverse()
-for song in songs:
+print( str(len(gig_songs)) + ' songs found:')
+#gig_songs.reverse()
+SqrEnergy   = 0.0
+for song in gig_songs:
+    SqrEnergy   = SqrEnergy + song['energy']**2
     print(song['title'].removesuffix('*'))
+GigRMSEnergy    = math.sqrt( SqrEnergy / len(gig_songs) )
+print('Gig Energy Index = ' + str(GigRMSEnergy))
+
+#'''
+#Reorder the Repertwaar based on last gig:
+#move songs from last gig (songlist.txt) to bottom of the Repertwaar to
+#create a prioritized list that deprioritizes most recently played at a
+#given venue.
+#'''
+## sort the Repertwaar by title
+#repertwaar.sort( key = lambda s: s['title'] )
+#for RepSong in repertwaar:
+#    if RepSong not in gig_songs:
+#        print(RepSong['title'].removesuffix('*'))
+#for song in gig_songs:
+#    print(song['title'].removesuffix('*'))
 
 
 ## detect a partial match

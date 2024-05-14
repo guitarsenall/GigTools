@@ -261,6 +261,41 @@ OBJECTIVES:
             IT WORKS!!
         -   Commit & push
 
+    *   Another easy tool: Reorder the Repertwaar based on last gig:
+        move songs from last gig (songlist.txt) to bottom of the Repertwaar to
+        create a prioritized list that deprioritizes most recently played at a
+        given venue.
+        -   I actually used a Lambda function!!
+            The Repertwaar is a list with the sort() method that accepts
+            a sorting key.
+            sort the Repertwaar by title:
+                repertwaar.sort( key = lambda s: s['title'] )
+            where s is a song within repertwaar. But it is a dictionary,
+            so extract the title to use as a sorting key.
+            This approach could be used to sort the Repertwaar
+            on ANY field:
+                repertwaar.sort( key = lambda s: s['energy'] )
+            or,
+                repertwaar.sort( key = lambda s: s['data']['genre'] )
+
+    *   Calculate the Gig Energy Index as the RMS of the song energies.
+        -   It works.
+        -   Add it to reverse_songlist.py to get it for every future
+            gig.
+            >   Some notable gig energies:
+                    Sullivan's 2/9/24               6.2
+                    Sullivan's 3/29/24              7.3     Definite increase!
+                    Innkeepers 5/11/24              5.8
+                    Blue Margaritas 5/5/24          5.4
+                    Germantown Spring Fling 5/4/24  5.3
+                    Orange Cup 4/21/24              5.5
+                    Café Santa Rosa 4/12/24         4.3
+                    Opie’s 4/6/24                   6.2
+                    Hidden Hills 3/30/24            5.5
+                    Market Alley Wines 3/23/24      5.8
+        -   Commit & push
+
+
 
 ================================================================================
 
