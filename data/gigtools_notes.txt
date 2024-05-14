@@ -251,15 +251,21 @@ OBJECTIVES:
                 played in a gig times the number in the repertoire.
                 I don't see this exceeding about 50*100 = 5,000. No big deal.
                 Find the best.
+            >   Commit & push
 
+                                            Tuesday, May 14, 2024 (10:42 AM)
+    *   Back to reverse_songlist.py: Get it to use the Repertwaar for
+        correct spellings.
+        -   Prototype in scratch.py.
+        -   Port code to reverse_songlist.py
+            IT WORKS!!
+        -   Commit & push
 
 
 ================================================================================
 
 +   TO DO:
-    *   Make module to read, reverse, and print songlist.txt
-        -   Make this callable from command prompt
-        -   Call from EditPlus tool
+    *   How about a gig energy index? Consider RMS(energy)
     *   Read from OneNote
             https://stackoverflow.com/questions/34622471
                 /how-to-access-download-onenote-notebook-with-python

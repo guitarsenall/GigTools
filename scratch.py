@@ -13,9 +13,9 @@ def match_score(title, line):
     return match / (len(title)-1) * 100
 
 
-# read the Repertwaar CSV file
+# read the Repertwaar CSV file into repertwaar, a list of dictionaries
 import csv
-songs   = []    # a list of dictionaries
+repertwaar   = []    # a list of dictionaries
 with open('music_performance_repertoire.csv', 'r') as file:
     csvreader = csv.DictReader(file, quotechar='"', delimiter=',',
                                 quoting=csv.QUOTE_ALL )
@@ -26,23 +26,33 @@ with open('music_performance_repertoire.csv', 'r') as file:
         song    = { 'title'     : row['song']           ,
                     'energy'    : float(row['energy'])  ,
                     'data'      : row                   }
-        songs.append(song)
+        repertwaar.append(song)
+songs   = []
+ScoreThreshold  = 70.0
 with open('songlist.txt', 'r') as file:
     lines = []
     for line in file.readlines():
         lines.append(line.strip())  # strip the return
-        ThisSong    = songs[0]
+        ThisSong    = repertwaar[0]
         ThisScore   = 0.0
         LastScore   = 0.0
-        for song in songs:
+        for song in repertwaar:
             score   = match_score( song['title'], line.strip() )
             if score >= ThisScore:
                 LastSong    = ThisSong
                 LastScore   = ThisScore
                 ThisSong    = song
                 ThisScore   = score
-        print( line.strip(), ';', ThisSong['title'], ';', ThisScore, ';',
-                LastScore,   ';', LastSong['title'],  )
+        #print( line.strip(), ';', ThisSong['title'], ';', ThisScore, ';',
+        #        LastScore,   ';', LastSong['title'],  )
+        if ThisScore >= ScoreThreshold:
+            songs.append(ThisSong)
+        else:
+            print('Unmatched line: ' + line.strip() )
+print( str(len(songs)) + ' songs found:')
+songs.reverse()
+for song in songs:
+    print(song['title'].removesuffix('*'))
 
 
 ## detect a partial match
