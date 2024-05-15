@@ -295,6 +295,13 @@ OBJECTIVES:
                     Market Alley Wines 3/23/24      5.8
         -   Commit & push
 
+                                            Wednesday, May 15, 2024 (1:48 PM)
+    *   Back to reordering the Repertwaar. I am going to be using this
+        regularly, so make it its own script, reorder_repertoire.py.
+        -   It works great! I created a reordered repertwaar for Michael's
+            Friday night.
+        -   Commit & push
+
 
 
 ================================================================================
@@ -304,9 +311,17 @@ OBJECTIVES:
     *   Read from OneNote
             https://stackoverflow.com/questions/34622471
                 /how-to-access-download-onenote-notebook-with-python
+                This is old and has dead links.
             https://www.quora.com/Can-you-read-OneNote-data-with-Python
+                https://learn.microsoft.com/en-us/graph/integrate-with-onenote
+                This is worth studying.
+            https://www.codeproject.com/Articles/5318953
+                /OneNote-to-Markdown-Using-Python-and-the-Microsoft
     *   Song database
         -   in SQL?
+            >   Microsoft has a free SQL
+                    https://www.microsoft.com/en-us
+                        /sql-server/sql-server-downloads
         -   track plays
         -   Match titles
 
