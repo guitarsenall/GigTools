@@ -303,20 +303,188 @@ OBJECTIVES:
         -   Commit & push
 
 
+                                            Thursday, May 16, 2024 (12:02 PM)
++   Read OneNote data with Python.
+
+    *   Study
+        -   https://stackoverflow.com/questions/34622471
+                /how-to-access-download-onenote-notebook-with-python
+            This is old and has dead links.
+        -   https://www.quora.com/Can-you-read-OneNote-data-with-Python
+            This is worth studying.
+            >   It contains a link:
+                    https://learn.microsoft.com/en-us/graph
+                        /integrate-with-onenote
+                But it feels overwhelming with lots of dead ends.
+                And it does not discuss Python.
+        -   https://www.codeproject.com/Articles/5318953
+                /OneNote-to-Markdown-Using-Python-and-the-Microsoft
+            This might have code examples, but I will have to dig deep.
+        -   This one costs money
+                https://www.cdata.com/kb/tech/onenote-python-petl.rst
+            and I can't really tell if or how it will get me there.
+        -   This one
+                https://github.com/DissectMalware/pyOneNote
+            says it just dumps everything into a directory. But in what
+            format?
+        -   This one
+                https://github.com/varunsrin/one-py
+            says,
+                "OneNote is an object model class that lets you read content and
+                hierarchy from the OneNote application. It exposes them as
+                native python types so you can read OneNote data without having
+                to muck around with the underlying COM interfaces"
+            but it is written for
+                Windows 7 with Python 3.x
+                OneNote 2013 or 2010 with your notebooks open
+            and likely to not work.
+        -   This one
+                https://www.cdata.com/kb/tech/onenote-python-pandas.rst
+            claims to make it simple, but the example code has huge strings
+            with no clue as to how to build them. It says,
+                "OneNote uses the OAuth authentication standard. To authenticate
+                using OAuth, you will need to create an app to obtain the
+                OAuthClientId, OAuthClientSecret, and CallbackURL connection
+                properties. See the Help documentation for more information."
+            What help documentation? OneNote??
+        -   I fear this is simply out of scope.
+
+                                                Friday, May 17, 2024 (10:04 AM)
+    *   Can I export the pages to text files and read them?
+        -   File:export does not offer text. If offers
+                    .one
+                    .docx
+                    .doc
+                    .pdf
+                    .xps
+                    .mht (web page)
+            >   Try some on page "Tres Rojas 9/10/23"
+                It has several images which increase file size.
+                :   Create a subfolder, 'gigfiles'.
+                :   .mht (web page)
+                    The page gets saved as
+                    "Tres Rojas 91023.mht". It is huge (8MB) and binary.
+                :   .xps: "Tres Rojas 91023.xps". 1.5MB. Also binary.
+                :   .doc: 'Tres Rojas 91023.doc'. 6MB. Big.
+                    It has a binary header, but the text body is readily
+                    available. Perhaps I could find a way to skip the header?
+                :   .docx: 'Tres Rojas 91023.docx'. 4MB. Binary.
+                    #   This might help:
+                        Google('convert word doc to text python')
+                            https://stackoverflow.com/questions/62859658
+                                /how-to-convert-docx-to-txt-in-python
+                            https://stackoverflow.com/questions/42482
+                                /best-way-to-extract-text-from-a-word-doc
+                                -without-using-com-automation
+                :   .pdf: 'Tres Rojas 91023.pdf'. 1MB. Smallest file. Binary.
+                    #   This might help:
+                            https://www.geeksforgeeks.org
+                                /extract-text-from-pdf-file-using-python/
+                        The process looks easy. I like this one.
+        -   Read 'Tres Rojas 91023.pdf' using pypdf from
+                    https://www.geeksforgeeks.org
+                        /extract-text-from-pdf-file-using-python/
+            >   How to install?
+                :   It says to use
+                        pip install pypdf
+                    in terminal. Hmmm. Point the terminal at the Python 3.12
+                    folder,
+                        C:\Users\Owner\AppData\Local\Programs\Python\Python312\
+                    Error:
+                        'pip' is not recognized as an internal or external
+                        command, operable program or batch file.
+                    Found this:
+                        https://stackoverflow.com/questions/23708898
+                            /pip-is-not-recognized-as-an-internal-or-external
+                            -command
+                    which says,
+                        For Windows, when you install a package, you type:
+                        python -m pip install [packagename]
+                    IT WORKED!
+                        install_pypdf_a.png
+                    Of course, the terminal is in the python folder
+                    so the correct python version gets called.
+            >   Try it in scratch.py
+                :   It works, but it discards line returns, which are
+                    needed to isolate blocks so that I can find the
+                    list of songs. It also inserts extra stuff at the
+                    bottom of the page:
+                        'Brandy \n'
+                        'Those Who Wait \n'
+                        'The Wind & The Wheat Tres Rojas 9/10/23\n'
+                        'Sunday, September 10, 2023 5:19 PM\n'
+                        '   Performances Page 1    ')
+            >   Probably not the best solution. The next best might be to
+                read the current format of Word, which may come in handy
+                later.
+        -   Read 'Tres Rojas 91023.docx'.
+            >   Research best approach. Most point to python-docx:
+                    https://python-docx.readthedocs.io/en/latest/
+                See sample code in
+                    https://stackoverflow.com/questions/29309085
+                        /read-docx-files-via-python
+            >   Install via terminal in python312 folder with,
+                    python -m pip install python-docx
+                Try
+                    >>> import docx
+                Success. Try
+                    >>> doc = docx.Document(
+            >   Try it out.
+                Error:
+                    docx.opc.exceptions.PackageNotFoundError:
+                    Package not found at 'Tres Rojas 91023.docx'
+                google(python-docx PackageNotFoundError)
+                    This error simply means there is no .docx file at the
+                    location you specified.
+                Now it works quite nicely, but line returns are '\xa0'.
+                Nop, not all of them:
+                    'Lisa said she would reach out in January or February ...'
+                    'next year. ',                                        ...
+                    'Calendar reminder for 1/8/24.',                      ...
+                    ' ',                                                  ...
+                    '2/1/23 Messenger with Lisa. ',                       ...
+                    'Play 1-4PM. ',                                       ...
+                    '3 * $75 = $225',                                     ...
+                    ' ',                                                  ...
+                    '6/8/23 Running into his system: Send him the quarter-...
+                    'volume knob assigned to it. Use XLR output to Bose, a...
+                    'the Bose or using the Global EQ level. ',
+                    '8/28/23 Create event so I can invite people.',
+                    '9/2/23 Boost event, $10',
+                    '\xa0',
+                    '\xa0',
+                    'The Mission ',
+                    'As Warm As Tears ',
+                    'Morning Snow ',
+                    'Metamorphosis ',
+                    'If You Could Read My Mind ',
+                    'In Your Peace / I Love You Lord ',
+                Some discussion of cleaning it up at
+                    https://stackoverflow.com/questions/10993612
+                        /how-to-remove-xa0-from-string-in-python
+                Use
+                    import unicodedata
+                    unicodedata.normalize('NFKD',docpara.text)
+                It works.
+            >   Can I isolate blocks of text? allText is a list of strings
+                where each element is a line. Blocks are separated
+                by a line containing ' '.
+                It works great. One of the blocks is now the song list.
+            >   Can I detect a song list?
+                :   I am going to have to encapsulate some of these
+                    functions that I am using in multiple places:
+                        reading the repertoire
+                        finding matches in a song list
+                        scoring the match between two strings
+
+
+
 
 ================================================================================
 
 +   TO DO:
     *   How about a gig energy index? Consider RMS(energy)
     *   Read from OneNote
-            https://stackoverflow.com/questions/34622471
-                /how-to-access-download-onenote-notebook-with-python
-                This is old and has dead links.
-            https://www.quora.com/Can-you-read-OneNote-data-with-Python
-                https://learn.microsoft.com/en-us/graph/integrate-with-onenote
-                This is worth studying.
-            https://www.codeproject.com/Articles/5318953
-                /OneNote-to-Markdown-Using-Python-and-the-Microsoft
     *   Song database
         -   in SQL?
             >   Microsoft has a free SQL

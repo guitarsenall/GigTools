@@ -73,6 +73,6 @@ GigRMSEnergy    = math.sqrt( SqrEnergy / len(gig_songs) )
 print('Gig Energy Index = ' + str(GigRMSEnergy))
 print( str(len(gig_songs)) + ' songs found:')
 gig_songs.reverse()
-#for song in gig_songs:
-#    print(song['title'].removesuffix('*'))
+for song in gig_songs:
+    print(song['title'].removesuffix('*'))
 
