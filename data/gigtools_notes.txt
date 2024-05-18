@@ -476,8 +476,10 @@ OBJECTIVES:
                         reading the repertoire
                         finding matches in a song list
                         scoring the match between two strings
-
-
+                                            Saturday, May 18, 2024 (2:07 PM)
+                    Place functions in gigtools.py.
+                    Got it working.
+                    Commit & push
 
 
 ================================================================================
