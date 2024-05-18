@@ -3,23 +3,46 @@
 scratch.py
 '''
 
+import gigtools as gt
+
 # detect a partial match and return score
 def match_score(title, line):
+    ''' new version that takes length mismatch into account '''
     title   = title.strip()
     line    = line.strip()
-    match   = abs( len(title) - len(line) )
+    match   = -abs( len(title) - len(line) )
     for i in range( min(len(title),len(line)) - 1 ):
         if line[i:i+2] in title:
             match += 1
     return match / (len(title)-1) * 100
+
+#title   = 'Here, There and Everywhere'
+#line    = 'Guitars: 814ce, V700, 812ce'
+#match_score( title, line )
+
+def score_line(repertwaar, line):
+    ThisSong    = repertwaar[0]
+    ThisScore   = 0.0
+    LastScore   = 0.0
+    for song in repertwaar:
+        # use local version of match_score(), not gt
+        score   = match_score( song['title'], line.strip() )
+        if score >= ThisScore:
+            LastSong    = ThisSong
+            LastScore   = ThisScore
+            ThisSong    = song
+            ThisScore   = score
+    return ThisScore
 
 
 # read a DOCX gig file using docx
 import docx
 import os
 import unicodedata
-GigFolder   = 'S:\\will\\documents\\OneDrive\\2024\\gigtools\\gigfiles\\'
-GigFile     = 'Tres Rojas 91023.docx'
+ScoreThreshold  = 70.0
+repertwaar      = gt.read_repertwaar()
+GigFolder       = 'S:\\will\\documents\\OneDrive\\2024\\gigtools\\gigfiles\\'
+GigFile         = 'Tres Rojas 91023.docx'
 doc = docx.Document(GigFolder + GigFile)
 allText = []
 for docpara in doc.paragraphs:
@@ -32,6 +55,21 @@ for line in allText:
         this_block  = []
     else:
         this_block.append(line)
+for block in blocks:
+    if len(block) >= 5:
+        matches = 0
+        for line in block:
+            score   = score_line(repertwaar, line)
+            if score >= ScoreThreshold:
+                # increment the match count
+                matches += 1
+        if matches / len(block) >= 0.50:
+            # song list found
+            song_list   = block
+            break
+print(song_list)
+# I now have a list of strings from the file,
+# but they have not been turned into songs from repertwaar.
 
 
 ## read a PDF gig file using pypdf

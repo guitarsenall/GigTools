@@ -480,6 +480,14 @@ OBJECTIVES:
                     Place functions in gigtools.py.
                     Got it working.
                     Commit & push
+                :   What would be the criteria?
+                        1. A block should have more than 5 lines.
+                        2. A block should contain more than 50% matches.
+                :   Got it working!
+                    I now have a list of strings from the file,
+                    but they have not been turned into songs from repertwaar.
+                    Commit & push
+
 
 
 ================================================================================

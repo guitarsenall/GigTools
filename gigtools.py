@@ -34,7 +34,7 @@ def read_gig_songs(repertwaar, SongFile='songlist.txt'):
     with open(SongFile, 'r') as file:
         lines = []
         for line in file.readlines():
-            lines.append(line.strip())  # strip the return
+            # lines.append(line.strip())  # strip the return
             ThisSong    = repertwaar[0]
             ThisScore   = 0.0
             LastScore   = 0.0
