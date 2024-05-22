@@ -67,9 +67,12 @@ for block in blocks:
             # song list found
             song_list   = block
             break
-print(song_list)
-# I now have a list of strings from the file,
-# but they have not been turned into songs from repertwaar.
+gig_songs   = gt.match_gig_songs(repertwaar, song_list)
+for song in gig_songs:
+    song['playcount']  += 1
+for song in repertwaar:
+    print(song['title'].removesuffix('*'), ': ',
+            str(song['playcount']), ' plays' )
 
 
 ## read a PDF gig file using pypdf

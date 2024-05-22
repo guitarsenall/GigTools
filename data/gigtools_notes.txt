@@ -487,6 +487,29 @@ OBJECTIVES:
                     I now have a list of strings from the file,
                     but they have not been turned into songs from repertwaar.
                     Commit & push
+                                            Wednesday, May 22, 2024 (4:45 PM)
+            >   Create gigtools.match_gig_songs() to turn the list of strings
+                from the file into a list of songs from the Repertwaar.
+                Clone gigtools.read_gig_songs().
+                :   It works. I now have a list of gig_songs, each of which can
+                    be tested against repertwaar elements:
+                        >>> gig_songs[26] is repertwaar[0]
+                        True
+                        >>> gig_songs[26] == repertwaar[0]
+                        True
+                    So I can add a field for the play count and increment it:
+                        for song in gig_songs:
+                            gig_songs['playcount']  += 1
+        -   Read more than one performance.
+            >   How do I export more than one from OneNote?
+                :   Select multiple pages. OneNote allows me to select
+                    "selected pages" for export but prompts me for one name
+                    and write one document. Then it write one big document
+                    with the performances in sequence. 14MB for the
+                    8 gigs in may. I do NOT want to parse all THAT! I might have
+                    to export one performance at a time. But that would be
+                    really painful also. Perhaps I should look at parsing
+                    the multidoc, multi.docx.
 
 
 

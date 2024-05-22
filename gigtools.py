@@ -21,6 +21,7 @@ def read_repertwaar(CSVFile='music_performance_repertoire.csv'):
             energy  = float(row['energy'])
             song    = { 'title'     : row['song']           ,
                         'energy'    : float(row['energy'])  ,
+                        'playcount' : 0                     ,
                         'data'      : row                   }
             repertwaar.append(song)
     return repertwaar
@@ -53,5 +54,25 @@ def read_gig_songs(repertwaar, SongFile='songlist.txt'):
                 print('Unmatched line: ' + line.strip() )
     return gig_songs
 
+def match_gig_songs(repertwaar, song_strings):
+    ''' match the strings in song_strings with songs in repertwaar. '''
+    gig_songs       = []
+    ScoreThreshold  = 70.0
+    for SongStr in song_strings:
+        ThisSong    = repertwaar[0]
+        ThisScore   = 0.0
+        LastScore   = 0.0
+        for song in repertwaar:
+            score   = match_score( song['title'], SongStr.strip() )
+            if score >= ThisScore:
+                LastSong    = ThisSong
+                LastScore   = ThisScore
+                ThisSong    = song
+                ThisScore   = score
+        if ThisScore >= ScoreThreshold:
+            gig_songs.append(ThisSong)
+        else:
+            print('Unmatched line: ' + SongStr.strip() )
+    return gig_songs
 
 
