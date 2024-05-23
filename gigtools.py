@@ -1,12 +1,32 @@
 #   gigtools.py
 
+
 def match_score(title, line):
     ''' detect a partial match and return score '''
-    match   = 0
+    title   = title.strip().removesuffix('*')
+    line    = line.strip().removesuffix('*')
+    match   = -abs( len(title) - len(line) )
     for i in range( min(len(title),len(line)) - 1 ):
         if line[i:i+2] in title:
             match += 1
     return match / (len(title)-1) * 100
+
+
+def score_line(repertwaar, line):
+    ''' find best match in repertwaar and return score '''
+    ThisSong    = repertwaar[0]
+    ThisScore   = 0.0
+    LastScore   = 0.0
+    for song in repertwaar:
+        # use local version of match_score(), not gt
+        score   = match_score( song['title'], line.strip() )
+        if score >= ThisScore:
+            LastSong    = ThisSong
+            LastScore   = ThisScore
+            ThisSong    = song
+            ThisScore   = score
+    return ThisScore
+
 
 def read_repertwaar(CSVFile='music_performance_repertoire.csv'):
     ''' read the repertwaar from CSV file into a list of dictionaries '''
@@ -25,6 +45,7 @@ def read_repertwaar(CSVFile='music_performance_repertoire.csv'):
                         'data'      : row                   }
             repertwaar.append(song)
     return repertwaar
+
 
 def read_gig_songs(repertwaar, SongFile='songlist.txt'):
     ''' read the songs from the last gig in last_gig_1.txt
@@ -53,6 +74,7 @@ def read_gig_songs(repertwaar, SongFile='songlist.txt'):
             else:
                 print('Unmatched line: ' + line.strip() )
     return gig_songs
+
 
 def match_gig_songs(repertwaar, song_strings):
     ''' match the strings in song_strings with songs in repertwaar. '''

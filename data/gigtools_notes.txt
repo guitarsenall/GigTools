@@ -500,6 +500,7 @@ OBJECTIVES:
                     So I can add a field for the play count and increment it:
                         for song in gig_songs:
                             gig_songs['playcount']  += 1
+                :   Commit/push
         -   Read more than one performance.
             >   How do I export more than one from OneNote?
                 :   Select multiple pages. OneNote allows me to select
@@ -510,8 +511,43 @@ OBJECTIVES:
                     to export one performance at a time. But that would be
                     really painful also. Perhaps I should look at parsing
                     the multidoc, multi.docx.
-
-
+                                            Thursday, May 23, 2024 (10:14 AM)
+            >   Try reading multi.docx in scratch.py.
+                :   Separate the gigs. Each begins with a title followed
+                    by some header information:
+                        'Tres Rojas 5/19/24',
+                        'Friday, May 17, 2024',
+                        '8:47 AM',
+                        ' ',
+                        ' ',
+                        'Performance #3',
+                        'Shift: 1-4PM',
+                        'Pay: $225',
+                        'Cash Tips: $15',
+                        'Digital Tips: $20',
+                        'Mileage: 20.0',
+                        'Loadout: Wide Outdoor',
+                        'Guitars: 814ce, 618e, V700',
+                        'Songs: 38',
+                        'Energy: 5.9',
+                        'Special Notes:',
+                    I think the most reliable detection is 'Performance #',
+                    which follows the title by 3-5 lines. So perhaps I
+                    find multiple occurrences of this and look backward
+                    to get the title line, which should end with '/24'
+                    #   Got it working: title_idx is a list of indices
+                        into allText for the title lines.
+                :   Try parsing to read a list of gigs. Working.
+                :   I want a formatted print. Study
+                        https://docs.python.org/3/library/string.html
+                    So, to print the repertwaar with play count, use,
+                        for song in repertwaar:
+                            print( '{0:<40}: {1:d} plays'.format(
+                                        song['title'].removesuffix('*'),
+                                        song['playcount'] ) )
+                :   IT WORKS!!! See output.txt.
+                :   Commit/push
+            >   Can I extract the venue and date from the title?
 
 ================================================================================
 

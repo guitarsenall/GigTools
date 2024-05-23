@@ -1,0 +1,129 @@
+*** Python 3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)] on win32. ***
+>>> 
+Found 8 gig titles in multi.docx:
+	Holly Brook EP 5/3/24
+	Germantown Spring Fling 5/4/24
+	Blue Margaritas 5/5/24
+	Castaways 5/10/24
+	Innkeepers 5/11/24
+	Michael’s 5/17/24
+	Goldie’s Pizza 5/18/24
+	Tres Rojas 5/19/24
+Parsing Gig title: Holly Brook EP 5/3/24
+	12 songs found
+	45 text lines
+Parsing Gig title: Germantown Spring Fling 5/4/24
+	34 songs found
+	119 text lines
+Parsing Gig title: Blue Margaritas 5/5/24
+	35 songs found
+	97 text lines
+Parsing Gig title: Castaways 5/10/24
+	38 songs found
+	84 text lines
+Parsing Gig title: Innkeepers 5/11/24
+	38 songs found
+	86 text lines
+Parsing Gig title: Michael’s 5/17/24
+	29 songs found
+	64 text lines
+Parsing Gig title: Goldie’s Pizza 5/18/24
+	42 songs found
+	92 text lines
+Parsing Gig title: Tres Rojas 5/19/24
+	38 songs found
+	127 text lines
+play counts by song:
+
+	Crazy Little Thing Called Love          : 8 plays
+
+	Time In A Bottle                        : 7 plays
+	The Reunion                             : 7 plays
+	Metamorphosis                           : 7 plays
+	You've Got A Friend                     : 7 plays
+	Wild World                              : 7 plays
+	The Wind & The Wheat                    : 7 plays
+	Brandy                                  : 7 plays
+	Doctor My Eyes                          : 7 plays
+
+	Sailing                                 : 6 plays
+	If You Could Read My Mind               : 6 plays
+	Time After Time                         : 6 plays
+	Classical Gas                           : 6 plays
+	Something                               : 6 plays
+	Show Me The Way                         : 6 plays
+	I've Got A Name                         : 6 plays
+	Here Comes The Sun                      : 6 plays
+
+	Here, There and Everywhere              : 5 plays
+	In Your Peace / I Love You Lord         : 5 plays
+	Addison's Walk                          : 5 plays
+	Del's Bells                             : 5 plays
+	Infinite Horizon / County Down          : 5 plays
+	Misunderstanding                        : 5 plays
+	Sister Golden Hair                      : 5 plays
+	Beginnings                              : 5 plays
+	Even The Losers                         : 5 plays
+	Everybody Wants to Rule the World       : 5 plays
+	Pinball Wizard                          : 5 plays
+
+	Cats In The Cradle                      : 4 plays
+	Blackbird                               : 4 plays
+	Emmaus                                  : 4 plays
+	Operator                                : 4 plays
+	Nothing But The Call                    : 4 plays
+	Solitary Man                            : 4 plays
+	Kashmir                                 : 4 plays
+	Behind Blue Eyes                        : 4 plays
+	The Power Of Love                       : 4 plays
+
+	Julia                                   : 3 plays
+	Beyond Justice to Mercy                 : 3 plays
+	Everything I Own                        : 3 plays
+	Under The Sun                           : 3 plays
+	Love The One You're With                : 3 plays
+	Listen to the Music                     : 3 plays
+	It Don't Come Easy                      : 3 plays
+	Annie's Song                            : 3 plays
+	If I Needed Someone                     : 3 plays
+
+	Yesterday                               : 2 plays
+	As Warm As Tears                        : 2 plays
+	Morning Snow                            : 2 plays
+	The Mission                             : 2 plays
+	Those Who Wait                          : 2 plays
+	Mood For A Day                          : 2 plays
+	Heart of Worship                        : 2 plays
+	Shilo                                   : 2 plays
+	More Today Than Yesterday               : 2 plays
+	When My Love Awakened                   : 2 plays
+	I Can See Clearly Now                   : 2 plays
+	Eight Days A Week                       : 2 plays
+	Give A Little Bit                       : 2 plays
+	I've Just Seen A Face                   : 2 plays
+	Still The One                           : 2 plays
+	There She Goes                          : 2 plays
+
+	The Treasure                            : 1 plays
+	Two Of Us                               : 1 plays
+	Love Lies Bleeding                      : 1 plays
+	Searchin' So Long                       : 1 plays
+
+	When Night Falls                        : 0 plays
+	Fare Thee Well                          : 0 plays
+	Rickover's Dream                        : 0 plays
+	Leading You Home                        : 0 plays
+	Tuesday Afternoon                       : 0 plays
+	Seeking Rivendell (acoustic)            : 0 plays
+	White Christmas                         : 0 plays
+	Hide Your Love Away                     : 0 plays
+	Fire Vamp                               : 0 plays
+	Seeking Rivendell                       : 0 plays
+	The Ride                                : 0 plays
+	Came The Light                          : 0 plays
+	Candace' Song                           : 0 plays
+	The Eyes of a Child                     : 0 plays
+	Maybe I'm Amazed                        : 0 plays
+	Cheering You On                         : 0 plays
+	What I Like About You                   : 0 plays
+>>> 
