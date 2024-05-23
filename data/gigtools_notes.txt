@@ -548,12 +548,33 @@ OBJECTIVES:
                 :   IT WORKS!!! See output.txt.
                 :   Commit/push
             >   Can I extract the venue and date from the title?
+                :   Yes:
+                        import datetime as dt
+                        title   = 'Germantown Spring Fling 5/4/24'
+                        tok     = title.rpartition(' ')
+                        venue   = tok[0]
+                        datestr = tok[2]
+                        m,d,y   = datestr.split('/')
+                        date    = dt.date( int(y)+2000, int(m), int(d) )
+                :   Then I can add a list of dates to the song dictionary.
+            >   New idea: export a range of performances per month into separate
+                files. multi.docx has the current list of gigs in May, 2024.
+                Add January, February, March, and April:
+                    gigs_january_2024.docx
+                    gigs_february_2024.docx
+                    gigs_march_2024.docx
+                    gigs_april_2024.docx
+                :   IT WORKS!!! See output.txt.
+                :   Commit/push
+
+
 
 ================================================================================
 
 +   TO DO:
-    *   How about a gig energy index? Consider RMS(energy)
-    *   Read from OneNote
+    *   Process songs: Use the gigdate to compute the number days
+        since it was played, and use this to concoct a 'freshness' score.
+    *   Track guitars, venues
     *   Song database
         -   in SQL?
             >   Microsoft has a free SQL

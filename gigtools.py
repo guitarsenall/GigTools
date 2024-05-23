@@ -42,6 +42,7 @@ def read_repertwaar(CSVFile='music_performance_repertoire.csv'):
             song    = { 'title'     : row['song']           ,
                         'energy'    : float(row['energy'])  ,
                         'playcount' : 0                     ,
+                        'playdates' : []                    ,
                         'data'      : row                   }
             repertwaar.append(song)
     return repertwaar
