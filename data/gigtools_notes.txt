@@ -566,12 +566,26 @@ OBJECTIVES:
                     gigs_april_2024.docx
                 :   IT WORKS!!! See output.txt.
                 :   Commit/push
+                                                Friday, May 31, 2024 (12:09 PM)
+        -   Add some information about when the song was played.
+            >   Export May performances to gigs_may_2024.docx.
+            >   Format: print a sequence of numbers where each is the
+                number of days between the play dates, e.g.,
+                    Kashmir     : 8 plays : 12,1,8,5,29,8,49,22
+                The first interval measures today to the most recent play.
+            >   Got it working.
+                -   Commit/push
 
 
 
 ================================================================================
 
 +   TO DO:
+    *   Read rehearsals.txt to add play counts to songs and improve freshness.
+        -   Can't use ConfigParser because rehearsals.txt will include
+            multiple rehearsals.
+    *   Detecting the song list should not require a certain number of
+        songs. Find the block with the most matches.
     *   Process songs: Use the gigdate to compute the number days
         since it was played, and use this to concoct a 'freshness' score.
     *   Track guitars, venues

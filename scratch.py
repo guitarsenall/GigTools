@@ -29,7 +29,7 @@ gig_files       = [ 'gigs_january_2024.docx'    ,
                     'gigs_february_2024.docx'   ,
                     'gigs_march_2024.docx'      ,
                     'gigs_april_2024.docx'      ,
-                    'multi.docx'                ]
+                    'gigs_may_2024.docx'        ]
 gigs    = []
 for GigFile in gig_files:
     doc = docx.Document(GigFolder + GigFile)
@@ -103,16 +103,27 @@ played_songs    = []
 for song in repertwaar:
     if song['playcount'] > 0:
         played_songs.append(song)
-repertwaar.sort( reverse=True, key = lambda s: s['playcount'] )     #
+repertwaar.sort( reverse=True, key = lambda s: s['playcount'] )
 playcount   = 0
 print('play counts by song:')
 for song in repertwaar:
-    if song['playcount'] != playcount:
-        #print('')
-        playcount   = song['playcount']
-    print( '\t{0:<40}: {1:d} plays'.format(
+    if song['playcount'] > 0:
+        # form the play-interval string
+        gig_dates   = sorted( song['playdates'], reverse=True )
+        CurDate     = dt.date.today()
+        delta       = CurDate - gig_dates[0]
+        DeltaString = f'{delta.days}'
+        CurDate     = gig_dates[0]
+        for gigdate in gig_dates[1:]:
+            delta       = CurDate - gigdate
+            DeltaString += f',{delta.days}'
+            CurDate     = gigdate
+    else:
+        DeltaString = ''
+    print( '\t{0:<40}: {1:d} plays : {2}'.format(
                 song['title'].removesuffix('*'),
-                song['playcount'] ) )
+                song['playcount'], DeltaString ) )
+
 
 
 ## read a DOCX gig file using docx
