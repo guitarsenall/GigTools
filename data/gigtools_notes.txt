@@ -576,14 +576,27 @@ OBJECTIVES:
             >   Got it working.
                 -   Commit/push
 
+                                                Tuesday, June 4, 2024 (11:36 AM)
+    *   Read rehearsals.txt to add play counts to songs and improve freshness.
+        -   Can't use ConfigParser because rehearsals.txt will include
+            multiple rehearsals.
+        -   The code in scratch.py is too big now. Move it to
+            play_count.py.
+            >   Should I do any refactoring?
+                One section of code reads the .docx files and modifies
+                the repertwaar; the next displays it. So the first could be
+                a function,
+                    read_gig_files(gig_files, repertwaar)
+                moved to gigtools.py
+            >   Got it working.
+                -   Commit/push
 
 
 ================================================================================
 
 +   TO DO:
-    *   Read rehearsals.txt to add play counts to songs and improve freshness.
-        -   Can't use ConfigParser because rehearsals.txt will include
-            multiple rehearsals.
+    *   Detect venues and dates in titles
+        -   Mark repertwaar to indicate recent plays
     *   Detecting the song list should not require a certain number of
         songs. Find the block with the most matches.
     *   Process songs: Use the gigdate to compute the number days
