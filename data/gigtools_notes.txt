@@ -590,6 +590,10 @@ OBJECTIVES:
                 moved to gigtools.py
             >   Got it working.
                 -   Commit/push
+        -   Create a snippet to read rehearsals.txt.
+            >   I think it is working. No printout, just adding playdates
+                to the songs found.
+                -   Commit/push
 
 
 ================================================================================
@@ -599,6 +603,7 @@ OBJECTIVES:
         -   Mark repertwaar to indicate recent plays
     *   Detecting the song list should not require a certain number of
         songs. Find the block with the most matches.
+        -   The section '# get the song list' should be a function.
     *   Process songs: Use the gigdate to compute the number days
         since it was played, and use this to concoct a 'freshness' score.
     *   Track guitars, venues

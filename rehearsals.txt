@@ -1,17 +1,33 @@
 
+
+Date    : 3/14/2024
+Guitars : 618e
+Songs   : 4
+
+    Two Of Us
+    Even The Losers
+    More Today Than Yesterday
+    Power of Love
+
+Date    : 3/21/2024
+Guitars : 618e
+Songs   : 1
+
+    The Power of Love
+
 Date    : 5/24/2024
 Guitars : 814ce, 618e
 Songs   : 6
 
-Time In A Bottle
-Beyond Justice to Mercy
-Cheering You On
-Fare Thee Well
-Came The Light
-The Power Of Love
-Annie's Song
-Mood For A Day
-When Night Falls
-Those Who Wait
-Del's Bells
-Classical Gas
+    Time In A Bottle
+    Beyond Justice to Mercy
+    Cheering You On
+    Fare Thee Well
+    Came The Light
+    The Power Of Love
+    Annie's Song
+    Mood For A Day
+    When Night Falls
+    Those Who Wait
+    Del's Bells
+    Classical Gas
