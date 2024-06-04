@@ -1,258 +1,87 @@
 *** Python 3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)] on win32. ***
 >>>
-*** Remote Interpreter Reinitialized ***
->>>
-Found 5 gig titles in gigs_january_2024.docx:
-	Saxony 1/12/24
-	Good Tequilas 1/18/24
-	Michael’s 1/19/24
-	Market Alley Wines 1/27/24
-	Holly Brook Wa 1/31/24
-Parsing Gig title: Saxony 1/12/24
-	15 songs found
-	58 text lines
-Parsing Gig title: Good Tequilas 1/18/24
-	29 songs found
-	57 text lines
-Parsing Gig title: Michael’s 1/19/24
-	28 songs found
-	59 text lines
-Parsing Gig title: Market Alley Wines 1/27/24
-	26 songs found
-	84 text lines
-Parsing Gig title: Holly Brook Wa 1/31/24
-	15 songs found
-	51 text lines
-Found 7 gig titles in gigs_february_2024.docx:
-	33 Room 2/1/24
-	Holly Brook EP 2/8/24
-	Sullivan’s 2/9/24
-	Orange Cup 2/11/24
-	Cherry Street 2/14/24
-	Michael’s 2/16/24
-	Innkeepers 2/24/24
-Parsing Gig title: 33 Room 2/1/24
-	32 songs found
-	69 text lines
-Parsing Gig title: Holly Brook EP 2/8/24
-	17 songs found
-	55 text lines
-Parsing Gig title: Sullivan’s 2/9/24
-	38 songs found
-	95 text lines
-Parsing Gig title: Orange Cup 2/11/24
-	27 songs found
-	54 text lines
-Parsing Gig title: Cherry Street 2/14/24
-	40 songs found
-	87 text lines
-Parsing Gig title: Michael’s 2/16/24
-	27 songs found
-	59 text lines
-Parsing Gig title: Innkeepers 2/24/24
-	40 songs found
-	77 text lines
-Found 8 gig titles in gigs_march_2024.docx:
-	Holly Brook EP 3/6/24
-	Independence Village 3/7/24
-	Deer Creek Baptist 3/8/24
-	Michael’s 3/15/24
-	Market Alley Wines 3/23/24
-	Independence Village 3/28/24
-	Sullivan’s 3/29/24
-	Hidden Hills 3/30/24
-Parsing Gig title: Holly Brook EP 3/6/24
-	13 songs found
-	53 text lines
-Parsing Gig title: Independence Village 3/7/24
-	17 songs found
-	65 text lines
-Parsing Gig title: Deer Creek Baptist 3/8/24
-	9 songs found
-	52 text lines
-Parsing Gig title: Michael’s 3/15/24
-	28 songs found
-	61 text lines
-Parsing Gig title: Market Alley Wines 3/23/24
-	25 songs found
-	76 text lines
-Parsing Gig title: Independence Village 3/28/24
-	13 songs found
-	50 text lines
-Parsing Gig title: Sullivan’s 3/29/24
-	39 songs found
-	104 text lines
-Parsing Gig title: Hidden Hills 3/30/24
-	37 songs found
-	88 text lines
-Found 10 gig titles in gigs_april_2024.docx:
-	Holly Brook AP 4/2/24
-	Holly Brook EP 4/5/24
-	Opie’s 4/6/24
-	Holly Brook Wa 4/10/24
-	Cafe´ Santa Rosa 4/12/24
-	Proctor Place 4/16/24
-	Michael’s 4/19/24
-	Orange Cup 4/21/24
-	Independence Village 4/25/24
-	Saxony 4/26/24
-Parsing Gig title: Holly Brook AP 4/2/24
-	14 songs found
-	65 text lines
-Parsing Gig title: Holly Brook EP 4/5/24
-	15 songs found
-	63 text lines
-Parsing Gig title: Opie’s 4/6/24
-	40 songs found
-	83 text lines
-Parsing Gig title: Holly Brook Wa 4/10/24
-	16 songs found
-	52 text lines
-Parsing Gig title: Cafe´ Santa Rosa 4/12/24
-	24 songs found
-	69 text lines
-Parsing Gig title: Proctor Place 4/16/24
-	15 songs found
-	52 text lines
-Parsing Gig title: Michael’s 4/19/24
-	28 songs found
-	53 text lines
-Parsing Gig title: Orange Cup 4/21/24
-	28 songs found
-	75 text lines
-Parsing Gig title: Independence Village 4/25/24
-	17 songs found
-	60 text lines
-Parsing Gig title: Saxony 4/26/24
-	16 songs found
-	49 text lines
-Found 11 gig titles in gigs_may_2024.docx:
-	Holly Brook EP 5/3/24
-	Germantown Spring Fling 5/4/24
-	Blue Margaritas 05/05/24
-	Castaways 05/10/24
-	Innkeepers 05/11/24
-	Michael’s 05/17/24
-	Goldie’s Pizza 05/18/24
-	Tres Rojas 05/19/24
-	Mackinaw Winery 05/26/24
-	Snyder Village 5/28/24
-	Independence Village 5/30/24
-Parsing Gig title: Holly Brook EP 5/3/24
-	12 songs found
-	45 text lines
-Parsing Gig title: Germantown Spring Fling 5/4/24
-	34 songs found
-	119 text lines
-Parsing Gig title: Blue Margaritas 05/05/24
-	35 songs found
-	97 text lines
-Parsing Gig title: Castaways 05/10/24
-	38 songs found
-	84 text lines
-Parsing Gig title: Innkeepers 05/11/24
-	38 songs found
-	86 text lines
-Parsing Gig title: Michael’s 05/17/24
-	29 songs found
-	64 text lines
-Parsing Gig title: Goldie’s Pizza 05/18/24
-	42 songs found
-	92 text lines
-Parsing Gig title: Tres Rojas 05/19/24
-	38 songs found
-	129 text lines
-Parsing Gig title: Mackinaw Winery 05/26/24
-	41 songs found
-	110 text lines
-Parsing Gig title: Snyder Village 5/28/24
-	19 songs found
-	59 text lines
-Parsing Gig title: Independence Village 5/30/24
-	14 songs found
-	44 text lines
 play counts by song:
-	Doctor My Eyes                          : 33 plays : 1,2,2,7,1,7,1,5,1,1,7,5,2,9,4,7,1,1,5,8,7,1,1,11,8,2,3,2,8,5,8,1,6
-	If You Could Read My Mind               : 31 plays : 3,2,7,1,8,5,1,1,7,1,6,3,4,6,4,3,7,8,7,2,11,8,2,3,2,1,8,4,8,1,6
-	Operator                                : 30 plays : 1,2,2,7,1,8,6,13,2,3,4,6,4,3,1,1,5,8,7,1,1,11,10,5,1,7,1,4,9,6
-	Beginnings                              : 30 plays : 3,2,7,1,7,6,1,9,4,2,7,6,4,3,1,6,8,7,1,1,11,8,2,3,2,9,4,8,1,6
-	Sister Golden Hair                      : 29 plays : 3,2,7,1,1,7,6,8,1,4,11,4,4,3,1,6,15,1,1,11,10,3,2,1,7,5,8,1,6
-	You've Got A Friend                     : 28 plays : 3,9,1,1,6,1,5,1,8,5,5,4,7,8,13,8,12,8,2,3,2,1,7,1,4,8,1,6
-	Nothing But The Call                    : 27 plays : 5,8,7,1,5,9,1,4,9,2,4,8,1,5,0,8,7,13,8,2,3,2,1,7,5,8,1
-	Classical Gas                           : 26 plays : 3,9,8,1,5,1,1,12,2,3,10,4,3,1,1,5,15,1,12,8,2,5,8,1,12,1
-	Brandy                                  : 25 plays : 5,7,0,1,7,1,6,1,7,7,13,7,1,6,8,8,12,10,3,2,8,1,4,8,7
-	Metamorphosis                           : 24 plays : 1,4,7,1,1,6,1,5,1,18,10,4,3,7,17,11,8,2,5,1,7,1,12,7
-	Wild World                              : 24 plays : 3,9,1,1,7,5,1,1,17,10,4,3,1,1,21,12,10,3,2,1,7,13,1,6
-	I've Got A Name                         : 24 plays : 1,2,10,1,7,5,1,1,12,5,10,7,1,1,5,8,9,11,8,7,1,8,4,9
-	Here Comes The Sun                      : 24 plays : 3,2,7,1,7,1,5,1,9,4,2,9,8,3,1,1,13,9,11,10,5,1,12,15
-	Misunderstanding                        : 23 plays : 5,7,1,8,5,1,8,5,2,7,6,7,1,14,20,8,2,3,2,1,7,5,9
-	The Wind & The Wheat                    : 23 plays : 5,7,0,2,6,1,5,1,22,6,1,6,7,0,16,12,10,3,3,7,5,9,6
-	Time After Time                         : 21 plays : 1,4,8,1,7,5,1,1,12,9,6,7,1,14,20,10,3,2,1,7,13
-	Addison's Walk                          : 21 plays : 5,7,1,7,6,1,13,2,3,4,13,7,8,9,11,8,2,5,8,5,8
-	Something                               : 21 plays : 12,1,8,0,5,1,9,6,13,1,7,1,13,20,10,3,2,1,8,4,9
-	Pinball Wizard                          : 21 plays : 5,7,1,1,6,1,15,19,8,6,8,8,20,2,3,2,8,1,4,8,1
-	The Reunion                             : 20 plays : 5,7,1,1,6,1,5,1,22,10,3,1,22,12,8,2,5,13,8,7
-	Sailing                                 : 19 plays : 5,7,1,7,1,5,1,13,2,3,4,2,4,7,7,8,8,1,11
-	Emmaus                                  : 19 plays : 3,2,8,1,12,1,9,9,4,6,7,7,8,8,12,13,10,5,9
-	Show Me The Way                         : 19 plays : 5,7,1,1,6,1,0,15,13,2,11,1,6,28,10,5,8,5,9
-	Everybody Wants to Rule the World       : 19 plays : 1,4,8,1,6,1,6,13,11,4,7,1,34,8,2,5,8,5,8
-	In Your Peace / I Love You Lord         : 18 plays : 5,7,0,1,7,8,7,5,5,4,13,7,36,2,3,10,5,9
-	Cats In The Cradle                      : 18 plays : 5,7,1,8,6,13,2,7,6,7,7,28,10,3,2,8,13,1
-	Here, There and Everywhere              : 17 plays : 12,0,8,1,5,10,6,9,5,6,35,10,5,1,7,5,9
-	The Mission                             : 17 plays : 3,10,13,16,3,4,7,8,33,13,2,8,1,4,8,1,6
-	Annie's Song                            : 17 plays : 1,4,9,6,7,24,4,4,5,13,20,8,2,3,2,8,14
-	Behind Blue Eyes                        : 17 plays : 13,7,6,1,13,2,7,6,7,1,6,8,28,7,13,8,1
-	Del's Bells                             : 16 plays : 5,8,1,6,6,1,8,1,19,7,15,8,20,2,3,10
-	Infinite Horizon / County Down          : 16 plays : 13,7,1,5,1,13,2,7,2,11,15,20,8,2,18,9
-	Those Who Wait                          : 15 plays : 5,21,1,15,7,6,1,6,15,28,2,3,10,13,1
-	Morning Snow                            : 14 plays : 1,2,2,7,15,13,5,6,8,46,5,10,13,7
-	Blackbird                               : 14 plays : 5,8,7,1,5,23,2,5,6,35,13,2,8,5
-	Love The One You're With                : 14 plays : 5,7,9,6,9,6,14,7,1,13,20,8,7,1
-	As Warm As Tears                        : 13 plays : 3,2,9,12,9,5,5,4,2,11,23,20,8
-	Time In A Bottle                        : 13 plays : 1,2,2,7,1,7,1,5,1,1,7,5,2
-	Everything I Own                        : 13 plays : 12,8,6,16,7,13,2,13,20,8,2,5,22
-	Under The Sun                           : 13 plays : 3,9,8,6,10,6,21,6,36,2,3,10,14
-	If I Needed Someone                     : 12 plays : 1,19,1,6,13,9,6,7,1,14,33,10
-	Crazy Little Thing Called Love          : 12 plays : 3,2,7,1,1,6,1,5,1,1,7,1
-	Julia                                   : 11 plays : 5,8,7,7,28,1,6,43,2,14,12
-	Shilo                                   : 11 plays : 5,7,14,10,19,8,22,12,10,5,8
-	More Today Than Yesterday               : 11 plays : 1,4,8,7,15,7,9,4,8,6,8
-	Still The One                           : 11 plays : 12,14,16,14,6,1,6,16,12,13,3
-	Solitary Man                            : 10 plays : 13,1,7,5,36,1,23,21,5,28
-	Listen to the Music                     : 10 plays : 1,4,8,1,7,34,8,34,15,13
-	Mood For A Day                          : 9 plays : 13,1,31,17,43,7,8,13,1
-	Two Of Us                               : 9 plays : 20,20,2,9,4,1,3,4,14
-	I Can See Clearly Now                   : 9 plays : 14,7,14,1,20,7,21,13,15
-	The Eyes of a Child                     : 9 plays : 3,32,1,4,11,5,28,13,13
-	It Don't Come Easy                      : 9 plays : 5,9,6,1,19,15,8,14,56
-	Even The Losers                         : 8 plays : 13,7,1,5,1,15,13,8
-	I've Just Seen A Face                   : 8 plays : 12,0,44,7,44,5,9,12
-	Maybe I'm Amazed                        : 8 plays : 5,30,20,8,34,10,5,8
-	Kashmir                                 : 8 plays : 12,1,8,5,29,8,49,22
-	The Power Of Love                       : 8 plays : 5,8,1,6,1,19,15,8
-	There She Goes                          : 7 plays : 13,1,41,8,44,13,13
-	The Treasure                            : 6 plays : 3,11,45,27,35,12
-	Beyond Justice to Mercy                 : 6 plays : 14,6,8,31,10,28
-	Searchin' So Long                       : 6 plays : 5,9,41,8,44,14
-	What I Like About You                   : 6 plays : 5,35,23,34,13,23
-	Yesterday                               : 5 plays : 14,6,35,1,51
-	Eight Days A Week                       : 5 plays : 13,1,28,35,56
-	Love Lies Bleeding                      : 5 plays : 5,15,35,7,1
-	Fare Thee Well                          : 4 plays : 1,41,7,85
-	Give A Little Bit                       : 4 plays : 13,1,83,15
-	Came The Light                          : 4 plays : 1,39,2,44
-	Heart of Worship                        : 3 plays : 20,8,27
-	Hide Your Love Away                     : 3 plays : 5,58,44
-	When My Love Awakened                   : 3 plays : 12,8,42
-	When Night Falls                        : 2 plays : 105,2
-	Rickover's Dream                        : 0 plays :
-	Leading You Home                        : 0 plays :
-	Tuesday Afternoon                       : 0 plays :
-	Seeking Rivendell (acoustic)            : 0 plays :
-	White Christmas                         : 0 plays :
-	Fire Vamp                               : 0 plays :
-	Seeking Rivendell                       : 0 plays :
-	The Ride                                : 0 plays :
-	Candace' Song                           : 0 plays :
-	Cheering You On                         : 0 plays :
+	Rickover's Dream                        :   0 plays :
+	Leading You Home                        :   0 plays :
+	Tuesday Afternoon                       :   0 plays :
+	Seeking Rivendell (acoustic)            :   0 plays :
+	White Christmas                         :   0 plays :
+	Fire Vamp                               :   0 plays :
+	Seeking Rivendell                       :   0 plays :
+	The Ride                                :   0 plays :
+	Candace' Song                           :   0 plays :
+	Two Of Us                               :  10 plays : 24,20,2,9,4,1,3,4,14,1
+	Heart of Worship                        :   3 plays : 24,8,27
+	I Can See Clearly Now                   :   9 plays : 18,7,14,1,20,7,21,13,15
+	Yesterday                               :   5 plays : 18,6,35,1,51
+	Behind Blue Eyes                        :  17 plays : 17,7,6,1,13,2,7,6,7,1,6,8,28,7,13,8,1
+	Infinite Horizon / County Down          :  16 plays : 17,7,1,5,1,13,2,7,2,11,15,20,8,2,18,9
+	Solitary Man                            :  10 plays : 17,1,7,5,36,1,23,21,5,28
+	Even The Losers                         :   9 plays : 17,7,1,5,1,15,13,8,15
+	There She Goes                          :   7 plays : 17,1,41,8,44,13,13
+	Eight Days A Week                       :   5 plays : 17,1,28,35,56
+	Give A Little Bit                       :   4 plays : 17,1,83,15
+	Something                               :  21 plays : 16,1,8,0,5,1,9,6,13,1,7,1,13,20,10,3,2,1,8,4,9
+	Here, There and Everywhere              :  17 plays : 16,0,8,1,5,10,6,9,5,6,35,10,5,1,7,5,9
+	Everything I Own                        :  13 plays : 16,8,6,16,7,13,2,13,20,8,2,5,22
+	Still The One                           :  11 plays : 16,14,16,14,6,1,6,16,12,13,3
+	I've Just Seen A Face                   :   8 plays : 16,0,44,7,44,5,9,12
+	Kashmir                                 :   8 plays : 16,1,8,5,29,8,49,22
+	When My Love Awakened                   :   3 plays : 16,8,42
+	Mood For A Day                          :  10 plays : 11,6,1,31,17,43,7,8,13,1
+	Beyond Justice to Mercy                 :   7 plays : 11,7,6,8,31,10,28
+	When Night Falls                        :   3 plays : 11,98,2
+	Cheering You On                         :   1 plays : 11
+	Nothing But The Call                    :  27 plays : 9,8,7,1,5,9,1,4,9,2,4,8,1,5,0,8,7,13,8,2,3,2,1,7,5,8,1
+	Brandy                                  :  25 plays : 9,7,0,1,7,1,6,1,7,7,13,7,1,6,8,8,12,10,3,2,8,1,4,8,7
+	Misunderstanding                        :  23 plays : 9,7,1,8,5,1,8,5,2,7,6,7,1,14,20,8,2,3,2,1,7,5,9
+	The Wind & The Wheat                    :  23 plays : 9,7,0,2,6,1,5,1,22,6,1,6,7,0,16,12,10,3,3,7,5,9,6
+	Addison's Walk                          :  21 plays : 9,7,1,7,6,1,13,2,3,4,13,7,8,9,11,8,2,5,8,5,8
+	Pinball Wizard                          :  21 plays : 9,7,1,1,6,1,15,19,8,6,8,8,20,2,3,2,8,1,4,8,1
+	The Reunion                             :  20 plays : 9,7,1,1,6,1,5,1,22,10,3,1,22,12,8,2,5,13,8,7
+	Sailing                                 :  19 plays : 9,7,1,7,1,5,1,13,2,3,4,2,4,7,7,8,8,1,11
+	Show Me The Way                         :  19 plays : 9,7,1,1,6,1,0,15,13,2,11,1,6,28,10,5,8,5,9
+	In Your Peace / I Love You Lord         :  18 plays : 9,7,0,1,7,8,7,5,5,4,13,7,36,2,3,10,5,9
+	Cats In The Cradle                      :  18 plays : 9,7,1,8,6,13,2,7,6,7,7,28,10,3,2,8,13,1
+	Del's Bells                             :  16 plays : 9,8,1,6,6,1,8,1,19,7,15,8,20,2,3,10
+	Those Who Wait                          :  16 plays : 9,2,19,1,15,7,6,1,6,15,28,2,3,10,13,1
+	Blackbird                               :  14 plays : 9,8,7,1,5,23,2,5,6,35,13,2,8,5
+	Love The One You're With                :  14 plays : 9,7,9,6,9,6,14,7,1,13,20,8,7,1
+	Julia                                   :  11 plays : 9,8,7,7,28,1,6,43,2,14,12
+	Shilo                                   :  11 plays : 9,7,14,10,19,8,22,12,10,5,8
+	The Power Of Love                       :  10 plays : 9,2,6,1,6,1,19,15,8,8
+	It Don't Come Easy                      :   9 plays : 9,9,6,1,19,15,8,14,56
+	Maybe I'm Amazed                        :   8 plays : 9,30,20,8,34,10,5,8
+	Searchin' So Long                       :   6 plays : 9,9,41,8,44,14
+	What I Like About You                   :   6 plays : 9,35,23,34,13,23
+	Love Lies Bleeding                      :   5 plays : 9,15,35,7,1
+	Hide Your Love Away                     :   3 plays : 9,58,44
+	If You Could Read My Mind               :  31 plays : 7,2,7,1,8,5,1,1,7,1,6,3,4,6,4,3,7,8,7,2,11,8,2,3,2,1,8,4,8,1,6
+	Beginnings                              :  30 plays : 7,2,7,1,7,6,1,9,4,2,7,6,4,3,1,6,8,7,1,1,11,8,2,3,2,9,4,8,1,6
+	Sister Golden Hair                      :  29 plays : 7,2,7,1,1,7,6,8,1,4,11,4,4,3,1,6,15,1,1,11,10,3,2,1,7,5,8,1,6
+	You've Got A Friend                     :  28 plays : 7,9,1,1,6,1,5,1,8,5,5,4,7,8,13,8,12,8,2,3,2,1,7,1,4,8,1,6
+	Classical Gas                           :  26 plays : 7,9,8,1,5,1,1,12,2,3,10,4,3,1,1,5,15,1,12,8,2,5,8,1,12,1
+	Wild World                              :  24 plays : 7,9,1,1,7,5,1,1,17,10,4,3,1,1,21,12,10,3,2,1,7,13,1,6
+	Here Comes The Sun                      :  24 plays : 7,2,7,1,7,1,5,1,9,4,2,9,8,3,1,1,13,9,11,10,5,1,12,15
+	Emmaus                                  :  19 plays : 7,2,8,1,12,1,9,9,4,6,7,7,8,8,12,13,10,5,9
+	The Mission                             :  17 plays : 7,10,13,16,3,4,7,8,33,13,2,8,1,4,8,1,6
+	As Warm As Tears                        :  13 plays : 7,2,9,12,9,5,5,4,2,11,23,20,8
+	Under The Sun                           :  13 plays : 7,9,8,6,10,6,21,6,36,2,3,10,14
+	Crazy Little Thing Called Love          :  12 plays : 7,2,7,1,1,6,1,5,1,1,7,1
+	The Eyes of a Child                     :   9 plays : 7,32,1,4,11,5,28,13,13
+	The Treasure                            :   6 plays : 7,11,45,27,35,12
+	Doctor My Eyes                          :  33 plays : 5,2,2,7,1,7,1,5,1,1,7,5,2,9,4,7,1,1,5,8,7,1,1,11,8,2,3,2,8,5,8,1,6
+	Operator                                :  30 plays : 5,2,2,7,1,8,6,13,2,3,4,6,4,3,1,1,5,8,7,1,1,11,10,5,1,7,1,4,9,6
+	Metamorphosis                           :  24 plays : 5,4,7,1,1,6,1,5,1,18,10,4,3,7,17,11,8,2,5,1,7,1,12,7
+	I've Got A Name                         :  24 plays : 5,2,10,1,7,5,1,1,12,5,10,7,1,1,5,8,9,11,8,7,1,8,4,9
+	Time After Time                         :  21 plays : 5,4,8,1,7,5,1,1,12,9,6,7,1,14,20,10,3,2,1,7,13
+	Everybody Wants to Rule the World       :  19 plays : 5,4,8,1,6,1,6,13,11,4,7,1,34,8,2,5,8,5,8
+	Annie's Song                            :  18 plays : 5,4,2,7,6,7,24,4,4,5,13,20,8,2,3,2,8,14
+	Morning Snow                            :  14 plays : 5,2,2,7,15,13,5,6,8,46,5,10,13,7
+	Time In A Bottle                        :  14 plays : 5,2,2,2,5,1,7,1,5,1,1,7,5,2
+	More Today Than Yesterday               :  12 plays : 5,4,8,7,15,7,9,4,8,6,8,1
+	If I Needed Someone                     :  12 plays : 5,19,1,6,13,9,6,7,1,14,33,10
+	Listen to the Music                     :  10 plays : 5,4,8,1,7,34,8,34,15,13
+	Fare Thee Well                          :   5 plays : 5,6,35,7,85
+	Came The Light                          :   5 plays : 5,6,33,2,44
 >>>

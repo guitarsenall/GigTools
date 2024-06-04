@@ -594,6 +594,10 @@ OBJECTIVES:
             >   I think it is working. No printout, just adding playdates
                 to the songs found.
                 -   Commit/push
+        -   Integrate it with the .docx read. Move it all to
+            play_count.py.
+            >   Got it working. See output.txt.
+                -   Commit/push
 
 
 ================================================================================
