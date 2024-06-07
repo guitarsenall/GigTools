@@ -7,57 +7,38 @@ import gigtools as gt
 import datetime
 
 
-# play with arranging list
-import random
-g   = [0, 4, 1, 5, 2, 4, 3, 4, 5, 2, 6, 4, 7, 2, 8]
-#for i in range(200):
-#    g.append( random.randint(0,20) )
-v   = {}
-gcopy   = g[:]
-print(f'g = {g}')
-while g:                                # g not empty
-    i   = g.pop()
-    v[i]    = []
-    v[i].append(i)
-    print(f'Got the first {i}. g = {g}')
-    #   find & remove all matches
-    c   = 0
-    searching   = True
-    while searching:
-        print(f'searching for {i}')
-        #if i==4:
-        #    print(f'\ti==4 and g = {g}')
-        for j in range(len(g)):
-            #print(f'\t\tg[{j}] = {g[j]}')
-            if g[j]==i:
-                print(f'\t\tFound another {i}. Popping...')
-                v[i].append( g.pop(j) )
-                print(f'\t\tg = {g}')
-                break                   # for loop
-        if len(g)==0 or len(g)<c:
-            searching   = False
-            print(f'\tfor loop done with {i}')
-            print(f'\tg = {g}')
-        c   += 1
+## play with arranging list
+#import random
+#g   = [0, 4, 1, 5, 2, 4, 3, 4, 5, 2, 6, 4, 7, 2, 8]
+##for i in range(200):
+##    g.append( random.randint(0,20) )
+#v   = {}
+#gcopy   = g[:]
+#print(f'g = {g}')
+#while g:                                # g not empty
+#    i   = g.pop()
+#    v[i]    = []
+#    v[i].append(i)
+#    print(f'Got the first {i}. g = {g}')
+#    #   find & remove all matches
+#    c   = 0
+#    searching   = True
+#    while searching:
+#        print(f'searching for {i}')
+#        for j in range(len(g)):
+#            if g[j]==i:
+#                print(f'\t\tFound another {i}. Popping...')
+#                v[i].append( g.pop(j) )
+#                print(f'\t\tg = {g}')
+#                break                   # for loop
+#        if len(g)==0 or len(g)<c:
+#            searching   = False
+#            print(f'\tfor loop done with {i}')
+#            print(f'\tg = {g}')
+#        c   += 1
 
 
-## just find a 4
-#v   = []
-#c   = 0
-#searching = True
-#while searching:
-#    print(f'g = {g}')
-#    for i in range(len(g)):
-#        if g[i]==4:
-#            print(f'\tfound one')
-#            v.append( g.pop(i) )
-#            break
-#    if len(g)==0 or len(g)<c:
-#        searching   = False
-#    c   += 1
 
-
-'''
 # venue-history repertwaar printout
 
 # read in the repertwaar--a list of song dictionaries
@@ -79,15 +60,24 @@ while gigs_copy:                             # not empty
     gig                 = gigs_copy.pop()
     VName               = gig['Venue'].strip().title()
     venue_gigs[VName]   = [gig]
+    print(f'Got the first {VName}. Searching for more.')
     #   find & remove all matches
-    while True:
-        for gig in gigs_copy:
+    c           = 0
+    searching   = True
+    while searching:
+        for j in range(len(gigs_copy)):
             # compare gig['Venue'] with VName
+            gig = gigs_copy[j]
             s   = gt.match_score( VName, gig['Venue'].strip().title() )
-            if s >= 50:
-                venue_gigs[VName].append( gigs_copy.pop(gigs_copy.index(gig)) )
+            if s >= 60:
+                print(f'\t\tFound another {VName}. Popping...')
+                venue_gigs[VName].append( gigs_copy.pop(j) )
                 break                   # for loop
-        break                           # while loop
+        if len(gigs_copy)==0 or len(gigs_copy)<c:
+            searching   = False
+            print(f'\tfor loop done with {VName}')
+            print(f'\tNumber of gigs left = {len(gigs_copy)}')
+        c   += 1
 
 # print
 print('gigs found per venue:')
@@ -96,7 +86,6 @@ for k, v in venue_gigs.items():
 print('all venue names:')
 for gig in gigs:
     print( '\t' + gig['Venue'].strip().title() )
-'''
 
 
 ## sort repertwaar on most recent playdate, and display

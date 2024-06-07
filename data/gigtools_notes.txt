@@ -650,6 +650,10 @@ OBJECTIVES:
                          7: [7],
                          8: [8]}
                         Commit.
+                #   Adapt the algorithm to the gigs.
+                    IT WORKS!!! See output.txt
+
+
 
 
 ================================================================================
