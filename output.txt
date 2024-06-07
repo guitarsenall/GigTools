@@ -1,92 +1,108 @@
 *** Python 3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)] on win32. ***
 >>>
-g = [0, 4, 1, 2, 4, 3, 4, 5, 6, 4, 7, 8]
-Got the first 8. g = [0, 4, 1, 2, 4, 3, 4, 5, 6, 4, 7]
+g = [0, 4, 1, 5, 2, 4, 3, 4, 5, 2, 6, 4, 7, 2, 8]
+Got the first 8. g = [0, 4, 1, 5, 2, 4, 3, 4, 5, 2, 6, 4, 7, 2]
 searching for 8
-		x = 0
-		x = 4
-		x = 1
-		x = 2
-		x = 4
-		x = 3
-		x = 4
-		x = 5
-		x = 6
-		x = 4
-		x = 7
+searching for 8
+searching for 8
+searching for 8
+searching for 8
+searching for 8
+searching for 8
+searching for 8
+searching for 8
+searching for 8
+searching for 8
+searching for 8
+searching for 8
+searching for 8
+searching for 8
+searching for 8
 	for loop done with 8
-	g = [0, 4, 1, 2, 4, 3, 4, 5, 6, 4, 7]
-Got the first 7. g = [0, 4, 1, 2, 4, 3, 4, 5, 6, 4]
-searching for 7
-		x = 0
-		x = 4
-		x = 1
-		x = 2
-		x = 4
-		x = 3
-		x = 4
-		x = 5
-		x = 6
-		x = 4
-	for loop done with 7
-	g = [0, 4, 1, 2, 4, 3, 4, 5, 6, 4]
-Got the first 4. g = [0, 4, 1, 2, 4, 3, 4, 5, 6]
-searching for 4
-	i==4 and g = [0, 4, 1, 2, 4, 3, 4, 5, 6]
-		x = 0
-		x = 4
-		Found another 4. Popping...
-		g = [0, 1, 2, 4, 3, 4, 5, 6]
-	for loop done with 4
-	g = [0, 1, 2, 4, 3, 4, 5, 6]
-Got the first 6. g = [0, 1, 2, 4, 3, 4, 5]
-searching for 6
-		x = 0
-		x = 1
-		x = 2
-		x = 4
-		x = 3
-		x = 4
-		x = 5
-	for loop done with 6
-	g = [0, 1, 2, 4, 3, 4, 5]
-Got the first 5. g = [0, 1, 2, 4, 3, 4]
-searching for 5
-		x = 0
-		x = 1
-		x = 2
-		x = 4
-		x = 3
-		x = 4
-	for loop done with 5
-	g = [0, 1, 2, 4, 3, 4]
-Got the first 4. g = [0, 1, 2, 4, 3]
-searching for 4
-	i==4 and g = [0, 1, 2, 4, 3]
-		x = 0
-		x = 1
-		x = 2
-		x = 4
-		Found another 4. Popping...
-		g = [0, 1, 2, 3]
-	for loop done with 4
-	g = [0, 1, 2, 3]
-Got the first 3. g = [0, 1, 2]
-searching for 3
-		x = 0
-		x = 1
-		x = 2
-	for loop done with 3
-	g = [0, 1, 2]
-Got the first 2. g = [0, 1]
+	g = [0, 4, 1, 5, 2, 4, 3, 4, 5, 2, 6, 4, 7, 2]
+Got the first 2. g = [0, 4, 1, 5, 2, 4, 3, 4, 5, 2, 6, 4, 7]
 searching for 2
-		x = 0
-		x = 1
+		Found another 2. Popping...
+		g = [0, 4, 1, 5, 4, 3, 4, 5, 2, 6, 4, 7]
+searching for 2
+		Found another 2. Popping...
+		g = [0, 4, 1, 5, 4, 3, 4, 5, 6, 4, 7]
+searching for 2
+searching for 2
+searching for 2
+searching for 2
+searching for 2
+searching for 2
+searching for 2
+searching for 2
+searching for 2
+searching for 2
+searching for 2
 	for loop done with 2
+	g = [0, 4, 1, 5, 4, 3, 4, 5, 6, 4, 7]
+Got the first 7. g = [0, 4, 1, 5, 4, 3, 4, 5, 6, 4]
+searching for 7
+searching for 7
+searching for 7
+searching for 7
+searching for 7
+searching for 7
+searching for 7
+searching for 7
+searching for 7
+searching for 7
+searching for 7
+searching for 7
+	for loop done with 7
+	g = [0, 4, 1, 5, 4, 3, 4, 5, 6, 4]
+Got the first 4. g = [0, 4, 1, 5, 4, 3, 4, 5, 6]
+searching for 4
+		Found another 4. Popping...
+		g = [0, 1, 5, 4, 3, 4, 5, 6]
+searching for 4
+		Found another 4. Popping...
+		g = [0, 1, 5, 3, 4, 5, 6]
+searching for 4
+		Found another 4. Popping...
+		g = [0, 1, 5, 3, 5, 6]
+searching for 4
+searching for 4
+searching for 4
+searching for 4
+searching for 4
+	for loop done with 4
+	g = [0, 1, 5, 3, 5, 6]
+Got the first 6. g = [0, 1, 5, 3, 5]
+searching for 6
+searching for 6
+searching for 6
+searching for 6
+searching for 6
+searching for 6
+searching for 6
+	for loop done with 6
+	g = [0, 1, 5, 3, 5]
+Got the first 5. g = [0, 1, 5, 3]
+searching for 5
+		Found another 5. Popping...
+		g = [0, 1, 3]
+searching for 5
+searching for 5
+searching for 5
+searching for 5
+	for loop done with 5
+	g = [0, 1, 3]
+Got the first 3. g = [0, 1]
+searching for 3
+searching for 3
+searching for 3
+searching for 3
+	for loop done with 3
 	g = [0, 1]
 Got the first 1. g = [0]
 searching for 1
-		x = 0
+searching for 1
+searching for 1
 	for loop done with 1
 	g = [0]
 Got the first 0. g = []
@@ -94,3 +110,14 @@ searching for 0
 	for loop done with 0
 	g = []
 >>>
+>>>
+>>> v
+{0: [0],
+ 1: [1],
+ 2: [2, 2, 2],
+ 3: [3],
+ 4: [4, 4, 4, 4],
+ 5: [5, 5],
+ 6: [6],
+ 7: [7],
+ 8: [8]}

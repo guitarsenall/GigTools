@@ -9,7 +9,7 @@ import datetime
 
 # play with arranging list
 import random
-g   = [0, 4, 1, 2, 4, 3, 4, 5, 6, 4, 7, 8]
+g   = [0, 4, 1, 5, 2, 4, 3, 4, 5, 2, 6, 4, 7, 2, 8]
 #for i in range(200):
 #    g.append( random.randint(0,20) )
 v   = {}
@@ -21,22 +21,40 @@ while g:                                # g not empty
     v[i].append(i)
     print(f'Got the first {i}. g = {g}')
     #   find & remove all matches
+    c   = 0
     searching   = True
     while searching:
         print(f'searching for {i}')
-        if i==4:
-            print(f'\ti==4 and g = {g}')
-        for x in g:
-            print(f'\t\tx = {x}')
-            if x==i:
-                print(f'\t\tFound another {x}. Popping...')
-                p   = g.pop(g.index(x))
-                v[i].append( p )
+        #if i==4:
+        #    print(f'\ti==4 and g = {g}')
+        for j in range(len(g)):
+            #print(f'\t\tg[{j}] = {g[j]}')
+            if g[j]==i:
+                print(f'\t\tFound another {i}. Popping...')
+                v[i].append( g.pop(j) )
                 print(f'\t\tg = {g}')
                 break                   # for loop
-        print(f'\tfor loop done with {i}')
-        print(f'\tg = {g}')
-        searching = False
+        if len(g)==0 or len(g)<c:
+            searching   = False
+            print(f'\tfor loop done with {i}')
+            print(f'\tg = {g}')
+        c   += 1
+
+
+## just find a 4
+#v   = []
+#c   = 0
+#searching = True
+#while searching:
+#    print(f'g = {g}')
+#    for i in range(len(g)):
+#        if g[i]==4:
+#            print(f'\tfound one')
+#            v.append( g.pop(i) )
+#            break
+#    if len(g)==0 or len(g)<c:
+#        searching   = False
+#    c   += 1
 
 
 '''
