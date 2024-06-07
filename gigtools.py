@@ -105,7 +105,7 @@ def match_gig_songs(repertwaar, song_strings):
     return gig_songs
 
 
-def read_gig_files(gig_files, repertwaar):
+def read_gig_files(gig_files, repertwaar, verbose=False):
     ''' read a list of .docx files, modify the contents of repertwaar,
         and return a list of gigs. '''
     gigs    = []
@@ -129,15 +129,17 @@ def read_gig_files(gig_files, repertwaar):
                         title_idx.append(i-b)
                         #print(f'\tTitle: {allText[i-b]}')
                         break
-        print(f'Found {len(title_idx)} gig titles in {GigFile}:')
-        for i in title_idx:
-            print('\t' + allText[i])
+        if verbose:
+            print(f'Found {len(title_idx)} gig titles in {GigFile}:')
+            for i in title_idx:
+                print('\t' + allText[i])
         title_idx.append(len(allText)-1)
         # loop over the gig sections
         for i in range(len(title_idx)-1):
             gig_lines   = allText[ title_idx[i] : title_idx[i+1]-1 ]
             title       = allText[title_idx[i]]
-            print(f'Parsing Gig title: {title}')
+            if verbose:
+                print(f'Parsing Gig title: {title}')
             # get the venue and date
             tok         = title.rpartition(' ')
             venue       = tok[0]
@@ -167,8 +169,9 @@ def read_gig_files(gig_files, repertwaar):
                         song_list   = block
                         break
             gig_songs   = match_gig_songs(repertwaar, song_list)
-            print(f'\t{len(gig_songs)} songs found' )
-            print(f'\t{len(gig_lines)} text lines' )
+            if verbose:
+                print(f'\t{len(gig_songs)} songs found' )
+                print(f'\t{len(gig_lines)} text lines' )
             for song in gig_songs:
                 song['playcount']  += 1
                 song['playdates'].append(gigdate)

@@ -600,6 +600,31 @@ OBJECTIVES:
                 -   Commit/push
 
 
+                                            Thursday, June 6, 2024 (1:22 PM)
++   Venue history: Print the Repertwaar with a suffix that indicates the
+    play history at a given venue.
+
+    *   Detect venues.
+        -   How can I do this without predefining the venues? gigs is a list
+            of dictionaries.
+            >   Use a while loop to iterate over the gigs, use gigs.pop()
+                to get a gig and remove it from the list. Iterate until the
+                list is empty.
+                #   Try this with integers.
+                    Not trivial since gigs has to be popped every time
+                    a match is found.
+                    Tricky (double while loop) but got it working.
+                #   Expand to gigs. Now I need a way to detect a match
+                    of the venue name.
+                #   Oops, the algorithm gets a max of 2 occurrences.
+                    Back to integers.
+                    Still stumped. See output.txt. The first break
+                    statement seems to be breaking both loops.
+                                                Friday, June 7, 2024 (3:48 PM)
+                    Commit before I really change the algorithm.
+
+
+
 ================================================================================
 
 +   TO DO:

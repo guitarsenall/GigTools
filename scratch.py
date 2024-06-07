@@ -7,39 +7,113 @@ import gigtools as gt
 import datetime
 
 
-# sort repertwaar on most recent playdate, and display
-played_songs    = []
-# get the earliest date
-MinDate         = datetime.date.today()
-for song in repertwaar:
-    if song['playcount'] > 0:
-        played_songs.append(song)
-        MinDate = min( MinDate, min(song['playdates']) )
-# write earliest date to unplayed songs
-for song in repertwaar:
-    if song['playcount'] == 0:
-        song['playdates'].append(MinDate)
-# sort the repertwaar
-repertwaar.sort( key = lambda s: max(s['playdates']) )
-# analysis and printout
-print('play counts by song:')
-for song in repertwaar:
-    if song['playcount'] > 0:
-        # form the play-interval string
-        gig_dates   = sorted( song['playdates'], reverse=True )
-        CurDate     = datetime.date.today()
-        delta       = CurDate - gig_dates[0]
-        DeltaString = f'{delta.days}'
-        CurDate     = gig_dates[0]
-        for gigdate in gig_dates[1:]:
-            delta       = CurDate - gigdate
-            DeltaString += f',{delta.days}'
-            CurDate     = gigdate
-    else:
-        DeltaString = ''
-    print( '\t{0:<40}: {1:3d} plays : {2}'.format(
-                song['title'].removesuffix('*'),
-                song['playcount'], DeltaString ) )
+# play with arranging list
+import random
+g   = [0, 4, 1, 2, 4, 3, 4, 5, 6, 4, 7, 8]
+#for i in range(200):
+#    g.append( random.randint(0,20) )
+v   = {}
+gcopy   = g[:]
+print(f'g = {g}')
+while g:                                # g not empty
+    i   = g.pop()
+    v[i]    = []
+    v[i].append(i)
+    print(f'Got the first {i}. g = {g}')
+    #   find & remove all matches
+    searching   = True
+    while searching:
+        print(f'searching for {i}')
+        if i==4:
+            print(f'\ti==4 and g = {g}')
+        for x in g:
+            print(f'\t\tx = {x}')
+            if x==i:
+                print(f'\t\tFound another {x}. Popping...')
+                p   = g.pop(g.index(x))
+                v[i].append( p )
+                print(f'\t\tg = {g}')
+                break                   # for loop
+        print(f'\tfor loop done with {i}')
+        print(f'\tg = {g}')
+        searching = False
+
+
+'''
+# venue-history repertwaar printout
+
+# read in the repertwaar--a list of song dictionaries
+repertwaar      = gt.read_repertwaar()
+
+# read the gig history
+GigFolder       = 'S:\\will\\documents\\OneDrive\\2024\\gigtools\\gigfiles\\'
+GigFile         = 'multi.docx'
+gig_files       = [ GigFolder + 'gigs_january_2024.docx'    ,
+                    GigFolder + 'gigs_february_2024.docx'   ,
+                    GigFolder + 'gigs_march_2024.docx'      ,
+                    GigFolder + 'gigs_april_2024.docx'      ,
+                    GigFolder + 'gigs_may_2024.docx'        ,
+                    GigFolder + 'gigs_june_2024.docx'       ]
+gigs            = gt.read_gig_files(gig_files, repertwaar)
+gigs_copy       = gigs[:]
+venue_gigs  = {}
+while gigs_copy:                             # not empty
+    gig                 = gigs_copy.pop()
+    VName               = gig['Venue'].strip().title()
+    venue_gigs[VName]   = [gig]
+    #   find & remove all matches
+    while True:
+        for gig in gigs_copy:
+            # compare gig['Venue'] with VName
+            s   = gt.match_score( VName, gig['Venue'].strip().title() )
+            if s >= 50:
+                venue_gigs[VName].append( gigs_copy.pop(gigs_copy.index(gig)) )
+                break                   # for loop
+        break                           # while loop
+
+# print
+print('gigs found per venue:')
+for k, v in venue_gigs.items():
+    print(f'\t{k}: {len(v)}')
+print('all venue names:')
+for gig in gigs:
+    print( '\t' + gig['Venue'].strip().title() )
+'''
+
+
+## sort repertwaar on most recent playdate, and display
+#played_songs    = []
+## get the earliest date
+#MinDate         = datetime.date.today()
+#for song in repertwaar:
+#    if song['playcount'] > 0:
+#        played_songs.append(song)
+#        MinDate = min( MinDate, min(song['playdates']) )
+## write earliest date to unplayed songs
+#for song in repertwaar:
+#    if song['playcount'] == 0:
+#        song['playdates'].append(MinDate)
+## sort the repertwaar
+#repertwaar.sort( key = lambda s: max(s['playdates']) )
+## analysis and printout
+#print('play counts by song:')
+#for song in repertwaar:
+#    if song['playcount'] > 0:
+#        # form the play-interval string
+#        gig_dates   = sorted( song['playdates'], reverse=True )
+#        CurDate     = datetime.date.today()
+#        delta       = CurDate - gig_dates[0]
+#        DeltaString = f'{delta.days}'
+#        CurDate     = gig_dates[0]
+#        for gigdate in gig_dates[1:]:
+#            delta       = CurDate - gigdate
+#            DeltaString += f',{delta.days}'
+#            CurDate     = gigdate
+#    else:
+#        DeltaString = ''
+#    print( '\t{0:<40}: {1:3d} plays : {2}'.format(
+#                song['title'].removesuffix('*'),
+#                song['playcount'], DeltaString ) )
 
 
 

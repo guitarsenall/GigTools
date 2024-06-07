@@ -31,3 +31,16 @@ Songs   : 6
     Those Who Wait
     Del's Bells
     Classical Gas
+
+Date    : 6/4/24
+Guitars : 812ce
+
+    Mood For A Day
+    The Wind & The Wheat
+    When Night Falls
+    The Power Of Love
+    Fare Thee Well
+    Classical Gas
+    Del's Bells
+    Those Who Wait
+
