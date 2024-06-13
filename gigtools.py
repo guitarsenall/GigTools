@@ -183,3 +183,33 @@ def read_gig_files(gig_files, repertwaar, verbose=False):
             gigs.append(gig)
     return gigs
 
+
+def gigs_by_venue(gigs):
+    ''' Accepts a list of gigs, output is a dictionary where each
+        element is a list of gigs for that venue.'''
+    gigs_copy       = gigs[:]
+    venue_gigs  = {}
+    while gigs_copy:                             # not empty
+        gig                 = gigs_copy.pop()
+        VName               = gig['Venue'].strip().title()
+        venue_gigs[VName]   = [gig]
+        print(f'Got the first {VName}. Searching for more.')
+        #   find & remove all matches
+        c           = 0
+        searching   = True
+        while searching:
+            for j in range(len(gigs_copy)):
+                # compare gig['Venue'] with VName
+                gig = gigs_copy[j]
+                s   = match_score( VName, gig['Venue'].strip().title() )
+                if s >= 60:
+                    print(f'\t\tFound another {VName}. Popping...')
+                    venue_gigs[VName].append( gigs_copy.pop(j) )
+                    break                   # for loop
+            if len(gigs_copy)==0 or len(gigs_copy)<c:
+                searching   = False
+                print(f'\tfor loop done with {VName}')
+                print(f'\tNumber of gigs left = {len(gigs_copy)}')
+            c   += 1
+    return venue_gigs
+

@@ -653,6 +653,30 @@ OBJECTIVES:
                 #   Adapt the algorithm to the gigs.
                     IT WORKS!!! See output.txt
 
+                                            Thursday, June 13, 2024 (10:27 AM)
+    *   Mark repertwaar to indicate recent plays.
+        -   Idea: A series of digits in parentheses, for example:
+                    Behind Blue Eyes (1347)
+            where each digit represents how many gigs ago at THAT venue
+            I played that song. In this case, 1347 means I played it
+                Last gig        : yes
+                2 gigs ago      : no
+                3 gigs ago      : yes
+                4 gigs ago      : yes
+                5 gigs ago      : no
+                6 gigs ago      : no
+                7 gigs ago      : yes
+            Don't bother going past 9.
+            This way I get a quick indication of how much I have played that
+            song recently at my repeat venues.
+        -   Move code to gigtools.gigs_by_venue()
+        -   Prototype one song:
+                VenueName   = 'Holly Brook Washington'
+                SongName    = 'Brandy'
+            It works!
+                >>> TitleString
+                'Holly Brook Washington (13)'
+            Commit.
 
 
 
@@ -660,7 +684,21 @@ OBJECTIVES:
 
 +   TO DO:
     *   Detect venues and dates in titles
-        -   Mark repertwaar to indicate recent plays
+        -   Mark repertwaar to indicate recent plays.
+            Idea: A series of digits in parentheses, for example:
+                    Behind Blue Eyes (1347)
+            where each digit represents how many gigs ago at THAT venue
+            I played that song. In this case, 1347 means I played it
+                Last gig        : yes
+                2 gigs ago      : no
+                3 gigs ago      : yes
+                4 gigs ago      : yes
+                5 gigs ago      : no
+                6 gigs ago      : no
+                7 gigs ago      : yes
+            Don't bother going past 9.
+            This way I get a quick indication of how much I have played that
+            song recently at my repeat venues.
     *   Detecting the song list should not require a certain number of
         songs. Find the block with the most matches.
         -   The section '# get the song list' should be a function.
