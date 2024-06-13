@@ -677,7 +677,32 @@ OBJECTIVES:
                 >>> TitleString
                 'Holly Brook Washington (13)'
             Commit.
-
+            Oops, print song title, not venue name.
+        -   Expand to all songs.
+            >   It works for well-named venues. But it is having trouble
+                with "Michael’S". The apostrophe is not an alphanumeric
+                character. I need to get rid of these in venue and song names!
+                Google. Found this:
+                    >>> k[12]
+                    'Michael’S'
+                    >>> print( ''.join(ch for ch in k[12] if ch.isalnum()) )
+                    MichaelS
+                Implement in gt.fix_venue_name().
+                Oops. It is removing spaces. Use ch.isascii()
+            >   Got it working in scratch.py for
+                    VenueName   = "Michaels"
+                Sample:
+                    Crazy Little Thing Called Love (1)
+                    Del's Bells (134)
+                    Doctor My Eyes (2345)
+                    Eight Days A Week (1235)
+                    Emmaus (13)
+                    Even The Losers (2)
+                    Everybody Wants to Rule the World (145)
+                    Everything I Own (234)
+                    Fare Thee Well (2)
+                See the rest in output.txt
+            >   Commit/push
 
 
 ================================================================================

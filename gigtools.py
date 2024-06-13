@@ -7,6 +7,11 @@ import unicodedata
 import datetime
 
 
+def fix_venue_name(VName):
+    ''' removes the apostrophe from a venue name '''
+    return ''.join( ch for ch in VName if ch.isascii() )
+
+
 def match_score(title, line):
     ''' detect a partial match and return score '''
     title   = title.strip().removesuffix('*')
@@ -175,11 +180,11 @@ def read_gig_files(gig_files, repertwaar, verbose=False):
             for song in gig_songs:
                 song['playcount']  += 1
                 song['playdates'].append(gigdate)
-            gig = { 'Title' : allText[title_idx[i]] ,
-                    'Venue' : venue                 ,
-                    'Date'  : gigdate               ,
-                    'Songs' : gig_songs             ,
-                    'Lines' : gig_lines             }
+            gig = { 'title' : allText[title_idx[i]] ,
+                    'venue' : fix_venue_name(venue) ,
+                    'date'  : gigdate               ,
+                    'songs' : gig_songs             ,
+                    'lines' : gig_lines             }
             gigs.append(gig)
     return gigs
 
@@ -191,7 +196,7 @@ def gigs_by_venue(gigs):
     venue_gigs  = {}
     while gigs_copy:                             # not empty
         gig                 = gigs_copy.pop()
-        VName               = gig['Venue'].strip().title()
+        VName               = gig['venue'].strip().title()
         venue_gigs[VName]   = [gig]
         print(f'Got the first {VName}. Searching for more.')
         #   find & remove all matches
@@ -199,9 +204,9 @@ def gigs_by_venue(gigs):
         searching   = True
         while searching:
             for j in range(len(gigs_copy)):
-                # compare gig['Venue'] with VName
+                # compare gig['venue'] with VName
                 gig = gigs_copy[j]
-                s   = match_score( VName, gig['Venue'].strip().title() )
+                s   = match_score( VName, gig['venue'].strip().title() )
                 if s >= 60:
                     print(f'\t\tFound another {VName}. Popping...')
                     venue_gigs[VName].append( gigs_copy.pop(j) )
