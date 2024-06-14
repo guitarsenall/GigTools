@@ -155,12 +155,19 @@ def read_gig_files(gig_files, repertwaar, verbose=False):
             blocks      = []
             song_list   = []
             this_block  = []
+            guitars     = []
             for line in gig_lines:
                 if line == ' ':
                     blocks.append(this_block[:])    # copy the list
                     this_block  = []
                 else:
                     this_block.append(line)
+                    if 'guitars:' in line.lower():
+                        GuitarStr   = line.lower().removeprefix('guitars:')
+                        guitars     = []
+                        for tok in GuitarStr.split(','):
+                            guitars.append( tok.strip() )
+                        guitars.sort()
             for block in blocks:
                 if len(block) >= 9:
                     matches = 0
@@ -180,11 +187,12 @@ def read_gig_files(gig_files, repertwaar, verbose=False):
             for song in gig_songs:
                 song['playcount']  += 1
                 song['playdates'].append(gigdate)
-            gig = { 'title' : allText[title_idx[i]] ,
-                    'venue' : fix_venue_name(venue) ,
-                    'date'  : gigdate               ,
-                    'songs' : gig_songs             ,
-                    'lines' : gig_lines             }
+            gig = { 'title'     : allText[title_idx[i]] ,
+                    'venue'     : fix_venue_name(venue) ,
+                    'date'      : gigdate               ,
+                    'songs'     : gig_songs             ,
+                    'lines'     : gig_lines             ,
+                    'guitars'   : guitars               }
             gigs.append(gig)
     return gigs
 

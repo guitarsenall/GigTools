@@ -704,6 +704,12 @@ OBJECTIVES:
                 See the rest in output.txt
             >   Commit/push
 
+    *   track guitars used in gigs.
+        -   See output.txt. It shows I have played the 814ce in 13 gigs.
+            Before that I was playing the 812ce. So it is time to rotate
+            to the 414ce-L3.
+            >   Commit/push
+
 
 ================================================================================
 

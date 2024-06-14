@@ -21,46 +21,54 @@ gig_files       = [ GigFolder + 'gigs_january_2024.docx'    ,
                     GigFolder + 'gigs_april_2024.docx'      ,
                     GigFolder + 'gigs_may_2024.docx'        ,
                     GigFolder + 'gigs_june_2024.docx'       ]
-gigs            = gt.read_gig_files(gig_files, repertwaar)
-venue_gigs      = gt.gigs_by_venue(gigs)
-print('gigs found per venue:')
-for k, v in venue_gigs.items():
-    print(f'\t{k}: {len(v)}')
-print('all venue names:')
+gigs            = gt.read_gig_files( gig_files, repertwaar, verbose=True)
+
+
+# track guitars used in gigs
+gigs.sort( key = lambda g: g['date'], reverse=False )
 for gig in gigs:
-    print( '\t' + gig['venue'].strip().title() )
+    print( "\t{0:<12}: {1:<40}: {2}".format(
+            str(gig['date']), gig['venue'], gig['guitars'] ) )
 
-# track plays in venue
-VenueName   = "Michaels"
-v_gigs      = venue_gigs[VenueName]
-v_gigs.sort( key = lambda g: g['date'], reverse=True )
-for gig in v_gigs:
-    print(f"gig date: {gig['date']}")
-print('')
 
-# add playdates to songs from this venue
-repertwaar.sort( key = lambda s: s['title'] )
-for song in repertwaar:
-    SongName    = song['title'].removesuffix('*')
-    PlayString  = ' ('
-    played      = False
-    for i, gig in enumerate(v_gigs):
-        if i > 9:
-            break
-        # get song titles
-        gig_song_titles = []
-        for s in gig['songs']:
-            gig_song_titles.append(s['title'].removesuffix('*'))
-        if SongName in gig_song_titles:
-        # if 'this song is in this gig':
-            played      = True
-            PlayString  += str(i+1)
-    if played:
-        PlayString += ')'
-    else:
-        PlayString = ''
-    TitleString = SongName + PlayString
-    print(TitleString)
+## track plays in venue
+#venue_gigs      = gt.gigs_by_venue(gigs)
+#print('gigs found per venue:')
+#for k, v in venue_gigs.items():
+#    print(f'\t{k}: {len(v)}')
+#print('all venue names:')
+#for gig in gigs:
+#    print( '\t' + gig['venue'].strip().title() )
+#VenueName   = "Michaels"
+#v_gigs      = venue_gigs[VenueName]
+#v_gigs.sort( key = lambda g: g['date'], reverse=True )
+#for gig in v_gigs:
+#    print(f"gig date: {gig['date']}")
+#print('')
+#
+## add PlayString suffixes to songs played at this venue
+#repertwaar.sort( key = lambda s: s['title'] )
+#for song in repertwaar:
+#    SongName    = song['title'].removesuffix('*')
+#    PlayString  = ' ('
+#    played      = False
+#    for i, gig in enumerate(v_gigs):
+#        if i > 9:
+#            break
+#        # get song titles
+#        gig_song_titles = []
+#        for s in gig['songs']:
+#            gig_song_titles.append(s['title'].removesuffix('*'))
+#        if SongName in gig_song_titles:
+#        # if 'this song is in this gig':
+#            played      = True
+#            PlayString  += str(i+1)
+#    if played:
+#        PlayString += ')'
+#    else:
+#        PlayString = ''
+#    TitleString = SongName + PlayString
+#    print(TitleString)
 
 
 
