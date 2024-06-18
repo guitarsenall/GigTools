@@ -16,6 +16,10 @@ def match_score(title, line):
     ''' detect a partial match and return score '''
     title   = title.strip().removesuffix('*')
     line    = line.strip().removesuffix('*')
+    if '(' in line:
+        # remove venue-play markings
+        tok     = line.rpartition('(')
+        line    = tok[0].strip()
     match   = -abs( len(title) - len(line) )
     for i in range( min(len(title),len(line)) - 1 ):
         if line[i:i+2] in title:
@@ -225,4 +229,45 @@ def gigs_by_venue(gigs):
                 print(f'\tNumber of gigs left = {len(gigs_copy)}')
             c   += 1
     return venue_gigs
+
+
+def venue_play_list(VenueName, gigs, repertwaar):
+    ''' prints the repertwaar titles with markings from previous
+        gigs at VenueName'''
+    venue_gigs      = gigs_by_venue(gigs)
+    print('gigs found per venue:')
+    for k, v in venue_gigs.items():
+        print(f'\t{k}: {len(v)}')
+    print('all venue names:')
+    for gig in gigs:
+        print( '\t' + gig['venue'].strip().title() )
+    v_gigs      = venue_gigs[VenueName]
+    v_gigs.sort( key = lambda g: g['date'], reverse=True )
+    for gig in v_gigs:
+        print(f"gig date: {gig['date']}")
+    print('')
+
+    # add PlayString suffixes to songs played at this venue
+    for song in repertwaar:
+        SongName    = song['title'].removesuffix('*')
+        PlayString  = ' ('
+        played      = False
+        for i, gig in enumerate(v_gigs):
+            if i > 9:
+                break
+            # get song titles
+            gig_song_titles = []
+            for s in gig['songs']:
+                gig_song_titles.append(s['title'].removesuffix('*'))
+            if SongName in gig_song_titles:
+            # if 'this song is in this gig':
+                played      = True
+                PlayString  += str(i+1)
+        if played:
+            PlayString += ')'
+        else:
+            PlayString = ''
+        TitleString = SongName + PlayString
+        print(TitleString)
+
 

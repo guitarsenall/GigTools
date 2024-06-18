@@ -710,6 +710,33 @@ OBJECTIVES:
             to the 414ce-L3.
             >   Commit/push
 
+                                            Tuesday, June 18, 2024 (10:20 AM)
+    *   Having trouble with marking the repertwaar:
+        -   Songs are not getting matched in reverse_songlist.py:
+                Unmatched line: Cheering You On
+                Unmatched line: Eight Days A Week
+                Unmatched line: Searchinl So Long
+                Unmatched line: Came The Light
+                Unmatched line: Fare T hee Well
+                Unmatched line: I've Just Seen A Face
+                Unmatched line: Hide Your Love Away
+                Unmatched line: Solitary Man
+                Unmatched line: There She Goes
+                Unmatched line: Mood For A Day
+                Unmatched line: The Treasure
+                Unmatched line: Those Who Wait
+                Unmatched line: As Warm As Tears
+                Unmatched line: Morning Snow
+            These are the ones WITHOUT markings, so my modifications to
+            gigtools.match_score() must have broken it somehow.
+            Got it fixed.
+            Process songs from Innkeepers the other night.
+        -   Move code from scratch.py to
+                gigtools.venue_play_list(VenueName, gigs, repertwaar)
+        -   Create a venue play-list for today at Holly Brook East Peoria.
+            >   It works. See output.txt.
+            >   Commit/push
+
 
 ================================================================================
 
