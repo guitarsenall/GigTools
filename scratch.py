@@ -7,35 +7,69 @@ import gigtools as gt
 import datetime
 
 
-
-# venue-history repertwaar printout
-
-# read in the repertwaar--a list of song dictionaries
-repertwaar      = gt.read_repertwaar()
-repertwaar.sort( key = lambda s: s['title'] )
-
-# read the gig history
-GigFolder       = 'S:\\will\\documents\\OneDrive\\2024\\gigtools\\gigfiles\\'
-GigFile         = 'multi.docx'
-gig_files       = [ GigFolder + 'gigs_january_2024.docx'    ,
-                    GigFolder + 'gigs_february_2024.docx'   ,
-                    GigFolder + 'gigs_march_2024.docx'      ,
-                    GigFolder + 'gigs_april_2024.docx'      ,
-                    GigFolder + 'gigs_may_2024.docx'        ,
-                    GigFolder + 'gigs_june_2024.docx'       ]
-gigs            = gt.read_gig_files( gig_files, repertwaar, verbose=True)
+## oil change
+#OldDate     = datetime.date( 2023, 12, 29 )      # YYYY, MM, DD
+#OldMiles    = 172617.0
+#NewDate     = datetime.date( 2024,  6, 19 )      # YYYY, MM, DD
+#NewMiles    = 175823.0
+#delta       = NewDate - OldDate
+#DeltaString = f'{delta.days}'
+#mpd         = (NewMiles-OldMiles) / delta.days
+#NextDate    = NewDate + datetime.timedelta(days = 3000.0/mpd)
+#print(f'Miles per day = {mpd}')
+#print(f'Next change on {NextDate}')
 
 
-## track guitars used in gigs
+## read in the repertwaar--a list of song dictionaries
+#repertwaar      = gt.read_repertwaar()
+#repertwaar.sort( key = lambda s: s['title'] )
+#
+## read the gig history
+#GigFolder       = 'S:\\will\\documents\\OneDrive\\2024\\gigtools\\gigfiles\\'
+#GigFile         = 'multi.docx'
+#gig_files       = [ GigFolder + 'gigs_january_2024.docx'    ,
+#                    GigFolder + 'gigs_february_2024.docx'   ,
+#                    GigFolder + 'gigs_march_2024.docx'      ,
+#                    GigFolder + 'gigs_april_2024.docx'      ,
+#                    GigFolder + 'gigs_may_2024.docx'        ,
+#                    GigFolder + 'gigs_june_2024.docx'       ]
+#gigs            = gt.read_gig_files( gig_files, repertwaar, verbose=True)
+
+
+# Print all gigs with their energies
+import math
+def gig_energy(gig, verbose=False):
+    SqrEnergy   = 0.0
+    for song in gig['songs']:
+        SqrEnergy   = SqrEnergy + song['energy']**2
+    GigRMSEnergy    = math.sqrt( SqrEnergy / len(gig['songs']) )
+    gig['energy']   = GigRMSEnergy
+    if verbose:
+        print("{0:<40}: {1:3.1f}".format(
+                        gig['title'], gig['energy'] ))
+        for song in gig['songs']:
+            print("\t{0:<40}: {1:3.1f}".format(
+                        song['title'], song['energy'] ))
+    return gig['energy']
+for i,gig in enumerate(gigs):
+    GigEnergy   = gig_energy(gig, verbose=False)
+    print("{0:3d}: {1:<40}: {2:3.1f}".format( i,
+                        gig['title'], gig['energy'] ))
+
+
+
+## track guitars used in gigs since a given date
+#SinceDate   = datetime.date( 2024, 3, 26 )      # YYYY, MM, DD
 #gigs.sort( key = lambda g: g['date'], reverse=False )
 #for gig in gigs:
-#    print( "\t{0:<12}: {1:<40}: {2}".format(
-#            str(gig['date']), gig['venue'], gig['guitars'] ) )
+#    if gig['date'] >= SinceDate:
+#        print( "\t{0:<12}: {1:<40}: {2}".format(
+#                str(gig['date']), gig['venue'], gig['guitars'] ) )
 
 
-# track plays in venue
-VenueName   = "Holly Brook East Peoria"
-gt.venue_play_list(VenueName, gigs, repertwaar)
+## track plays in venue
+#VenueName   = "Proctor Place"
+#gt.venue_play_list(VenueName, gigs, repertwaar)
 
 
 ## play with arranging list

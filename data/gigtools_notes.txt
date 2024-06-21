@@ -735,34 +735,50 @@ OBJECTIVES:
                 gigtools.venue_play_list(VenueName, gigs, repertwaar)
         -   Create a venue play-list for today at Holly Brook East Peoria.
             >   It works. See output.txt.
+                    venue_play_list_a.png
             >   Commit/push
+
+
+                                            Friday, June 21, 2024 (10:41 AM)
++   Gig energy report
+
+    *   Initial ideas:
+        -   Print all gigs with their energies
+            >   Include a deviation?
+        -   Function that accepts a gig prints the songs in order with
+            their energies.
+            >   If Verbose==True...
+            >   Plot?
+
+    *   Print all gigs with their energies
+        -   Ask ChatGPT:
+                In python 3.12, I am entering the following:
+                print(f"{0:3.1f} and {1:3d}".format(3.1459, 2))
+                Why won't the first number print "3.1"?
+            It fully explains the answer: don't use the format() method
+            with an F-string. That is, get rid of the 'f':
+                print("{0:3.1f} and {1:3d}".format(3.1459, 2))
+            Scary.
+        -   Function that accepts a gig prints the songs in order with
+            their energies.
+            >   If Verbose==True...
+        -   It works. See output.txt.
+            And I was right: yesterday's gig was a record low at 2.9.
+        -   Commit/push
 
 
 ================================================================================
 
 +   TO DO:
-    *   Detect venues and dates in titles
-        -   Mark repertwaar to indicate recent plays.
-            Idea: A series of digits in parentheses, for example:
-                    Behind Blue Eyes (1347)
-            where each digit represents how many gigs ago at THAT venue
-            I played that song. In this case, 1347 means I played it
-                Last gig        : yes
-                2 gigs ago      : no
-                3 gigs ago      : yes
-                4 gigs ago      : yes
-                5 gigs ago      : no
-                6 gigs ago      : no
-                7 gigs ago      : yes
-            Don't bother going past 9.
-            This way I get a quick indication of how much I have played that
-            song recently at my repeat venues.
+    *   Gig Energy Report
+        -   Print all gigs with their energies
+            >   Include a deviation?
     *   Detecting the song list should not require a certain number of
         songs. Find the block with the most matches.
+        gigtools.read_gig_files()
         -   The section '# get the song list' should be a function.
     *   Process songs: Use the gigdate to compute the number days
         since it was played, and use this to concoct a 'freshness' score.
-    *   Track guitars, venues
     *   Song database
         -   in SQL?
             >   Microsoft has a free SQL

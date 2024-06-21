@@ -146,7 +146,7 @@ def read_gig_files(gig_files, repertwaar, verbose=False):
         # loop over the gig sections
         for i in range(len(title_idx)-1):
             gig_lines   = allText[ title_idx[i] : title_idx[i+1]-1 ]
-            title       = allText[title_idx[i]]
+            title       = allText[ title_idx[i] ]
             if verbose:
                 print(f'Parsing Gig title: {title}')
             # get the venue and date
