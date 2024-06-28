@@ -1,107 +1,502 @@
 *** Python 3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)] on win32. ***
+*** Remote Python engine is active ***
 >>>
-  0: Saxony 1/12/24                          : 5.3
-  1: Good Tequilas 1/18/24                   : 5.1
-  2: Michael’s 1/19/24                       : 5.7
-  3: Market Alley Wines 1/27/24              : 5.6
-  4: Holly Brook Washington 1/31/24          : 5.5
-  5: 33 Room 2/1/24                          : 5.1
-  6: Holly Brook East Peoria 2/8/24          : 5.4
-  7: Sullivan’s 2/9/24                       : 6.1
-  8: Orange Cup 2/11/24                      : 5.4
-  9: Cherry Street 2/14/24                   : 5.3
- 10: Michael’s 2/16/24                       : 4.6
- 11: Innkeepers 2/24/24                      : 5.8
- 12: Holly Brook East Peoria 3/6/24          : 5.3
- 13: Independence Village 3/7/24             : 5.7
- 14: Deer Creek Baptist 3/8/24               : 5.6
- 15: Michael’s 3/15/24                       : 5.7
- 16: Market Alley Wines 3/23/24              : 5.4
- 17: Independence Village 3/28/24            : 5.4
- 18: Sullivan’s 3/29/24                      : 7.1
- 19: Hidden Hills 3/30/24                    : 5.4
- 20: Holly Brook Airport 4/2/24              : 5.0
- 21: Holly Brook East Peoria 4/5/24          : 5.4
- 22: Opie’s 4/6/24                           : 6.1
- 23: Holly Brook Washington 4/10/24          : 5.4
- 24: Cafe Santa Rosa 4/12/24                 : 4.2
- 25: Proctor Place 4/16/24                   : 3.5
- 26: Michael’s 4/19/24                       : 5.6
- 27: Orange Cup 4/21/24                      : 5.4
- 28: Independence Village 4/25/24            : 6.2
- 29: Saxony 4/26/24                          : 5.6
- 30: Holly Brook East Peoria 5/3/24          : 5.2
- 31: Germantown Spring Fling 5/4/24          : 5.2
- 32: Blue Margaritas 05/05/24                : 5.2
- 33: Castaways 05/10/24                      : 6.3
- 34: Innkeepers 05/11/24                     : 5.7
- 35: Michael’s 5/17/24                       : 6.1
- 36: Goldie’s Pizza 05/18/24                 : 6.0
- 37: Tres Rojas 05/19/24                     : 5.9
- 38: Mackinaw Winery 05/26/24                : 6.0
- 39: Snyder Village 5/28/24                  : 5.0
- 40: Independence Village 5/30/24            : 5.4
- 41: Proctor Place 6/20/24                   : 2.9
+Found 5 gig titles in S:\will\documents\OneDrive\2024\gigtools\gigfiles\gigs_january_2024.docx:
+	Saxony 1/12/24
+	Good Tequilas 1/18/24
+	Michael’s 1/19/24
+	Market Alley Wines 1/27/24
+	Holly Brook Washington 1/31/24
+Parsing Gig title: Saxony 1/12/24
+	15 songs found
+	58 text lines
+Parsing Gig title: Good Tequilas 1/18/24
+	29 songs found
+	57 text lines
+Parsing Gig title: Michael’s 1/19/24
+	28 songs found
+	59 text lines
+Parsing Gig title: Market Alley Wines 1/27/24
+	26 songs found
+	84 text lines
+Parsing Gig title: Holly Brook Washington 1/31/24
+	15 songs found
+	51 text lines
+Found 7 gig titles in S:\will\documents\OneDrive\2024\gigtools\gigfiles\gigs_february_2024.docx:
+	33 Room 2/1/24
+	Holly Brook East Peoria 2/8/24
+	Sullivan’s 2/9/24
+	Orange Cup 2/11/24
+	Cherry Street 2/14/24
+	Michael’s 2/16/24
+	Innkeepers 2/24/24
+Parsing Gig title: 33 Room 2/1/24
+	32 songs found
+	69 text lines
+Parsing Gig title: Holly Brook East Peoria 2/8/24
+	17 songs found
+	55 text lines
+Parsing Gig title: Sullivan’s 2/9/24
+	38 songs found
+	95 text lines
+Parsing Gig title: Orange Cup 2/11/24
+	27 songs found
+	54 text lines
+Parsing Gig title: Cherry Street 2/14/24
+	40 songs found
+	87 text lines
+Parsing Gig title: Michael’s 2/16/24
+	27 songs found
+	59 text lines
+Parsing Gig title: Innkeepers 2/24/24
+	40 songs found
+	77 text lines
+Found 8 gig titles in S:\will\documents\OneDrive\2024\gigtools\gigfiles\gigs_march_2024.docx:
+	Holly Brook East Peoria 3/6/24
+	Independence Village 3/7/24
+	Deer Creek Baptist 3/8/24
+	Michael’s 3/15/24
+	Market Alley Wines 3/23/24
+	Independence Village 3/28/24
+	Sullivan’s 3/29/24
+	Hidden Hills 3/30/24
+Parsing Gig title: Holly Brook East Peoria 3/6/24
+	13 songs found
+	53 text lines
+Parsing Gig title: Independence Village 3/7/24
+	17 songs found
+	65 text lines
+Parsing Gig title: Deer Creek Baptist 3/8/24
+	9 songs found
+	52 text lines
+Parsing Gig title: Michael’s 3/15/24
+	28 songs found
+	61 text lines
+Parsing Gig title: Market Alley Wines 3/23/24
+	25 songs found
+	76 text lines
+Parsing Gig title: Independence Village 3/28/24
+	13 songs found
+	50 text lines
+Parsing Gig title: Sullivan’s 3/29/24
+	39 songs found
+	104 text lines
+Parsing Gig title: Hidden Hills 3/30/24
+	37 songs found
+	88 text lines
+Found 10 gig titles in S:\will\documents\OneDrive\2024\gigtools\gigfiles\gigs_april_2024.docx:
+	Holly Brook Airport 4/2/24
+	Holly Brook East Peoria 4/5/24
+	Opie’s 4/6/24
+	Holly Brook Washington 4/10/24
+	Cafe Santa Rosa 4/12/24
+	Proctor Place 4/16/24
+	Michael’s 4/19/24
+	Orange Cup 4/21/24
+	Independence Village 4/25/24
+	Saxony 4/26/24
+Parsing Gig title: Holly Brook Airport 4/2/24
+	14 songs found
+	65 text lines
+Parsing Gig title: Holly Brook East Peoria 4/5/24
+	15 songs found
+	63 text lines
+Parsing Gig title: Opie’s 4/6/24
+	40 songs found
+	83 text lines
+Parsing Gig title: Holly Brook Washington 4/10/24
+	16 songs found
+	52 text lines
+Parsing Gig title: Cafe Santa Rosa 4/12/24
+	24 songs found
+	69 text lines
+Parsing Gig title: Proctor Place 4/16/24
+	15 songs found
+	52 text lines
+Parsing Gig title: Michael’s 4/19/24
+	28 songs found
+	53 text lines
+Parsing Gig title: Orange Cup 4/21/24
+	28 songs found
+	75 text lines
+Parsing Gig title: Independence Village 4/25/24
+	17 songs found
+	60 text lines
+Parsing Gig title: Saxony 4/26/24
+	16 songs found
+	49 text lines
+Found 11 gig titles in S:\will\documents\OneDrive\2024\gigtools\gigfiles\gigs_may_2024.docx:
+	Holly Brook East Peoria 5/3/24
+	Germantown Spring Fling 5/4/24
+	Blue Margaritas 05/05/24
+	Castaways 05/10/24
+	Innkeepers 05/11/24
+	Michael’s 5/17/24
+	Goldie’s Pizza 05/18/24
+	Tres Rojas 05/19/24
+	Mackinaw Winery 05/26/24
+	Snyder Village 5/28/24
+	Independence Village 5/30/24
+Parsing Gig title: Holly Brook East Peoria 5/3/24
+	12 songs found
+	45 text lines
+Parsing Gig title: Germantown Spring Fling 5/4/24
+	34 songs found
+	119 text lines
+Parsing Gig title: Blue Margaritas 05/05/24
+	35 songs found
+	97 text lines
+Parsing Gig title: Castaways 05/10/24
+	38 songs found
+	84 text lines
+Parsing Gig title: Innkeepers 05/11/24
+	38 songs found
+	86 text lines
+Parsing Gig title: Michael’s 5/17/24
+	29 songs found
+	64 text lines
+Parsing Gig title: Goldie’s Pizza 05/18/24
+	42 songs found
+	92 text lines
+Parsing Gig title: Tres Rojas 05/19/24
+	38 songs found
+	129 text lines
+Parsing Gig title: Mackinaw Winery 05/26/24
+	41 songs found
+	110 text lines
+Parsing Gig title: Snyder Village 5/28/24
+	19 songs found
+	59 text lines
+Parsing Gig title: Independence Village 5/30/24
+	14 songs found
+	44 text lines
+Found 11 gig titles in S:\will\documents\OneDrive\2024\gigtools\gigfiles\gigs_june_2024.docx:
+	Market Alley Wines 6/1/24
+	Washington Square 6/6/24
+	Grand Regency 6/7/24
+	Topsy’s 6/8/24
+	Serenity SLC 6/10/24
+	Charter SLC 6/11/24
+	Holly Brook Washington 6/12/24
+	Innkeepers 6/15/24
+	Holly Brook East Peoria 6/18/24
+	Proctor Place 6/20/24
+	Michael’s 6/21/24
+Parsing Gig title: Market Alley Wines 6/1/24
+	28 songs found
+	77 text lines
+Parsing Gig title: Washington Square 6/6/24
+	32 songs found
+	85 text lines
+Parsing Gig title: Grand Regency 6/7/24
+	17 songs found
+	69 text lines
+Parsing Gig title: Topsy’s 6/8/24
+	40 songs found
+	81 text lines
+Parsing Gig title: Serenity SLC 6/10/24
+	18 songs found
+	55 text lines
+Parsing Gig title: Charter SLC 6/11/24
+	15 songs found
+	50 text lines
+Parsing Gig title: Holly Brook Washington 6/12/24
+	15 songs found
+	51 text lines
+Parsing Gig title: Innkeepers 6/15/24
+	40 songs found
+	76 text lines
+Parsing Gig title: Holly Brook East Peoria 6/18/24
+	16 songs found
+	56 text lines
+Parsing Gig title: Proctor Place 6/20/24
+	16 songs found
+	59 text lines
+Parsing Gig title: Michael’s 6/21/24
+	31 songs found
+	73 text lines
+Got the first Michaels. Searching for more.
+		Found another Michaels. Popping...
+		Found another Michaels. Popping...
+		Found another Michaels. Popping...
+		Found another Michaels. Popping...
+		Found another Michaels. Popping...
+	for loop done with Michaels
+	Number of gigs left = 46
+Got the first Proctor Place. Searching for more.
+		Found another Proctor Place. Popping...
+	for loop done with Proctor Place
+	Number of gigs left = 44
+Got the first Holly Brook East Peoria. Searching for more.
+		Found another Holly Brook East Peoria. Popping...
+		Found another Holly Brook East Peoria. Popping...
+		Found another Holly Brook East Peoria. Popping...
+		Found another Holly Brook East Peoria. Popping...
+	for loop done with Holly Brook East Peoria
+	Number of gigs left = 39
+Got the first Innkeepers. Searching for more.
+		Found another Innkeepers. Popping...
+		Found another Innkeepers. Popping...
+	for loop done with Innkeepers
+	Number of gigs left = 36
+Got the first Holly Brook Washington. Searching for more.
+		Found another Holly Brook Washington. Popping...
+		Found another Holly Brook Washington. Popping...
+	for loop done with Holly Brook Washington
+	Number of gigs left = 33
+Got the first Charter Slc. Searching for more.
+	for loop done with Charter Slc
+	Number of gigs left = 32
+Got the first Serenity Slc. Searching for more.
+	for loop done with Serenity Slc
+	Number of gigs left = 31
+Got the first Topsys. Searching for more.
+	for loop done with Topsys
+	Number of gigs left = 30
+Got the first Grand Regency. Searching for more.
+	for loop done with Grand Regency
+	Number of gigs left = 29
+Got the first Washington Square. Searching for more.
+	for loop done with Washington Square
+	Number of gigs left = 28
+Got the first Market Alley Wines. Searching for more.
+		Found another Market Alley Wines. Popping...
+		Found another Market Alley Wines. Popping...
+	for loop done with Market Alley Wines
+	Number of gigs left = 25
+Got the first Independence Village. Searching for more.
+		Found another Independence Village. Popping...
+		Found another Independence Village. Popping...
+		Found another Independence Village. Popping...
+	for loop done with Independence Village
+	Number of gigs left = 21
+Got the first Snyder Village. Searching for more.
+	for loop done with Snyder Village
+	Number of gigs left = 20
+Got the first Mackinaw Winery. Searching for more.
+	for loop done with Mackinaw Winery
+	Number of gigs left = 19
+Got the first Tres Rojas. Searching for more.
+	for loop done with Tres Rojas
+	Number of gigs left = 18
+Got the first Goldies Pizza. Searching for more.
+	for loop done with Goldies Pizza
+	Number of gigs left = 17
+Got the first Castaways. Searching for more.
+	for loop done with Castaways
+	Number of gigs left = 16
+Got the first Blue Margaritas. Searching for more.
+	for loop done with Blue Margaritas
+	Number of gigs left = 15
+Got the first Germantown Spring Fling. Searching for more.
+	for loop done with Germantown Spring Fling
+	Number of gigs left = 14
+Got the first Saxony. Searching for more.
+		Found another Saxony. Popping...
+	for loop done with Saxony
+	Number of gigs left = 12
+Got the first Orange Cup. Searching for more.
+		Found another Orange Cup. Popping...
+	for loop done with Orange Cup
+	Number of gigs left = 10
+Got the first Cafe Santa Rosa. Searching for more.
+	for loop done with Cafe Santa Rosa
+	Number of gigs left = 9
+Got the first Opies. Searching for more.
+	for loop done with Opies
+	Number of gigs left = 8
+Got the first Holly Brook Airport. Searching for more.
+	for loop done with Holly Brook Airport
+	Number of gigs left = 7
+Got the first Hidden Hills. Searching for more.
+	for loop done with Hidden Hills
+	Number of gigs left = 6
+Got the first Sullivans. Searching for more.
+		Found another Sullivans. Popping...
+	for loop done with Sullivans
+	Number of gigs left = 4
+Got the first Deer Creek Baptist. Searching for more.
+	for loop done with Deer Creek Baptist
+	Number of gigs left = 3
+Got the first Cherry Street. Searching for more.
+	for loop done with Cherry Street
+	Number of gigs left = 2
+Got the first 33 Room. Searching for more.
+	for loop done with 33 Room
+	Number of gigs left = 1
+Got the first Good Tequilas. Searching for more.
+	for loop done with Good Tequilas
+	Number of gigs left = 0
+gigs found per venue:
+	Michaels: 6
+	Proctor Place: 2
+	Holly Brook East Peoria: 5
+	Innkeepers: 3
+	Holly Brook Washington: 3
+	Charter Slc: 1
+	Serenity Slc: 1
+	Topsys: 1
+	Grand Regency: 1
+	Washington Square: 1
+	Market Alley Wines: 3
+	Independence Village: 4
+	Snyder Village: 1
+	Mackinaw Winery: 1
+	Tres Rojas: 1
+	Goldies Pizza: 1
+	Castaways: 1
+	Blue Margaritas: 1
+	Germantown Spring Fling: 1
+	Saxony: 2
+	Orange Cup: 2
+	Cafe Santa Rosa: 1
+	Opies: 1
+	Holly Brook Airport: 1
+	Hidden Hills: 1
+	Sullivans: 2
+	Deer Creek Baptist: 1
+	Cherry Street: 1
+	33 Room: 1
+	Good Tequilas: 1
+all venue names:
+	Saxony
+	Good Tequilas
+	Michaels
+	Market Alley Wines
+	Holly Brook Washington
+	33 Room
+	Holly Brook East Peoria
+	Sullivans
+	Orange Cup
+	Cherry Street
+	Michaels
+	Innkeepers
+	Holly Brook East Peoria
+	Independence Village
+	Deer Creek Baptist
+	Michaels
+	Market Alley Wines
+	Independence Village
+	Sullivans
+	Hidden Hills
+	Holly Brook Airport
+	Holly Brook East Peoria
+	Opies
+	Holly Brook Washington
+	Cafe Santa Rosa
+	Proctor Place
+	Michaels
+	Orange Cup
+	Independence Village
+	Saxony
+	Holly Brook East Peoria
+	Germantown Spring Fling
+	Blue Margaritas
+	Castaways
+	Innkeepers
+	Michaels
+	Goldies Pizza
+	Tres Rojas
+	Mackinaw Winery
+	Snyder Village
+	Independence Village
+	Market Alley Wines
+	Washington Square
+	Grand Regency
+	Topsys
+	Serenity Slc
+	Charter Slc
+	Holly Brook Washington
+	Innkeepers
+	Holly Brook East Peoria
+	Proctor Place
+	Michaels
+gig date: 2024-05-30
+gig date: 2024-04-25
+gig date: 2024-03-28
+gig date: 2024-03-07
 
->>> gig_energy(gigs[41], verbose=True)
-Proctor Place 6/20/24                   : 2.9
-	As Warm As Tears*                       : 1.0
-	Morning Snow*                           : 1.0
-	Metamorphosis*                          : 3.0
-	Those Who Wait*                         : 3.0
-	Under The Sun*                          : 3.0
-	You've Got A Friend                     : 3.0
-	Nothing But The Call*                   : 4.0
-	The Mission*                            : 3.0
-	Time In A Bottle                        : 3.0
-	Addison's Walk*                         : 3.0
-	Sailing                                 : 3.0
-	Infinite Horizon / County Down*         : 3.0
-	The Reunion*                            : 4.0
-	If You Could Read My Mind               : 3.0
-	In Your Peace / I Love You Lord*        : 1.0
-	Emmaus*                                 : 3.0
-
->>> gig_energy(gigs[18], verbose=True)
-Sullivan’s 3/29/24                      : 7.1
-	Nothing But The Call*                   : 4.0
-	Solitary Man                            : 6.0
-	Hide Your Love Away                     : 6.0
-	Behind Blue Eyes                        : 5.0
-	More Today Than Yesterday               : 7.0
-	If I Needed Someone                     : 7.0
-	Sister Golden Hair                      : 7.0
-	There She Goes                          : 7.0
-	Maybe I'm Amazed                        : 8.0
-	Brandy                                  : 8.0
-	Classical Gas*                          : 4.0
-	Doctor My Eyes                          : 7.0
-	Beginnings                              : 7.0
-	Kashmir                                 : 10.0
-	Something                               : 5.0
-	Operator                                : 4.0
-	Two Of Us                               : 6.0
-	Misunderstanding                        : 5.0
-	Everybody Wants to Rule the World       : 7.0
-	Shilo                                   : 6.0
-	Listen to the Music                     : 9.0
-	Wild World                              : 6.0
-	The Power Of Love                       : 8.0
-	Show Me The Way                         : 9.0
-	Love Lies Bleeding                      : 9.0
-	Here Comes The Sun                      : 8.0
-	Love The One You're With                : 8.0
-	Under The Sun*                          : 3.0
-	Still The One                           : 10.0
-	It Don't Come Easy                      : 8.0
-	The Reunion*                            : 4.0
-	Even The Losers                         : 9.0
-	Pinball Wizard                          : 9.0
-	I've Just Seen A Face                   : 8.0
-	Time After Time                         : 4.0
-	I Can See Clearly Now                   : 8.0
-	Searchin' So Long                       : 7.0
-	What I Like About You                   : 10.0
-	I've Got A Name                         : 6.0
-7.14142842854285
+Addison's Walk
+Annie's Song (13)
+As Warm As Tears (4)
+Beginnings (24)
+Behind Blue Eyes
+Beyond Justice to Mercy
+Blackbird
+Brandy (4)
+Came The Light (1)
+Candace' Song
+Cats In The Cradle
+Cheering You On
+Classical Gas (34)
+Crazy Little Thing Called Love (2)
+Del's Bells (24)
+Doctor My Eyes (134)
+Eight Days A Week
+Emmaus (24)
+Even The Losers
+Everybody Wants to Rule the World (1)
+Everything I Own (3)
+Fare Thee Well (1)
+Fire Vamp
+Give A Little Bit
+Heart of Worship
+Here Comes The Sun (23)
+Here, There and Everywhere (2)
+Hide Your Love Away
+I Can See Clearly Now (2)
+I've Got A Name (13)
+I've Just Seen A Face
+If I Needed Someone (1)
+If You Could Read My Mind (2)
+In Your Peace / I Love You Lord
+Infinite Horizon / County Down
+It Don't Come Easy
+Julia
+Kashmir
+Leading You Home
+Listen to the Music (1)
+Love Lies Bleeding
+Love The One You're With (23)
+Maybe I'm Amazed
+Metamorphosis (1)
+Misunderstanding
+Mood For A Day
+More Today Than Yesterday (1)
+Morning Snow (1)
+Nothing But The Call (23)
+Operator (134)
+Pinball Wizard (24)
+Rickover's Dream
+Sailing (4)
+Searchin' So Long
+Seeking Rivendell - Acoustic
+Seeking Rivendell - Electric
+Shilo  (24)
+Show Me The Way (2)
+Sister Golden Hair (24)
+Solitary Man
+Something (23)
+Still The One (4)
+The Eyes of a Child (2)
+The Mission (3)
+The Power Of Love
+The Reunion (4)
+The Ride
+The Treasure
+The Wind & The Wheat (4)
+There She Goes
+Those Who Wait
+Time After Time (1)
+Time In A Bottle (1)
+Tuesday Afternoon
+Two Of Us
+Under The Sun (2)
+What I Like About You
+When My Love Awakened
+When Night Falls
+White Christmas
+Wild World (34)
+Yesterday
+You've Got A Friend (34)
 >>>

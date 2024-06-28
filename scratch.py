@@ -36,30 +36,68 @@ import datetime
 #gigs            = gt.read_gig_files( gig_files, repertwaar, verbose=True)
 
 
-# Print all gigs with their energies
-import math
-def gig_energy(gig, verbose=False):
-    SqrEnergy   = 0.0
-    for song in gig['songs']:
-        SqrEnergy   = SqrEnergy + song['energy']**2
-    GigRMSEnergy    = math.sqrt( SqrEnergy / len(gig['songs']) )
-    gig['energy']   = GigRMSEnergy
-    if verbose:
-        print("{0:<40}: {1:3.1f}".format(
-                        gig['title'], gig['energy'] ))
-        for song in gig['songs']:
-            print("\t{0:<40}: {1:3.1f}".format(
-                        song['title'], song['energy'] ))
-    return gig['energy']
-for i,gig in enumerate(gigs):
-    GigEnergy   = gig_energy(gig, verbose=False)
-    print("{0:3d}: {1:<40}: {2:3.1f}".format( i,
-                        gig['title'], gig['energy'] ))
+# Read data from guitars.txt into guitars, a dictionary list
+with open('guitars.txt', 'r') as file:
+    lines = file.readlines()
+# find the guitar lines
+guitar_idx      = []
+guitar_names    = []
+for i, line in enumerate(lines):
+    tok = line.split(':')
+    if len(tok) > 1 and 'guitar' in tok[0].lower():
+        guitar_idx.append(i)
+        guitar_names.append(tok[1].strip())
+print(f'Found {len(guitar_idx)} guitars in guitars.txt:')
+for i in guitar_idx:
+    print('\t' + lines[i].strip())
+guitar_idx.append(len(lines)-1)   # last line
+# loop over the guitar sections
+guitars  = []
+for i in range(len(guitar_idx)-1):
+    guitar_lines    = lines[ guitar_idx[i] : guitar_idx[i+1]-1 ]
+    title           = lines[ guitar_idx[i] ]
+    print(f'Parsing guitar line: {title}')
+    GuitarType  = ''
+    for line in guitar_lines:
+        tok = line.split(':')
+        if len(tok) > 1 and 'type' in tok[0].lower():
+            GuitarType  = tok[1].strip()
+        if len(tok) > 1 and 'strings' in tok[0].lower():
+            datestr = tok[1]
+            m,d,y   = datestr.split('/')
+            StringDate  = datetime.date( int(y)+2000, int(m), int(d) )
+    guitar  = { 'name'      : guitar_names[i]   ,
+                'type'      : GuitarType        ,
+                'change'    : StringDate        }
+                #'all lines' : guitar_lines      }
+    guitars.append(guitar)
+
+
+
+## Print all gigs with their energies
+#import math
+#def gig_energy(gig, verbose=False):
+#    SqrEnergy   = 0.0
+#    for song in gig['songs']:
+#        SqrEnergy   = SqrEnergy + song['energy']**2
+#    GigRMSEnergy    = math.sqrt( SqrEnergy / len(gig['songs']) )
+#    gig['energy']   = GigRMSEnergy
+#    if verbose:
+#        print("{0:<40}: {1:3.1f}".format(
+#                        gig['title'], gig['energy'] ))
+#        for song in gig['songs']:
+#            print("\t{0:<40}: {1:3.1f}".format(
+#                        song['title'], song['energy'] ))
+#    return gig['energy']
+#for i,gig in enumerate(gigs):
+#    GigEnergy   = gig_energy(gig, verbose=False)
+#    print("{0:3d}: {1:<40}: {2:3.1f}".format( i,
+#                        gig['title'], gig['energy'] ))
 
 
 
 ## track guitars used in gigs since a given date
-#SinceDate   = datetime.date( 2024, 3, 26 )      # YYYY, MM, DD
+#SinceDate   = datetime.date( 2024, 5, 29 )      # YYYY, MM, DD
 #gigs.sort( key = lambda g: g['date'], reverse=False )
 #for gig in gigs:
 #    if gig['date'] >= SinceDate:
@@ -68,7 +106,7 @@ for i,gig in enumerate(gigs):
 
 
 ## track plays in venue
-#VenueName   = "Proctor Place"
+#VenueName   = "Independence Village"
 #gt.venue_play_list(VenueName, gigs, repertwaar)
 
 

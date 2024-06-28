@@ -767,9 +767,32 @@ OBJECTIVES:
         -   Commit/push
 
 
+                                            Friday, June 28, 2024 (11:07 AM)
++   Guitar report
+    *   Initial thoughts
+        -   How many gigs since last string change?  I think I want a running
+            history that shows a guitar's gigs, string changes, and string
+            breakage.
+        -   How many songs?
+
+    *   Begin with the date of the most recent string change.
+        -   Put data in guitars.txt. Read the data into guitars, a list of
+            dictionaries.
+            >   Initial idea: each guitar has a 'type': strum, gentle, or
+                variax. The 814ce, 414ce-L3, and 812ce are all 'gentle'.
+                This way, knowing which gentle guitar I brought and what
+                type the song calls for, I can know which guitar was used
+                for each song.
+            >   It works.
+                Commit/push.
+
+
 ================================================================================
 
 +   TO DO:
+    *   Guitar report
+        -   How many gigs since last string change?
+        -   How many songs?
     *   Gig Energy Report
         -   Print all gigs with their energies
             >   Include a deviation?

@@ -1,0 +1,25 @@
+
+Guitar      : 812ce
+Type        : gentle
+Strings     : 5/13/24
+
+Guitar      : 414ce-L3
+Type        : gentle
+Strings     : 4/9/24
+
+Guitar      : 814ce
+Type        : gentle
+Strings     : 6/17/24
+
+Guitar      : 618e
+Type        : strum
+Strings     : 6/25/24
+
+Guitar      : 555
+Type        : strum
+Strings     : 9/18/23
+
+Guitar      : V700
+Type        : variax
+Strings     : 12/14/23
+
