@@ -20,20 +20,20 @@ import datetime
 #print(f'Next change on {NextDate}')
 
 
-# read in the repertwaar--a list of song dictionaries
-repertwaar      = gt.read_repertwaar()
-repertwaar.sort( key = lambda s: s['title'] )
-
-# read the gig history
-GigFolder       = 'S:\\will\\documents\\OneDrive\\2024\\gigtools\\gigfiles\\'
-GigFile         = 'multi.docx'
-gig_files       = [ GigFolder + 'gigs_january_2024.docx'    ,
-                    GigFolder + 'gigs_february_2024.docx'   ,
-                    GigFolder + 'gigs_march_2024.docx'      ,
-                    GigFolder + 'gigs_april_2024.docx'      ,
-                    GigFolder + 'gigs_may_2024.docx'        ,
-                    GigFolder + 'gigs_june_2024.docx'       ]
-gigs            = gt.read_gig_files( gig_files, repertwaar, verbose=True)
+## read in the repertwaar--a list of song dictionaries
+#repertwaar      = gt.read_repertwaar()
+#repertwaar.sort( key = lambda s: s['title'] )
+#
+## read the gig history
+#GigFolder       = 'S:\\will\\documents\\OneDrive\\2024\\gigtools\\gigfiles\\'
+#GigFile         = 'multi.docx'
+#gig_files       = [ GigFolder + 'gigs_january_2024.docx'    ,
+#                    GigFolder + 'gigs_february_2024.docx'   ,
+#                    GigFolder + 'gigs_march_2024.docx'      ,
+#                    GigFolder + 'gigs_april_2024.docx'      ,
+#                    GigFolder + 'gigs_may_2024.docx'        ,
+#                    GigFolder + 'gigs_june_2024.docx'       ]
+#gigs            = gt.read_gig_files( gig_files, repertwaar, verbose=True)
 
 
 # Read data from guitars.txt into guitars, a dictionary list
@@ -76,13 +76,19 @@ gigs.sort( key = lambda g: g['date'], reverse=False )
 for guitar in guitars:
     print(f"Guitar: {guitar['name']}")
     SinceDate   = guitar['change']
-    count       = 0
+    GigCount    = 0
+    SongCount   = 0
     for gig in gigs:
         if gig['date'] >= SinceDate and guitar['name'] in gig['guitars']:
-            count   += 1
+            GigCount   += 1
             print( "\t{0:<12}: {1:<40}: {2}".format(
                     str(gig['date']), gig['venue'], gig['guitars'] ) )
-    print(f"{count} gigs since string change")
+            for song in gig['songs']:
+                if song['data']['guitar'] == guitar['type']:
+                    SongCount   += 1
+                    print(f"\t\t{song['title']}")
+    print(f"{GigCount} gigs, {SongCount} songs, since string change\n")
+
 
 
 ## Print all gigs with their energies

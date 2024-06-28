@@ -51,11 +51,9 @@ def read_repertwaar(CSVFile='music_performance_repertoire.csv'):
         csvreader = csv.DictReader(file, quotechar='"', delimiter=',',
                                     quoting=csv.QUOTE_ALL )
         for row in csvreader:
-            #print( row['song'], float(row['energy']) )
-            title   = row['song']
-            energy  = float(row['energy'])
             song    = { 'title'     : row['song']           ,
                         'energy'    : float(row['energy'])  ,
+                        'guitar'    : row['guitar']         ,
                         'playcount' : 0                     ,
                         'playdates' : []                    ,
                         'data'      : row                   }

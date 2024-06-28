@@ -13,7 +13,7 @@ Strings     : 6/17/24
 
 Guitar      : 618e
 Type        : strum
-Strings     : 6/25/24
+Strings     : 5/29/24
 
 Guitar      : 555
 Type        : strum

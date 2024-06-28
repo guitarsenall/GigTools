@@ -793,6 +793,27 @@ OBJECTIVES:
                 correlate better.
             >   Commit/push.
 
+    *   Count the songs.
+        -   Requires a change to music_performance_repertoire.xlsx and its
+            CSV file: change guitar names to the types: strum, gentle, or
+            variax.
+            >   Am I reading the guitar type into the song? Fixed.
+        -   How do I access the song's guitar type in the gig?
+                gig[songs][i]['data']['guitar']
+            That is a long address!
+        -   Got it working.
+        -   Try the using old string change date for the 618e:
+                    True    = 6/25/24
+                    Old     = 5/29/24
+                618e    : 12 gigs, 107 songs =  8.9 songs/gig
+                414ce-L3:  5 gigs,  67 songs = 13.4 songs/gig
+                V700    : 43 gigs, 195 songs =  4.5 songs/gig
+            The 618e was at its limit and broke the high-E string during
+            the 11th gig. I don't know how the V700 has held up this long.
+            But it looks like a limit of 100 songs is prudent.
+            >   Commit/push.
+
+
 
 ================================================================================
 

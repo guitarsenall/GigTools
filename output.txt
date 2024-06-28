@@ -1,225 +1,5 @@
 *** Python 3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)] on win32. ***
 >>>
-*** Remote Interpreter Reinitialized ***
->>>
-Found 5 gig titles in S:\will\documents\OneDrive\2024\gigtools\gigfiles\gigs_january_2024.docx:
-	Saxony 1/12/24
-	Good Tequilas 1/18/24
-	Michael’s 1/19/24
-	Market Alley Wines 1/27/24
-	Holly Brook Washington 1/31/24
-Parsing Gig title: Saxony 1/12/24
-	15 songs found
-	58 text lines
-Parsing Gig title: Good Tequilas 1/18/24
-	29 songs found
-	57 text lines
-Parsing Gig title: Michael’s 1/19/24
-	28 songs found
-	59 text lines
-Parsing Gig title: Market Alley Wines 1/27/24
-	26 songs found
-	84 text lines
-Parsing Gig title: Holly Brook Washington 1/31/24
-	15 songs found
-	51 text lines
-Found 7 gig titles in S:\will\documents\OneDrive\2024\gigtools\gigfiles\gigs_february_2024.docx:
-	33 Room 2/1/24
-	Holly Brook East Peoria 2/8/24
-	Sullivan’s 2/9/24
-	Orange Cup 2/11/24
-	Cherry Street 2/14/24
-	Michael’s 2/16/24
-	Innkeepers 2/24/24
-Parsing Gig title: 33 Room 2/1/24
-	32 songs found
-	69 text lines
-Parsing Gig title: Holly Brook East Peoria 2/8/24
-	17 songs found
-	55 text lines
-Parsing Gig title: Sullivan’s 2/9/24
-	38 songs found
-	95 text lines
-Parsing Gig title: Orange Cup 2/11/24
-	27 songs found
-	54 text lines
-Parsing Gig title: Cherry Street 2/14/24
-	40 songs found
-	87 text lines
-Parsing Gig title: Michael’s 2/16/24
-	27 songs found
-	59 text lines
-Parsing Gig title: Innkeepers 2/24/24
-	40 songs found
-	77 text lines
-Found 8 gig titles in S:\will\documents\OneDrive\2024\gigtools\gigfiles\gigs_march_2024.docx:
-	Holly Brook East Peoria 3/6/24
-	Independence Village 3/7/24
-	Deer Creek Baptist 3/8/24
-	Michael’s 3/15/24
-	Market Alley Wines 3/23/24
-	Independence Village 3/28/24
-	Sullivan’s 3/29/24
-	Hidden Hills 3/30/24
-Parsing Gig title: Holly Brook East Peoria 3/6/24
-	13 songs found
-	53 text lines
-Parsing Gig title: Independence Village 3/7/24
-	17 songs found
-	65 text lines
-Parsing Gig title: Deer Creek Baptist 3/8/24
-	9 songs found
-	52 text lines
-Parsing Gig title: Michael’s 3/15/24
-	28 songs found
-	61 text lines
-Parsing Gig title: Market Alley Wines 3/23/24
-	25 songs found
-	76 text lines
-Parsing Gig title: Independence Village 3/28/24
-	13 songs found
-	50 text lines
-Parsing Gig title: Sullivan’s 3/29/24
-	39 songs found
-	104 text lines
-Parsing Gig title: Hidden Hills 3/30/24
-	37 songs found
-	88 text lines
-Found 10 gig titles in S:\will\documents\OneDrive\2024\gigtools\gigfiles\gigs_april_2024.docx:
-	Holly Brook Airport 4/2/24
-	Holly Brook East Peoria 4/5/24
-	Opie’s 4/6/24
-	Holly Brook Washington 4/10/24
-	Cafe Santa Rosa 4/12/24
-	Proctor Place 4/16/24
-	Michael’s 4/19/24
-	Orange Cup 4/21/24
-	Independence Village 4/25/24
-	Saxony 4/26/24
-Parsing Gig title: Holly Brook Airport 4/2/24
-	14 songs found
-	65 text lines
-Parsing Gig title: Holly Brook East Peoria 4/5/24
-	15 songs found
-	63 text lines
-Parsing Gig title: Opie’s 4/6/24
-	40 songs found
-	83 text lines
-Parsing Gig title: Holly Brook Washington 4/10/24
-	16 songs found
-	52 text lines
-Parsing Gig title: Cafe Santa Rosa 4/12/24
-	24 songs found
-	69 text lines
-Parsing Gig title: Proctor Place 4/16/24
-	15 songs found
-	52 text lines
-Parsing Gig title: Michael’s 4/19/24
-	28 songs found
-	53 text lines
-Parsing Gig title: Orange Cup 4/21/24
-	28 songs found
-	75 text lines
-Parsing Gig title: Independence Village 4/25/24
-	17 songs found
-	60 text lines
-Parsing Gig title: Saxony 4/26/24
-	16 songs found
-	49 text lines
-Found 11 gig titles in S:\will\documents\OneDrive\2024\gigtools\gigfiles\gigs_may_2024.docx:
-	Holly Brook East Peoria 5/3/24
-	Germantown Spring Fling 5/4/24
-	Blue Margaritas 05/05/24
-	Castaways 05/10/24
-	Innkeepers 05/11/24
-	Michael’s 5/17/24
-	Goldie’s Pizza 05/18/24
-	Tres Rojas 05/19/24
-	Mackinaw Winery 05/26/24
-	Snyder Village 5/28/24
-	Independence Village 5/30/24
-Parsing Gig title: Holly Brook East Peoria 5/3/24
-	12 songs found
-	45 text lines
-Parsing Gig title: Germantown Spring Fling 5/4/24
-	34 songs found
-	119 text lines
-Parsing Gig title: Blue Margaritas 05/05/24
-	35 songs found
-	97 text lines
-Parsing Gig title: Castaways 05/10/24
-	38 songs found
-	84 text lines
-Parsing Gig title: Innkeepers 05/11/24
-	38 songs found
-	86 text lines
-Parsing Gig title: Michael’s 5/17/24
-	29 songs found
-	64 text lines
-Parsing Gig title: Goldie’s Pizza 05/18/24
-	42 songs found
-	92 text lines
-Parsing Gig title: Tres Rojas 05/19/24
-	38 songs found
-	129 text lines
-Parsing Gig title: Mackinaw Winery 05/26/24
-	41 songs found
-	110 text lines
-Parsing Gig title: Snyder Village 5/28/24
-	19 songs found
-	59 text lines
-Parsing Gig title: Independence Village 5/30/24
-	14 songs found
-	44 text lines
-Found 12 gig titles in S:\will\documents\OneDrive\2024\gigtools\gigfiles\gigs_june_2024.docx:
-	Market Alley Wines 6/1/24
-	Washington Square 6/6/24
-	Grand Regency 6/7/24
-	Topsy’s 6/8/24
-	Serenity SLC 6/10/24
-	Charter SLC 6/11/24
-	Holly Brook Washington 6/12/24
-	Innkeepers 6/15/24
-	Holly Brook East Peoria 6/18/24
-	Proctor Place 6/20/24
-	Michael’s 6/21/24
-	Independence Village 6/27/24
-Parsing Gig title: Market Alley Wines 6/1/24
-	28 songs found
-	77 text lines
-Parsing Gig title: Washington Square 6/6/24
-	32 songs found
-	85 text lines
-Parsing Gig title: Grand Regency 6/7/24
-	17 songs found
-	69 text lines
-Parsing Gig title: Topsy’s 6/8/24
-	40 songs found
-	81 text lines
-Parsing Gig title: Serenity SLC 6/10/24
-	18 songs found
-	55 text lines
-Parsing Gig title: Charter SLC 6/11/24
-	15 songs found
-	50 text lines
-Parsing Gig title: Holly Brook Washington 6/12/24
-	15 songs found
-	51 text lines
-Parsing Gig title: Innkeepers 6/15/24
-	40 songs found
-	76 text lines
-Parsing Gig title: Holly Brook East Peoria 6/18/24
-	16 songs found
-	56 text lines
-Parsing Gig title: Proctor Place 6/20/24
-	16 songs found
-	59 text lines
-Parsing Gig title: Michael’s 6/21/24
-	31 songs found
-	75 text lines
-Parsing Gig title: Independence Village 6/27/24
-	17 songs found
-	64 text lines
 Found 6 guitars in guitars.txt:
 	Guitar      : 812ce
 	Guitar      : 414ce-L3
@@ -228,64 +8,450 @@ Found 6 guitars in guitars.txt:
 	Guitar      : 555
 	Guitar      : V700
 Guitar: 812ce
-0 gigs since string change
+0 gigs, 0 songs, since string change
+
 Guitar: 414ce-L3
 	2024-06-15  : Innkeepers                              : ['414ce-L3', '618e', 'V700']
+		Morning Snow*
+		As Warm As Tears*
+		Del's Bells*
+		Those Who Wait*
+		Time In A Bottle
+		The Treasure
+		Mood For A Day*
+		If You Could Read My Mind
+		Fare Thee Well*
+		Came The Light
+		Time After Time
+		The Eyes of a Child
+		Cheering You On
+		Classical Gas*
+		Cats In The Cradle
+		Under The Sun*
 	2024-06-18  : Holly Brook East Peoria                 : ['414ce-L3', '618e']
+		As Warm As Tears*
+		Emmaus*
+		Del's Bells*
+		Morning Snow*
+		You've Got A Friend
+		Operator
+		Everything I Own
+		Addison's Walk*
+		Sailing
+		Infinite Horizon / County Down*
+		The Reunion*
 	2024-06-20  : Proctor Place                           : ['414ce-L3']
+		As Warm As Tears*
+		Morning Snow*
+		Metamorphosis*
+		Those Who Wait*
+		Under The Sun*
+		You've Got A Friend
+		Nothing But The Call*
+		The Mission*
+		Time In A Bottle
+		Addison's Walk*
+		Sailing
+		Infinite Horizon / County Down*
+		The Reunion*
+		If You Could Read My Mind
+		In Your Peace / I Love You Lord*
+		Emmaus*
 	2024-06-21  : Michaels                                : ['414ce-L3', '618e', 'V700']
+		Morning Snow*
+		The Mission*
+		Under The Sun*
+		Time In A Bottle
+		Nothing But The Call*
+		Julia
+		The Eyes of a Child
+		Those Who Wait*
+		Blackbird
+		Classical Gas*
+		Cats In The Cradle
+		Fare Thee Well*
+		Everything I Own
+		Leading You Home
+		When Night Falls*
 	2024-06-27  : Independence Village                    : ['414ce-L3', '618e', 'V700']
-5 gigs since string change
+		As Warm As Tears*
+		In Your Peace / I Love You Lord*
+		The Mission*
+		Those Who Wait*
+		You've Got A Friend
+		Addison's Walk*
+		Sailing
+		Infinite Horizon / County Down*
+		The Reunion*
+5 gigs, 67 songs, since string change
+
 Guitar: 814ce
-0 gigs since string change
+0 gigs, 0 songs, since string change
+
 Guitar: 618e
+	2024-05-30  : Independence Village                    : ['618e', '814ce']
+		Annie's Song
+		Everybody Wants to Rule the World
+		Listen to the Music
+		Doctor My Eyes
+		If I Needed Someone
+		More Today Than Yesterday
+	2024-06-01  : Market Alley Wines                      : ['618e', '814ce', 'V700']
+		Wild World
+		Shilo
+		Crazy Little Thing Called Love
+		Behind Blue Eyes
+		Beginnings
+		Pinball Wizard
+		More Today Than Yesterday
+		Misunderstanding
+		Annie's Song
+		The Power Of Love
+		I Can See Clearly Now
+		What I Like About You
+	2024-06-06  : Washington Square                       : ['618e', '814ce', 'V700']
+		Annie's Song
+		Beginnings
+		Doctor My Eyes
+		Behind Blue Eyes
+		Sister Golden Hair
+		Shilo
+		Misunderstanding
+		Love The One You're With
+		Crazy Little Thing Called Love
+		Pinball Wizard
+		Wild World
+		Here Comes The Sun
+	2024-06-07  : Grand Regency                           : ['618e', '814ce']
+		Beginnings
+		Crazy Little Thing Called Love
+		Sister Golden Hair
+		Doctor My Eyes
+		I Can See Clearly Now
+		Here Comes The Sun
+		Annie's Song
+	2024-06-08  : Topsys                                  : ['618e', '814ce', 'V700']
+		Solitary Man
+		Wild World
+		There She Goes
+		Sister Golden Hair
+		Shilo
+		Hide Your Love Away
+		Listen to the Music
+		Misunderstanding
+		Even The Losers
+		Everybody Wants to Rule the World
+		Here Comes The Sun
+		Pinball Wizard
+		The Power Of Love
+		Doctor My Eyes
+		Crazy Little Thing Called Love
+	2024-06-10  : Serenity SLC                            : ['618e', '814ce']
+		Beginnings
+		Sister Golden Hair
+		Solitary Man
+		Wild World
+		Doctor My Eyes
+		Annie's Song
+		More Today Than Yesterday
+	2024-06-11  : Charter SLC                             : ['618e', '814ce', 'V700']
+		Shilo
+		Sister Golden Hair
+	2024-06-12  : Holly Brook Washington                  : ['618e', '814ce', 'V700']
+		Wild World
+		Searchin' So Long
+		Pinball Wizard
+		Love The One You're With
+		Crazy Little Thing Called Love
+	2024-06-15  : Innkeepers                              : ['414ce-L3', '618e', 'V700']
+		There She Goes
+		Solitary Man
+		Hide Your Love Away
+		Listen to the Music
+		Misunderstanding
+		Pinball Wizard
+		Wild World
+		Searchin' So Long
+		When My Love Awakened
+		Doctor My Eyes
+		I Can See Clearly Now
+		What I Like About You
+		Shilo
+		Annie's Song
+		Crazy Little Thing Called Love
+		Eight Days A Week
+		Everybody Wants to Rule the World
+		The Power Of Love
+	2024-06-18  : Holly Brook East Peoria                 : ['414ce-L3', '618e']
+		Beginnings
+		Here Comes The Sun
+		More Today Than Yesterday
+		Sister Golden Hair
+		Pinball Wizard
+	2024-06-21  : Michaels                                : ['414ce-L3', '618e', 'V700']
+		Beginnings
+		Doctor My Eyes
+		Crazy Little Thing Called Love
+		Even The Losers
+		Behind Blue Eyes
+		Here Comes The Sun
+		Eight Days A Week
+		More Today Than Yesterday
+		What I Like About You
+		Shilo
+		Misunderstanding
+		If I Needed Someone
 	2024-06-27  : Independence Village                    : ['414ce-L3', '618e', 'V700']
-1 gigs since string change
+		Wild World
+		Solitary Man
+		Behind Blue Eyes
+		Crazy Little Thing Called Love
+		Misunderstanding
+		Searchin' So Long
+12 gigs, 107 songs, since string change
+
 Guitar: 555
-0 gigs since string change
+0 gigs, 0 songs, since string change
+
 Guitar: V700
 	2024-01-12  : Saxony                                  : ['414ce-L3', '618e', 'V700']
+		Brandy
+		The Wind & The Wheat*
 	2024-01-18  : Good Tequilas                           : ['618e', '812ce', 'V700']
+		Here, There and Everywhere
+		Something
+		The Wind & The Wheat*
+		Show Me The Way
+		Kashmir
 	2024-01-19  : Michaels                                : ['618e', '812ce', 'V700']
+		I've Just Seen A Face
+		Brandy
+		It Don't Come Easy
 	2024-01-27  : Market Alley Wines                      : ['618e', '812ce', 'V700']
+		The Wind & The Wheat*
+		Here, There and Everywhere
+		Brandy
+		Show Me The Way
+		Something
 	2024-01-31  : Holly Brook Washington                  : ['618e', '812ce', 'V700']
+		Brandy
+		I've Just Seen A Face
+		Something
 	2024-02-01  : 33 Room                                 : ['618e', '812ce', 'V700']
+		Brandy
+		Show Me The Way
+		Here, There and Everywhere
+		Maybe I'm Amazed
+		The Wind & The Wheat*
 	2024-02-08  : Holly Brook East Peoria                 : ['414ce-L3', '618e', 'V700']
+		The Wind & The Wheat*
+		Something
+		Still The One
+		Here, There and Everywhere
 	2024-02-09  : Sullivans                               : ['414ce-L3', '618e', 'V700']
+		Brandy
+		Maybe I'm Amazed
+		Show Me The Way
+		I've Just Seen A Face
+		Here, There and Everywhere
+		Give A Little Bit
+		Kashmir
+		Something
 	2024-02-11  : Orange Cup                              : ['414ce-L3', '618e', 'V700']
+		The Wind & The Wheat*
+		Brandy
+		Something
+		Still The One
 	2024-02-14  : Cherry Street                           : ['414ce-L3', '618e', 'V700']
+		The Wind & The Wheat*
+		Brandy
+		Maybe I'm Amazed
+		Something
+		Here, There and Everywhere
+		Show Me The Way
+		Yesterday
+		I've Just Seen A Face
 	2024-02-16  : Michaels                                : ['414ce-L3', '618e', 'V700']
 	2024-02-24  : Innkeepers                              : ['618e', '814ce', 'V700']
+		The Wind & The Wheat*
+		Maybe I'm Amazed
+		Here, There and Everywhere
+		Show Me The Way
+		Something
+		Give A Little Bit
+		Still The One
+		Brandy
 	2024-03-07  : Independence Village                    : ['618e', '814ce', 'V700']
+		Brandy
+		The Wind & The Wheat*
+		Still The One
 	2024-03-15  : Michaels                                : ['618e', '814ce', 'V700']
+		Something
+		Brandy
+		It Don't Come Easy
 	2024-03-23  : Market Alley Wines                      : ['414ce-L3', '618e', 'V700']
+		The Wind & The Wheat*
+		The Wind & The Wheat*
+		Brandy
+		Show Me The Way
+		Still The One
 	2024-03-28  : Independence Village                    : ['414ce-L3', '618e', 'V700']
+		Something
 	2024-03-29  : Sullivans                               : ['414ce-L3', '618e', 'V700']
+		Maybe I'm Amazed
+		Brandy
+		Kashmir
+		Something
+		Show Me The Way
+		Love Lies Bleeding
+		Still The One
+		It Don't Come Easy
+		I've Just Seen A Face
 	2024-03-30  : Hidden Hills                            : ['414ce-L3', '618e', 'V700']
+		The Wind & The Wheat*
+		Brandy
+		Show Me The Way
+		Still The One
+		Love Lies Bleeding
+		Here, There and Everywhere
 	2024-04-05  : Holly Brook East Peoria                 : ['618e', '812ce', 'V700']
+		I've Just Seen A Face
+		Something
+		Here, There and Everywhere
+		Yesterday
+		The Wind & The Wheat*
+		Still The One
 	2024-04-06  : Opies                                   : ['618e', '812ce', 'V700']
+		Yesterday
+		It Don't Come Easy
+		The Wind & The Wheat*
+		Something
+		Brandy
+		Maybe I'm Amazed
+		Kashmir
+		Love Lies Bleeding
 	2024-04-10  : Holly Brook Washington                  : ['618e', '812ce', 'V700']
+		Here, There and Everywhere
+		Show Me The Way
 	2024-04-12  : Cafe Santa Rosa                         : ['618e', '812ce', 'V700']
+		The Wind & The Wheat*
+		Show Me The Way
 	2024-04-19  : Michaels                                : ['618e', '812ce', 'V700']
+		Still The One
+		Here, There and Everywhere
+		Brandy
+		Something
 	2024-04-21  : Orange Cup                              : ['618e', '812ce', 'V700']
+		It Don't Come Easy
 	2024-04-25  : Independence Village                    : ['618e', '812ce', 'V700']
+		Something
+		Show Me The Way
+		Here, There and Everywhere
 	2024-04-26  : Saxony                                  : ['618e', '812ce', 'V700']
+		Brandy
+		Maybe I'm Amazed
 	2024-05-03  : Holly Brook East Peoria                 : ['618e', '812ce', 'V700']
+		Brandy
 	2024-05-04  : Germantown Spring Fling                 : ['618e', '812ce', 'V700']
+		The Wind & The Wheat*
+		Brandy
+		Something
 	2024-05-05  : Blue Margaritas                         : ['618e', '812ce', 'V700']
+		Still The One
+		The Wind & The Wheat*
+		Here, There and Everywhere
+		Kashmir
+		Something
 	2024-05-10  : Castaways                               : ['618e', '812ce', 'V700']
+		Brandy
+		The Wind & The Wheat*
+		Something
+		Show Me The Way
+		Something
+		Show Me The Way
+		It Don't Come Easy
+		Kashmir
+		Here, There and Everywhere
 	2024-05-11  : Innkeepers                              : ['618e', '812ce', 'V700']
+		The Wind & The Wheat*
+		Brandy
+		It Don't Come Easy
+		Show Me The Way
+		Yesterday
+		Here, There and Everywhere
+		Love Lies Bleeding
 	2024-05-17  : Michaels                                : ['618e', '814ce', 'V700']
+		The Wind & The Wheat*
+		Show Me The Way
+		Yesterday
+		Give A Little Bit
+		It Don't Come Easy
 	2024-05-18  : Goldies Pizza                           : ['618e', '814ce', 'V700']
+		Brandy
+		Give A Little Bit
+		Something
+		Show Me The Way
+		Kashmir
 	2024-05-19  : Tres Rojas                              : ['618e', '814ce', 'V700']
+		Brandy
+		The Wind & The Wheat*
+		Here, There and Everywhere
+		I've Just Seen A Face
+		Brandy
+		The Wind & The Wheat*
+		Here, There and Everywhere
+		I've Just Seen A Face
+		Show Me The Way
+		Still The One
+		Kashmir
+		Something
 	2024-05-26  : Mackinaw Winery                         : ['618e', '814ce', 'V700']
+		The Wind & The Wheat*
+		Brandy
+		Show Me The Way
+		It Don't Come Easy
+		Maybe I'm Amazed
+		Love Lies Bleeding
 	2024-06-01  : Market Alley Wines                      : ['618e', '814ce', 'V700']
+		Brandy
+		Maybe I'm Amazed
+		The Wind & The Wheat*
+		I've Just Seen A Face
+		It Don't Come Easy
 	2024-06-06  : Washington Square                       : ['618e', '814ce', 'V700']
+		Brandy
+		Show Me The Way
 	2024-06-08  : Topsys                                  : ['618e', '814ce', 'V700']
+		It Don't Come Easy
+		Here, There and Everywhere
+		Love Lies Bleeding
+		Maybe I'm Amazed
+		Brandy
+		Show Me The Way
+		Something
 	2024-06-11  : Charter SLC                             : ['618e', '814ce', 'V700']
+		Brandy
+		Something
+		Still The One
 	2024-06-12  : Holly Brook Washington                  : ['618e', '814ce', 'V700']
+		Brandy
+		Something
+		Still The One
 	2024-06-15  : Innkeepers                              : ['414ce-L3', '618e', 'V700']
+		Maybe I'm Amazed
+		Yesterday
+		I've Just Seen A Face
+		Give A Little Bit
+		Something
+		Still The One
 	2024-06-21  : Michaels                                : ['414ce-L3', '618e', 'V700']
+		The Wind & The Wheat*
+		I've Just Seen A Face
+		Maybe I'm Amazed
+		Love Lies Bleeding
 	2024-06-27  : Independence Village                    : ['414ce-L3', '618e', 'V700']
-43 gigs since string change
+		Brandy
+		Maybe I'm Amazed
+43 gigs, 195 songs, since string change
+
 >>>
