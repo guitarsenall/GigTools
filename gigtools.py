@@ -167,7 +167,7 @@ def read_gig_files(gig_files, repertwaar, verbose=False):
                 else:
                     this_block.append(line)
                     if 'guitars:' in line.lower():
-                        GuitarStr   = line.lower().removeprefix('guitars:')
+                        GuitarStr   = line.removeprefix('Guitars:')
                         guitars     = []
                         for tok in GuitarStr.split(','):
                             guitars.append( tok.strip() )

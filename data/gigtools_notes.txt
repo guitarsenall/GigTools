@@ -785,6 +785,13 @@ OBJECTIVES:
                 for each song.
             >   It works.
                 Commit/push.
+        -   Try looping over each guitar, using the date of its string change
+            in code similar to what is already there.
+            >   It works. And it shows the V700 has had FORTY-THREE gigs
+                since its last string change on 12/14/23. And that is why
+                I need to track the number of songs, which I think will
+                correlate better.
+            >   Commit/push.
 
 
 ================================================================================

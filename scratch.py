@@ -20,20 +20,20 @@ import datetime
 #print(f'Next change on {NextDate}')
 
 
-## read in the repertwaar--a list of song dictionaries
-#repertwaar      = gt.read_repertwaar()
-#repertwaar.sort( key = lambda s: s['title'] )
-#
-## read the gig history
-#GigFolder       = 'S:\\will\\documents\\OneDrive\\2024\\gigtools\\gigfiles\\'
-#GigFile         = 'multi.docx'
-#gig_files       = [ GigFolder + 'gigs_january_2024.docx'    ,
-#                    GigFolder + 'gigs_february_2024.docx'   ,
-#                    GigFolder + 'gigs_march_2024.docx'      ,
-#                    GigFolder + 'gigs_april_2024.docx'      ,
-#                    GigFolder + 'gigs_may_2024.docx'        ,
-#                    GigFolder + 'gigs_june_2024.docx'       ]
-#gigs            = gt.read_gig_files( gig_files, repertwaar, verbose=True)
+# read in the repertwaar--a list of song dictionaries
+repertwaar      = gt.read_repertwaar()
+repertwaar.sort( key = lambda s: s['title'] )
+
+# read the gig history
+GigFolder       = 'S:\\will\\documents\\OneDrive\\2024\\gigtools\\gigfiles\\'
+GigFile         = 'multi.docx'
+gig_files       = [ GigFolder + 'gigs_january_2024.docx'    ,
+                    GigFolder + 'gigs_february_2024.docx'   ,
+                    GigFolder + 'gigs_march_2024.docx'      ,
+                    GigFolder + 'gigs_april_2024.docx'      ,
+                    GigFolder + 'gigs_may_2024.docx'        ,
+                    GigFolder + 'gigs_june_2024.docx'       ]
+gigs            = gt.read_gig_files( gig_files, repertwaar, verbose=True)
 
 
 # Read data from guitars.txt into guitars, a dictionary list
@@ -56,7 +56,7 @@ guitars  = []
 for i in range(len(guitar_idx)-1):
     guitar_lines    = lines[ guitar_idx[i] : guitar_idx[i+1]-1 ]
     title           = lines[ guitar_idx[i] ]
-    print(f'Parsing guitar line: {title}')
+    #print(f'Parsing guitar line: {title}')
     GuitarType  = ''
     for line in guitar_lines:
         tok = line.split(':')
@@ -71,7 +71,18 @@ for i in range(len(guitar_idx)-1):
                 'change'    : StringDate        }
                 #'all lines' : guitar_lines      }
     guitars.append(guitar)
-
+# track guitars used in gigs since a given date
+gigs.sort( key = lambda g: g['date'], reverse=False )
+for guitar in guitars:
+    print(f"Guitar: {guitar['name']}")
+    SinceDate   = guitar['change']
+    count       = 0
+    for gig in gigs:
+        if gig['date'] >= SinceDate and guitar['name'] in gig['guitars']:
+            count   += 1
+            print( "\t{0:<12}: {1:<40}: {2}".format(
+                    str(gig['date']), gig['venue'], gig['guitars'] ) )
+    print(f"{count} gigs since string change")
 
 
 ## Print all gigs with their energies
