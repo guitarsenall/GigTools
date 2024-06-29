@@ -54,9 +54,9 @@ guitar_idx.append(len(lines)-1)   # last line
 # loop over the guitar sections
 guitars  = []
 for i in range(len(guitar_idx)-1):
-    guitar_lines    = lines[ guitar_idx[i] : guitar_idx[i+1]-1 ]
+    guitar_lines    = lines[ guitar_idx[i] : guitar_idx[i+1] ]
     title           = lines[ guitar_idx[i] ]
-    #print(f'Parsing guitar line: {title}')
+    print(f'Parsing guitar line: {title.strip()}')
     GuitarType  = ''
     for line in guitar_lines:
         tok = line.split(':')
@@ -68,9 +68,13 @@ for i in range(len(guitar_idx)-1):
             StringDate  = datetime.date( int(y)+2000, int(m), int(d) )
     guitar  = { 'name'      : guitar_names[i]   ,
                 'type'      : GuitarType        ,
-                'change'    : StringDate        }
-                #'all lines' : guitar_lines      }
+                'change'    : StringDate        ,
+                'all lines' : guitar_lines      }
     guitars.append(guitar)
+    print(f"\tname  : {guitar_names[i]}")
+    print(f"\ttype  : {GuitarType}")
+    print(f"\tchange : {StringDate}")
+
 # track guitars used in gigs since a given date
 gigs.sort( key = lambda g: g['date'], reverse=False )
 for guitar in guitars:
