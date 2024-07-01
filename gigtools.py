@@ -54,6 +54,7 @@ def read_repertwaar(CSVFile='music_performance_repertoire.csv'):
             song    = { 'title'     : row['song']           ,
                         'energy'    : float(row['energy'])  ,
                         'guitar'    : row['guitar']         ,
+                        'mastery'   : float(row['mastery']) ,
                         'playcount' : 0                     ,
                         'playdates' : []                    ,
                         'data'      : row                   }

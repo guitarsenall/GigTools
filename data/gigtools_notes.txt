@@ -814,13 +814,49 @@ OBJECTIVES:
             >   Commit/push.
 
 
+                                                Monday, July 1, 2024 (9:06 AM)
++   Song Freshness
+    *   Process songs: Use the gigdate to compute the number days
+        since it was played, and use this to concoct a 'freshness' score
+        that can be used to prioritize rehearsal time.
+        -   Initial thoughts
+            Let's say a song needs to be played every 14 days to stay fresh.
+            If this happens, its freshness is 100%. If I fail to play today, the
+            freshness is somehow decreased, but not by much.  And recent plays
+            are much more important than plays a year ago. So I envision a
+            first-order exponential decay. Expand that to a transfer function
+            similar to that used for Cycling Chronic Training Load.
+            >   Ask ChatGPT for the formula:
+                    cycling_training_load_a.png
+            >   This formula needs the difficulty of the song: some songs
+                need to be played every 2 weeks (e.g., "Still The One" and
+                "Kashmir") while others could go 2 months (e.g., "Wild World").
+                But I think that would be the time constant. Harder songs lose
+                their freshness faster.
+            >   Ask ChatGPT to convert the expression to a Laplace-domain
+                transfer function:
+                                  1
+                    H(S)    = ---------
+                              tau*S + 1
+                then convert this to a differential equation:
+                    dF/dT = ( P(t) - F(t) ) / tau
+                Experiment with this in junk.xlxs, but  scale units of F by
+                tau (play interval).
+                I like the result.
+
+    *   Prototype in play_count.py
+        -   I will need to add the play interval to the repertwaar spreadsheet,
+            music_performance_repertoire.xlsx and its CSV file.
+            Add a column, "mastery", to indicate it.
+        -   Got it working for Kashmir.
+                song_freshness_a.png
+
 
 ================================================================================
 
 +   TO DO:
-    *   Guitar report
-        -   How many gigs since last string change?
-        -   How many songs?
+    *   Mileage report
+        -   Write to CSV
     *   Gig Energy Report
         -   Print all gigs with their energies
             >   Include a deviation?
@@ -828,8 +864,6 @@ OBJECTIVES:
         songs. Find the block with the most matches.
         gigtools.read_gig_files()
         -   The section '# get the song list' should be a function.
-    *   Process songs: Use the gigdate to compute the number days
-        since it was played, and use this to concoct a 'freshness' score.
     *   Song database
         -   in SQL?
             >   Microsoft has a free SQL

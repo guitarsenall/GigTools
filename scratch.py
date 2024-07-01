@@ -20,78 +20,78 @@ import datetime
 #print(f'Next change on {NextDate}')
 
 
-## read in the repertwaar--a list of song dictionaries
-#repertwaar      = gt.read_repertwaar()
-#repertwaar.sort( key = lambda s: s['title'] )
+# read in the repertwaar--a list of song dictionaries
+repertwaar      = gt.read_repertwaar()
+repertwaar.sort( key = lambda s: s['title'] )
+
+# read the gig history
+GigFolder       = 'S:\\will\\documents\\OneDrive\\2024\\gigtools\\gigfiles\\'
+GigFile         = 'multi.docx'
+gig_files       = [ GigFolder + 'gigs_january_2024.docx'    ,
+                    GigFolder + 'gigs_february_2024.docx'   ,
+                    GigFolder + 'gigs_march_2024.docx'      ,
+                    GigFolder + 'gigs_april_2024.docx'      ,
+                    GigFolder + 'gigs_may_2024.docx'        ,
+                    GigFolder + 'gigs_june_2024.docx'       ]
+gigs            = gt.read_gig_files( gig_files, repertwaar, verbose=True)
+
+
+## Read data from guitars.txt into guitars, a dictionary list
+#with open('guitars.txt', 'r') as file:
+#    lines = file.readlines()
+## find the guitar lines
+#guitar_idx      = []
+#guitar_names    = []
+#for i, line in enumerate(lines):
+#    tok = line.split(':')
+#    if len(tok) > 1 and 'guitar' in tok[0].lower():
+#        guitar_idx.append(i)
+#        guitar_names.append(tok[1].strip())
+#print(f'Found {len(guitar_idx)} guitars in guitars.txt:')
+#for i in guitar_idx:
+#    print('\t' + lines[i].strip())
+#guitar_idx.append(len(lines)-1)   # last line
+## loop over the guitar sections
+#guitars  = []
+#for i in range(len(guitar_idx)-1):
+#    guitar_lines    = lines[ guitar_idx[i] : guitar_idx[i+1] ]
+#    title           = lines[ guitar_idx[i] ]
+#    print(f'Parsing guitar line: {title.strip()}')
+#    GuitarType  = ''
+#    for line in guitar_lines:
+#        tok = line.split(':')
+#        if len(tok) > 1 and 'type' in tok[0].lower():
+#            GuitarType  = tok[1].strip()
+#        if len(tok) > 1 and 'strings' in tok[0].lower():
+#            datestr = tok[1]
+#            m,d,y   = datestr.split('/')
+#            StringDate  = datetime.date( int(y)+2000, int(m), int(d) )
+#    guitar  = { 'name'      : guitar_names[i]   ,
+#                'type'      : GuitarType        ,
+#                'change'    : StringDate        ,
+#                'all lines' : guitar_lines      }
+#    guitars.append(guitar)
+#    print(f"\tname  : {guitar_names[i]}")
+#    print(f"\ttype  : {GuitarType}")
+#    print(f"\tchange : {StringDate}")
 #
-## read the gig history
-#GigFolder       = 'S:\\will\\documents\\OneDrive\\2024\\gigtools\\gigfiles\\'
-#GigFile         = 'multi.docx'
-#gig_files       = [ GigFolder + 'gigs_january_2024.docx'    ,
-#                    GigFolder + 'gigs_february_2024.docx'   ,
-#                    GigFolder + 'gigs_march_2024.docx'      ,
-#                    GigFolder + 'gigs_april_2024.docx'      ,
-#                    GigFolder + 'gigs_may_2024.docx'        ,
-#                    GigFolder + 'gigs_june_2024.docx'       ]
-#gigs            = gt.read_gig_files( gig_files, repertwaar, verbose=True)
-
-
-# Read data from guitars.txt into guitars, a dictionary list
-with open('guitars.txt', 'r') as file:
-    lines = file.readlines()
-# find the guitar lines
-guitar_idx      = []
-guitar_names    = []
-for i, line in enumerate(lines):
-    tok = line.split(':')
-    if len(tok) > 1 and 'guitar' in tok[0].lower():
-        guitar_idx.append(i)
-        guitar_names.append(tok[1].strip())
-print(f'Found {len(guitar_idx)} guitars in guitars.txt:')
-for i in guitar_idx:
-    print('\t' + lines[i].strip())
-guitar_idx.append(len(lines)-1)   # last line
-# loop over the guitar sections
-guitars  = []
-for i in range(len(guitar_idx)-1):
-    guitar_lines    = lines[ guitar_idx[i] : guitar_idx[i+1] ]
-    title           = lines[ guitar_idx[i] ]
-    print(f'Parsing guitar line: {title.strip()}')
-    GuitarType  = ''
-    for line in guitar_lines:
-        tok = line.split(':')
-        if len(tok) > 1 and 'type' in tok[0].lower():
-            GuitarType  = tok[1].strip()
-        if len(tok) > 1 and 'strings' in tok[0].lower():
-            datestr = tok[1]
-            m,d,y   = datestr.split('/')
-            StringDate  = datetime.date( int(y)+2000, int(m), int(d) )
-    guitar  = { 'name'      : guitar_names[i]   ,
-                'type'      : GuitarType        ,
-                'change'    : StringDate        ,
-                'all lines' : guitar_lines      }
-    guitars.append(guitar)
-    print(f"\tname  : {guitar_names[i]}")
-    print(f"\ttype  : {GuitarType}")
-    print(f"\tchange : {StringDate}")
-
-# track guitars used in gigs since a given date
-gigs.sort( key = lambda g: g['date'], reverse=False )
-for guitar in guitars:
-    print(f"Guitar: {guitar['name']}")
-    SinceDate   = guitar['change']
-    GigCount    = 0
-    SongCount   = 0
-    for gig in gigs:
-        if gig['date'] >= SinceDate and guitar['name'] in gig['guitars']:
-            GigCount   += 1
-            print( "\t{0:<12}: {1:<40}: {2}".format(
-                    str(gig['date']), gig['venue'], gig['guitars'] ) )
-            for song in gig['songs']:
-                if song['data']['guitar'] == guitar['type']:
-                    SongCount   += 1
-                    print(f"\t\t{song['title']}")
-    print(f"{GigCount} gigs, {SongCount} songs, since string change\n")
+## track guitars used in gigs since a given date
+#gigs.sort( key = lambda g: g['date'], reverse=False )
+#for guitar in guitars:
+#    print(f"Guitar: {guitar['name']}")
+#    SinceDate   = guitar['change']
+#    GigCount    = 0
+#    SongCount   = 0
+#    for gig in gigs:
+#        if gig['date'] >= SinceDate and guitar['name'] in gig['guitars']:
+#            GigCount   += 1
+#            print( "\t{0:<12}: {1:<40}: {2}".format(
+#                    str(gig['date']), gig['venue'], gig['guitars'] ) )
+#            for song in gig['songs']:
+#                if song['data']['guitar'] == guitar['type']:
+#                    SongCount   += 1
+#                    print(f"\t\t{song['title']}")
+#    print(f"{GigCount} gigs, {SongCount} songs, since string change\n")
 
 
 
