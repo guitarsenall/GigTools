@@ -7,7 +7,7 @@ Songs   : 4
     Two Of Us
     Even The Losers
     More Today Than Yesterday
-    Power of Love
+    The Power of Love
 
 Date    : 3/21/24
 Guitars : 618e
@@ -43,4 +43,15 @@ Guitars : 812ce
     Classical Gas
     Del's Bells
     Those Who Wait
+
+Date    : 7/1/24
+Guitars : 414ce-L3, 618e, V700
+
+    Two Of Us
+    Cheering You On
+    Leading You Home
+    Beyond Justice to Mercy
+    Still The One
+    Kashmir
+    It Don't Come Easy
 
