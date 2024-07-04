@@ -159,6 +159,7 @@ def read_gig_files(gig_files, repertwaar, verbose=False):
             song_list   = []
             this_block  = []
             guitars     = []
+            mileage     = 0.0
             for line in gig_lines:
                 if line == ' ':
                     blocks.append(this_block[:])    # copy the list
@@ -167,10 +168,14 @@ def read_gig_files(gig_files, repertwaar, verbose=False):
                     this_block.append(line)
                     if 'guitars:' in line.lower():
                         GuitarStr   = line.removeprefix('Guitars:')
-                        guitars     = []
                         for tok in GuitarStr.split(','):
                             guitars.append( tok.strip() )
                         guitars.sort()
+                    if 'mileage:' in line.lower():
+                        # might be form '75*2 = 150'
+                        MileStr = line.removeprefix('Mileage:')
+                        tok     = MileStr.split(' ')
+                        mileage = float( tok[-1] )
             for block in blocks:
                 if len(block) >= 9:
                     matches = 0
@@ -193,14 +198,15 @@ def read_gig_files(gig_files, repertwaar, verbose=False):
             gig = { 'title'     : allText[title_idx[i]] ,
                     'venue'     : fix_venue_name(venue) ,
                     'date'      : gigdate               ,
+                    'mileage'   : mileage               ,
+                    'guitars'   : guitars               ,
                     'songs'     : gig_songs             ,
-                    'lines'     : gig_lines             ,
-                    'guitars'   : guitars               }
+                    'lines'     : gig_lines             }
             gigs.append(gig)
     return gigs
 
 
-def gigs_by_venue(gigs):
+def gigs_by_venue(gigs, verbose=False):
     ''' Accepts a list of gigs, output is a dictionary where each
         element is a list of gigs for that venue.'''
     gigs_copy       = gigs[:]
@@ -209,7 +215,8 @@ def gigs_by_venue(gigs):
         gig                 = gigs_copy.pop()
         VName               = gig['venue'].strip().title()
         venue_gigs[VName]   = [gig]
-        print(f'Got the first {VName}. Searching for more.')
+        if verbose:
+            print(f'Got the first {VName}. Searching for more.')
         #   find & remove all matches
         c           = 0
         searching   = True
@@ -219,13 +226,15 @@ def gigs_by_venue(gigs):
                 gig = gigs_copy[j]
                 s   = match_score( VName, gig['venue'].strip().title() )
                 if s >= 60:
-                    print(f'\t\tFound another {VName}. Popping...')
+                    if verbose:
+                        print(f'\t\tFound another {VName}. Popping...')
                     venue_gigs[VName].append( gigs_copy.pop(j) )
                     break                   # for loop
             if len(gigs_copy)==0 or len(gigs_copy)<c:
                 searching   = False
-                print(f'\tfor loop done with {VName}')
-                print(f'\tNumber of gigs left = {len(gigs_copy)}')
+                if verbose:
+                    print(f'\tfor loop done with {VName}')
+                    print(f'\tNumber of gigs left = {len(gigs_copy)}')
             c   += 1
     return venue_gigs
 

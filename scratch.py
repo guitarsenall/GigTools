@@ -36,6 +36,36 @@ gig_files       = [ GigFolder + 'gigs_january_2024.docx'    ,
 gigs            = gt.read_gig_files( gig_files, repertwaar, verbose=True)
 
 
+# mileage report.
+print( "{0:<40}|{1:>10}|{2:>7}|{3:>5}|".format(
+            'venue', 'mileage', '# gigs', 'sum' ) )
+print( "{0:<40}|{1:>10}|{2:>7}|{3:>5}|".format(
+            '-'*40, '-'*10, '-'*7, '-'*5 ) )
+    # sum: {3:4.0f}
+venue_gigs  = gt.gigs_by_venue(gigs)
+TotalGigs   = 0
+TotalMiles  = 0.0
+venue_names = sorted( venue_gigs.keys() )
+for VName in venue_names:
+    v_gigs      = venue_gigs[VName]
+    NGigs       = len(v_gigs)
+    TotalGigs   += NGigs
+    GigMileage  = v_gigs[0]['mileage']
+    TotalMiles  += NGigs*GigMileage
+    print( "{0:<40}|{1:10.1f}|{2:7d}|{3:5.0f}|".format(
+                VName               ,
+                GigMileage          ,
+                NGigs               ,
+                NGigs*GigMileage    ) )
+print( "{0:<40}|{1:>10}|{2:>7}|{3:>5}|".format(
+            '-'*40, '-'*10, '-'*7, '-'*5 ) )
+print( "{0:<40}|{1:>10}|{2:7d}|{3:5.0f}|".format(
+            'TOTAL'             ,
+            ''                  ,
+            TotalGigs           ,
+            TotalMiles          ) )
+
+
 ## Read data from guitars.txt into guitars, a dictionary list
 #with open('guitars.txt', 'r') as file:
 #    lines = file.readlines()

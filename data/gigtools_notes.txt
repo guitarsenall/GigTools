@@ -918,6 +918,23 @@ OBJECTIVES:
             >   Commit/push
 
 
+                                            Thursday, July 4, 2024 (10:04 AM)
++   Mileage.
+    Print a mileage total between two dates (especially 1st half of 2024)
+    for tax purposes.
+    *   Read the field in gigtools.read_gig_files()
+        Easy enough.
+    *   I want to reproduce the format in my spreadsheet:
+                mileage_report_a.png
+        -   For now, ignore grouping by venue. Just print the whole thing.
+            Got it.
+        -   Now group by venue.
+        -   Add the total.
+        -   Got it working. It matches the spreadsheet quite well aside from
+            a couple minor discrepancies. See output.txt.
+            I still need to write to CSV. Or I can copy/paste into Excel.
+            Commit/push
+
 
 ================================================================================
 
