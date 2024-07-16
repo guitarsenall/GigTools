@@ -936,6 +936,21 @@ OBJECTIVES:
             Commit/push
 
 
+                                            Tuesday, July 16, 2024 (4:33 PM)
++   Back to Guitar report
+    *   Move code from scratch.py to
+        gigtools.guitar_report()
+    *   Add verbose option.
+        It works:
+                812ce     :  0 gigs:   0 songs
+                414ce-L3  : 10 gigs: 119 songs
+                814ce     :  0 gigs:   0 songs
+                618e      :  6 gigs:  66 songs
+                555       :  0 gigs:   0 songs
+                V700      :  4 gigs:  15 songs
+        Commit/push
+
+
 ================================================================================
 
 +   TO DO:
