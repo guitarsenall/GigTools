@@ -349,3 +349,39 @@ def guitar_report(gigs, verbose=False):
                     guitar['name']              ,
                     str(GigCount) + ' gigs'     ,
                     str(SongCount) + ' songs'   ) )
+
+
+def mileage_report(gigs, BegDate, EndDate):
+    print( f"Mileage report {BegDate} to {EndDate}:" )
+    print( "{0:<40}|{1:>10}|{2:>7}|{3:>5}|".format(
+                'venue', 'mileage', '# gigs', 'sum' ) )
+    print( "{0:<40}|{1:>10}|{2:>7}|{3:>5}|".format(
+                '-'*40, '-'*10, '-'*7, '-'*5 ) )
+        # sum: {3:4.0f}
+    venue_gigs  = gigs_by_venue(gigs)
+    TotalGigs   = 0
+    TotalMiles  = 0.0
+    venue_names = sorted( venue_gigs.keys() )
+    for VName in venue_names:
+        v_gigs      = venue_gigs[VName]
+        VenueName   = v_gigs[0]['venue']
+        GigMileage  = v_gigs[0]['mileage']
+        NGigs       = 0
+        for gig in v_gigs:
+            if gig['date'] >= BegDate and gig['date'] <= EndDate:
+                NGigs   += 1
+        TotalGigs   += NGigs
+        TotalMiles  += NGigs*GigMileage
+        print( "{0:<40}|{1:10.1f}|{2:7d}|{3:5.0f}|".format(
+                    VenueName           ,
+                    GigMileage          ,
+                    NGigs               ,
+                    NGigs*GigMileage    ) )
+    print( "{0:<40}|{1:>10}|{2:>7}|{3:>5}|".format(
+                '-'*40, '-'*10, '-'*7, '-'*5 ) )
+    print( "{0:<40}|{1:>10}|{2:7d}|{3:5.0f}|".format(
+                'TOTAL'             ,
+                ''                  ,
+                TotalGigs           ,
+                TotalMiles          ) )
+

@@ -1,403 +1,46 @@
-*** Python 3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)] on win32. ***
-*** Remote Python engine is active ***
->>>
-Found 5 gig titles in S:\will\documents\OneDrive\2024\gigtools\gigfiles\gigs_january_2024.docx:
-	Saxony 1/12/24
-	Good Tequilas 1/18/24
-	Michael’s 1/19/24
-	Market Alley Wines 1/27/24
-	Holly Brook Washington 1/31/24
-Parsing Gig title: Saxony 1/12/24
-	15 songs found
-	58 text lines
-Parsing Gig title: Good Tequilas 1/18/24
-	29 songs found
-	57 text lines
-Parsing Gig title: Michael’s 1/19/24
-	28 songs found
-	59 text lines
-Parsing Gig title: Market Alley Wines 1/27/24
-	26 songs found
-	84 text lines
-Parsing Gig title: Holly Brook Washington 1/31/24
-	15 songs found
-	51 text lines
-Found 7 gig titles in S:\will\documents\OneDrive\2024\gigtools\gigfiles\gigs_february_2024.docx:
-	The 33 Room 2/1/24
-	Holly Brook East Peoria 2/8/24
-	Sullivan’s 2/9/24
-	Orange Cup 2/11/24
-	Cherry Street 2/14/24
-	Michael’s 2/16/24
-	Innkeepers 2/24/24
-Parsing Gig title: The 33 Room 2/1/24
-	32 songs found
-	69 text lines
-Parsing Gig title: Holly Brook East Peoria 2/8/24
-	17 songs found
-	55 text lines
-Parsing Gig title: Sullivan’s 2/9/24
-	38 songs found
-	95 text lines
-Parsing Gig title: Orange Cup 2/11/24
-	27 songs found
-	54 text lines
-Parsing Gig title: Cherry Street 2/14/24
-	40 songs found
-	87 text lines
-Parsing Gig title: Michael’s 2/16/24
-	27 songs found
-	59 text lines
-Parsing Gig title: Innkeepers 2/24/24
-	40 songs found
-	77 text lines
-Found 8 gig titles in S:\will\documents\OneDrive\2024\gigtools\gigfiles\gigs_march_2024.docx:
-	Holly Brook East Peoria 3/6/24
-	Independence Village 3/7/24
-	Deer Creek Baptist 3/8/24
-	Michael’s 3/15/24
-	Market Alley Wines 3/23/24
-	Independence Village 3/28/24
-	Sullivan’s 3/29/24
-	Hidden Hills 3/30/24
-Parsing Gig title: Holly Brook East Peoria 3/6/24
-	13 songs found
-	53 text lines
-Parsing Gig title: Independence Village 3/7/24
-	17 songs found
-	65 text lines
-Parsing Gig title: Deer Creek Baptist 3/8/24
-	9 songs found
-	52 text lines
-Parsing Gig title: Michael’s 3/15/24
-	28 songs found
-	61 text lines
-Parsing Gig title: Market Alley Wines 3/23/24
-	25 songs found
-	76 text lines
-Parsing Gig title: Independence Village 3/28/24
-	13 songs found
-	50 text lines
-Parsing Gig title: Sullivan’s 3/29/24
-	39 songs found
-	104 text lines
-Parsing Gig title: Hidden Hills 3/30/24
-	37 songs found
-	88 text lines
-Found 10 gig titles in S:\will\documents\OneDrive\2024\gigtools\gigfiles\gigs_april_2024.docx:
-	Holly Brook Airport 4/2/24
-	Holly Brook East Peoria 4/5/24
-	Opie’s 4/6/24
-	Holly Brook Washington 4/10/24
-	Cafe Santa Rosa 4/12/24
-	Proctor Place 4/16/24
-	Michael’s 4/19/24
-	Orange Cup 4/21/24
-	Independence Village 4/25/24
-	Saxony 4/26/24
-Parsing Gig title: Holly Brook Airport 4/2/24
-	14 songs found
-	65 text lines
-Parsing Gig title: Holly Brook East Peoria 4/5/24
-	15 songs found
-	63 text lines
-Parsing Gig title: Opie’s 4/6/24
-	40 songs found
-	83 text lines
-Parsing Gig title: Holly Brook Washington 4/10/24
-	16 songs found
-	52 text lines
-Parsing Gig title: Cafe Santa Rosa 4/12/24
-	24 songs found
-	69 text lines
-Parsing Gig title: Proctor Place 4/16/24
-	15 songs found
-	52 text lines
-Parsing Gig title: Michael’s 4/19/24
-	28 songs found
-	53 text lines
-Parsing Gig title: Orange Cup 4/21/24
-	28 songs found
-	75 text lines
-Parsing Gig title: Independence Village 4/25/24
-	17 songs found
-	60 text lines
-Parsing Gig title: Saxony 4/26/24
-	16 songs found
-	49 text lines
-Found 11 gig titles in S:\will\documents\OneDrive\2024\gigtools\gigfiles\gigs_may_2024.docx:
-	Holly Brook East Peoria 5/3/24
-	Germantown Spring Fling 5/4/24
-	Blue Margaritas 05/05/24
-	Castaways 05/10/24
-	Innkeepers 05/11/24
-	Michael’s 5/17/24
-	Goldie’s Pizza 05/18/24
-	Tres Rojas 05/19/24
-	Mackinaw Winery 05/26/24
-	Snyder Village 5/28/24
-	Independence Village 5/30/24
-Parsing Gig title: Holly Brook East Peoria 5/3/24
-	12 songs found
-	45 text lines
-Parsing Gig title: Germantown Spring Fling 5/4/24
-	34 songs found
-	119 text lines
-Parsing Gig title: Blue Margaritas 05/05/24
-	35 songs found
-	97 text lines
-Parsing Gig title: Castaways 05/10/24
-	38 songs found
-	84 text lines
-Parsing Gig title: Innkeepers 05/11/24
-	38 songs found
-	86 text lines
-Parsing Gig title: Michael’s 5/17/24
-	29 songs found
-	64 text lines
-Parsing Gig title: Goldie’s Pizza 05/18/24
-	42 songs found
-	92 text lines
-Parsing Gig title: Tres Rojas 05/19/24
-	38 songs found
-	129 text lines
-Parsing Gig title: Mackinaw Winery 05/26/24
-	41 songs found
-	110 text lines
-Parsing Gig title: Snyder Village 5/28/24
-	19 songs found
-	59 text lines
-Parsing Gig title: Independence Village 5/30/24
-	14 songs found
-	44 text lines
-Found 12 gig titles in S:\will\documents\OneDrive\2024\gigtools\gigfiles\gigs_june_2024.docx:
-	Market Alley Wines 6/1/24
-	Washington Square 6/6/24
-	Grand Regency 6/7/24
-	Topsy’s 6/8/24
-	Serenity SLC 6/10/24
-	Charter SLC 6/11/24
-	Holly Brook Washington 6/12/24
-	Innkeepers 6/15/24
-	Holly Brook East Peoria 6/18/24
-	Proctor Place 6/20/24
-	Michael’s 6/21/24
-	Independence Village 6/27/24
-Parsing Gig title: Market Alley Wines 6/1/24
-	28 songs found
-	77 text lines
-Parsing Gig title: Washington Square 6/6/24
-	32 songs found
-	85 text lines
-Parsing Gig title: Grand Regency 6/7/24
-	17 songs found
-	69 text lines
-Parsing Gig title: Topsy’s 6/8/24
-	40 songs found
-	81 text lines
-Parsing Gig title: Serenity SLC 6/10/24
-	18 songs found
-	55 text lines
-Parsing Gig title: Charter SLC 6/11/24
-	15 songs found
-	50 text lines
-Parsing Gig title: Holly Brook Washington 6/12/24
-	15 songs found
-	51 text lines
-Parsing Gig title: Innkeepers 6/15/24
-	40 songs found
-	76 text lines
-Parsing Gig title: Holly Brook East Peoria 6/18/24
-	16 songs found
-	56 text lines
-Parsing Gig title: Proctor Place 6/20/24
-	16 songs found
-	59 text lines
-Parsing Gig title: Michael’s 6/21/24
-	31 songs found
-	75 text lines
-Parsing Gig title: Independence Village 6/27/24
-	17 songs found
-	64 text lines
-gigs found per venue:
-	independence village: 5
-	michaels: 6
-	proctor place: 2
-	holly brook east peoria: 5
-	innkeepers: 3
-	holly brook washington: 3
-	charter slc: 1
-	serenity slc: 1
-	topsys: 1
-	grand regency: 1
-	washington square: 1
-	market alley wines: 3
-	snyder village: 1
-	mackinaw winery: 1
-	tres rojas: 1
-	goldies pizza: 1
-	castaways: 1
-	blue margaritas: 1
-	germantown spring fling: 1
-	saxony: 2
-	orange cup: 2
-	cafe santa rosa: 1
-	opies: 1
-	holly brook airport: 1
-	hidden hills: 1
-	sullivans: 2
-	deer creek baptist: 1
-	cherry street: 1
-	the 33 room: 1
-	good tequilas: 1
-all venue names:
-	Saxony
-	Good Tequilas
-	Michaels
-	Market Alley Wines
-	Holly Brook Washington
-	The 33 Room
-	Holly Brook East Peoria
-	Sullivans
-	Orange Cup
-	Cherry Street
-	Michaels
-	Innkeepers
-	Holly Brook East Peoria
-	Independence Village
-	Deer Creek Baptist
-	Michaels
-	Market Alley Wines
-	Independence Village
-	Sullivans
-	Hidden Hills
-	Holly Brook Airport
-	Holly Brook East Peoria
-	Opies
-	Holly Brook Washington
-	Cafe Santa Rosa
-	Proctor Place
-	Michaels
-	Orange Cup
-	Independence Village
-	Saxony
-	Holly Brook East Peoria
-	Germantown Spring Fling
-	Blue Margaritas
-	Castaways
-	Innkeepers
-	Michaels
-	Goldies Pizza
-	Tres Rojas
-	Mackinaw Winery
-	Snyder Village
-	Independence Village
-	Market Alley Wines
-	Washington Square
-	Grand Regency
-	Topsys
-	Serenity Slc
-	Charter Slc
-	Holly Brook Washington
-	Innkeepers
-	Holly Brook East Peoria
-	Proctor Place
-	Michaels
-	Independence Village
-gig date: 2024-06-21
-gig date: 2024-05-17
-gig date: 2024-04-19
-gig date: 2024-03-15
-gig date: 2024-02-16
-gig date: 2024-01-19
-
-Addison's Walk (3456)
-Annie's Song (245)
-As Warm As Tears (25)
-Beginnings (13456)
-Behind Blue Eyes (13456)
-Beyond Justice to Mercy (2)
-Blackbird (1)
-Brandy (346)
-Came The Light (3)
-Candace' Song
-Cats In The Cradle (136)
-Cheering You On
-Classical Gas (1356)
-Crazy Little Thing Called Love (12)
-Del's Bells (245)
-Doctor My Eyes (13456)
-Eight Days A Week (12346)
-Emmaus (24)
-Even The Losers (13)
-Everybody Wants to Rule the World (256)
-Everything I Own (1345)
-Fare Thee Well (13)
-Fire Vamp
-Give A Little Bit (2)
-Heart of Worship
-Here Comes The Sun (134)
-Here, There and Everywhere (3)
-Hide Your Love Away
-I Can See Clearly Now (2)
-I've Got A Name (245)
-I've Just Seen A Face (16)
-If I Needed Someone (14)
-If You Could Read My Mind (3456)
-In Your Peace / I Love You Lord (5)
-Infinite Horizon / County Down (345)
-It Don't Come Easy (246)
-Julia (156)
-Kashmir
-Leading You Home (1)
-Listen to the Music (2)
-Love Lies Bleeding (1)
-Love The One You're With (345)
-Maybe I'm Amazed (1)
-Metamorphosis (256)
-Misunderstanding (1345)
-Mood For A Day (256)
-More Today Than Yesterday (134)
-Morning Snow (156)
-Nothing But The Call (1456)
-Operator (34)
-Pinball Wizard (2456)
-Rickover's Dream
-Sailing (34)
-Searchin' So Long (2)
-Seeking Rivendell - Acoustic
-Seeking Rivendell - Electric
-Shilo  (1)
-Show Me The Way (2)
-Sister Golden Hair (26)
-Solitary Man (2)
-Something (34)
-Still The One (3)
-The Eyes of a Child (1)
-The Mission (136)
-The Power Of Love (2)
-The Reunion (256)
-The Ride
-The Treasure (26)
-The Wind & The Wheat (12)
-There She Goes (26)
-Those Who Wait (13456)
-Time After Time (246)
-Time In A Bottle (13)
-Tuesday Afternoon
-Two Of Us (34)
-Under The Sun (135)
-What I Like About You (16)
-When My Love Awakened
-When Night Falls (15)
-White Christmas
-Wild World (26)
-Yesterday (2)
-You've Got A Friend (2456)
+Mileage report 2024-06-01 to 2024-06-30:
+venue                                   |   mileage| # gigs|  sum|
+----------------------------------------|----------|-------|-----|
+blue margaritas                         |      15.0|      0|    0|
+bonar party                             |      30.0|      0|    0|
+cafe santa rosa                         |      11.8|      0|    0|
+castaways                               |      41.2|      0|    0|
+charter slc                             |      11.0|      1|   11|
+cherry street                           |     107.6|      0|    0|
+deer creek baptist                      |      35.8|      0|    0|
+germantown spring fling                 |      13.8|      0|    0|
+goldies pizza                           |      30.8|      0|    0|
+good tequilas                           |      11.2|      0|    0|
+grand regency                           |      16.2|      1|   16|
+hidden hills                            |      99.0|      0|    0|
+holly brook airport                     |      26.8|      0|    0|
+holly brook east peoria                 |       1.0|      1|    1|
+holly brook washington                  |      12.0|      1|   12|
+independence village                    |      18.0|      1|   18|
+innkeepers                              |     107.2|      1|  107|
+mackinaw winery                         |      54.6|      0|    0|
+market alley wines                      |     150.0|      1|  150|
+michaels                                |      14.0|      1|   14|
+opies                                   |     107.8|      0|    0|
+orange cup                              |     103.4|      0|    0|
+proctor place                           |      23.2|      1|   23|
+saxony                                  |       2.0|      0|    0|
+serenity slc                            |       3.6|      1|    4|
+snyder village                          |      27.4|      0|    0|
+sullivans                               |      12.0|      0|    0|
+the 33 room                             |      12.0|      0|    0|
+the local tap                           |      55.6|      0|    0|
+topsys                                  |      56.4|      1|   56|
+tres rojas                              |      20.0|      0|    0|
+washington square                       |      13.6|      1|   14|
+----------------------------------------|----------|-------|-----|
+TOTAL                                   |          |     12|  426|
 >>>
 
 
 *** Python 3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)] on win32. ***
+>>>
+*** Remote Interpreter Reinitialized ***
 >>>
 Found 5 gig titles in S:\will\documents\OneDrive\2024\gigtools\gigfiles\gigs_january_2024.docx:
 	Saxony 1/12/24
@@ -639,10 +282,41 @@ Parsing Gig title: Orange Cup 7/14/24
 	29 songs found
 	70 text lines
 
-
-812ce       : 0 gigs:  0 songs
-414ce-L3    :10 gigs:119 songs
-814ce       : 0 gigs:  0 songs
-618e        : 6 gigs: 66 songs
-555         : 0 gigs:  0 songs
-V700        : 4 gigs: 15 songs
+Mileage report 2024-07-01 to 2024-07-31:
+venue                                   |   mileage| # gigs|  sum|
+----------------------------------------|----------|-------|-----|
+Blue Margaritas                         |      15.0|      0|    0|
+Bonar Party                             |      30.0|      1|   30|
+Cafe Santa Rosa                         |      11.8|      0|    0|
+Castaways                               |      41.2|      0|    0|
+Charter SLC                             |      11.0|      1|   11|
+Cherry Street                           |     107.6|      0|    0|
+Deer Creek Baptist                      |      35.8|      0|    0|
+Germantown Spring Fling                 |      13.8|      0|    0|
+Goldies Pizza                           |      30.8|      0|    0|
+Good Tequilas                           |      11.2|      0|    0|
+Grand Regency                           |      16.2|      0|    0|
+Hidden Hills                            |      99.0|      0|    0|
+Holly Brook Airport                     |      26.8|      0|    0|
+Holly Brook East Peoria                 |       1.0|      0|    0|
+Holly Brook Washington                  |      12.0|      0|    0|
+Independence Village                    |      18.0|      0|    0|
+Innkeepers                              |     107.2|      0|    0|
+Mackinaw Winery                         |      54.6|      0|    0|
+Market Alley Wines                      |     150.0|      0|    0|
+Michaels                                |      14.0|      0|    0|
+Opies                                   |     107.8|      0|    0|
+Orange Cup                              |     103.4|      1|  103|
+Proctor Place                           |      23.2|      0|    0|
+Saxony                                  |       2.0|      1|    2|
+Serenity SLC                            |       3.6|      0|    0|
+Snyder Village                          |      27.4|      0|    0|
+Sullivans                               |      12.0|      0|    0|
+The 33 Room                             |      12.0|      0|    0|
+The Local Tap                           |      55.6|      1|   56|
+Topsys                                  |      56.4|      0|    0|
+Tres Rojas                              |      20.0|      0|    0|
+Washington Square                       |      13.6|      0|    0|
+----------------------------------------|----------|-------|-----|
+TOTAL                                   |          |      5|  202|
+>>>

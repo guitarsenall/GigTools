@@ -948,7 +948,17 @@ OBJECTIVES:
                 618e      :  6 gigs:  66 songs
                 555       :  0 gigs:   0 songs
                 V700      :  4 gigs:  15 songs
-        Commit/push
+        -   Commit/push
+
+
+                                            Wednesday, July 17, 2024 (5:26 PM)
++   Back to Mileage report
+    *   It still needs to be a function that accepts a beginning date
+        and ending date.
+        -   It works. A report for June matches the spreadsheet.
+            And a report for July gives 202 miles for 5 gigs.
+        -   Commit/push
+
 
 
 ================================================================================
