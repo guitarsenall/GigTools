@@ -1,46 +1,5 @@
-Mileage report 2024-06-01 to 2024-06-30:
-venue                                   |   mileage| # gigs|  sum|
-----------------------------------------|----------|-------|-----|
-blue margaritas                         |      15.0|      0|    0|
-bonar party                             |      30.0|      0|    0|
-cafe santa rosa                         |      11.8|      0|    0|
-castaways                               |      41.2|      0|    0|
-charter slc                             |      11.0|      1|   11|
-cherry street                           |     107.6|      0|    0|
-deer creek baptist                      |      35.8|      0|    0|
-germantown spring fling                 |      13.8|      0|    0|
-goldies pizza                           |      30.8|      0|    0|
-good tequilas                           |      11.2|      0|    0|
-grand regency                           |      16.2|      1|   16|
-hidden hills                            |      99.0|      0|    0|
-holly brook airport                     |      26.8|      0|    0|
-holly brook east peoria                 |       1.0|      1|    1|
-holly brook washington                  |      12.0|      1|   12|
-independence village                    |      18.0|      1|   18|
-innkeepers                              |     107.2|      1|  107|
-mackinaw winery                         |      54.6|      0|    0|
-market alley wines                      |     150.0|      1|  150|
-michaels                                |      14.0|      1|   14|
-opies                                   |     107.8|      0|    0|
-orange cup                              |     103.4|      0|    0|
-proctor place                           |      23.2|      1|   23|
-saxony                                  |       2.0|      0|    0|
-serenity slc                            |       3.6|      1|    4|
-snyder village                          |      27.4|      0|    0|
-sullivans                               |      12.0|      0|    0|
-the 33 room                             |      12.0|      0|    0|
-the local tap                           |      55.6|      0|    0|
-topsys                                  |      56.4|      1|   56|
-tres rojas                              |      20.0|      0|    0|
-washington square                       |      13.6|      1|   14|
-----------------------------------------|----------|-------|-----|
-TOTAL                                   |          |     12|  426|
->>>
-
-
 *** Python 3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)] on win32. ***
->>>
-*** Remote Interpreter Reinitialized ***
+*** Remote Python engine is active ***
 >>>
 Found 5 gig titles in S:\will\documents\OneDrive\2024\gigtools\gigfiles\gigs_january_2024.docx:
 	Saxony 1/12/24
@@ -260,12 +219,18 @@ Parsing Gig title: Michael’s 6/21/24
 Parsing Gig title: Independence Village 6/27/24
 	17 songs found
 	64 text lines
-Found 5 gig titles in S:\will\documents\OneDrive\2024\gigtools\gigfiles\gigs_july_2024.docx:
+Found 11 gig titles in S:\will\documents\OneDrive\2024\gigtools\gigfiles\gigs_july_2024.docx:
 	Charter SLC 7/9/24
 	The Local Tap 7/11/24
 	Saxony 7/12/24
 	Bonar Party 7/12/24
 	Orange Cup 7/14/24
+	The Loft SLC 7/18/24
+	Michael’s 7/19/24
+	Old Mill Vineyard 7/20/24
+	Serenity SLC 7/23/24
+	Independence Village 7/25/24
+	The Vault 7/26/24
 Parsing Gig title: Charter SLC 7/9/24
 	16 songs found
 	55 text lines
@@ -280,8 +245,25 @@ Parsing Gig title: Bonar Party 7/12/24
 	91 text lines
 Parsing Gig title: Orange Cup 7/14/24
 	29 songs found
-	70 text lines
-
+	72 text lines
+Parsing Gig title: The Loft SLC 7/18/24
+	20 songs found
+	60 text lines
+Parsing Gig title: Michael’s 7/19/24
+	29 songs found
+	69 text lines
+Parsing Gig title: Old Mill Vineyard 7/20/24
+	44 songs found
+	96 text lines
+Parsing Gig title: Serenity SLC 7/23/24
+	11 songs found
+	59 text lines
+Parsing Gig title: Independence Village 7/25/24
+	19 songs found
+	73 text lines
+Parsing Gig title: The Vault 7/26/24
+	36 songs found
+	89 text lines
 Mileage report 2024-07-01 to 2024-07-31:
 venue                                   |   mileage| # gigs|  sum|
 ----------------------------------------|----------|-------|-----|
@@ -300,23 +282,36 @@ Hidden Hills                            |      99.0|      0|    0|
 Holly Brook Airport                     |      26.8|      0|    0|
 Holly Brook East Peoria                 |       1.0|      0|    0|
 Holly Brook Washington                  |      12.0|      0|    0|
-Independence Village                    |      18.0|      0|    0|
+Independence Village                    |      18.0|      1|   18|
 Innkeepers                              |     107.2|      0|    0|
 Mackinaw Winery                         |      54.6|      0|    0|
 Market Alley Wines                      |     150.0|      0|    0|
-Michaels                                |      14.0|      0|    0|
+Michaels                                |      14.0|      1|   14|
+Old Mill Vineyard                       |      34.8|      1|   35|
 Opies                                   |     107.8|      0|    0|
 Orange Cup                              |     103.4|      1|  103|
 Proctor Place                           |      23.2|      0|    0|
 Saxony                                  |       2.0|      1|    2|
-Serenity SLC                            |       3.6|      0|    0|
+Serenity SLC                            |       3.6|      1|    4|
 Snyder Village                          |      27.4|      0|    0|
 Sullivans                               |      12.0|      0|    0|
 The 33 Room                             |      12.0|      0|    0|
 The Local Tap                           |      55.6|      1|   56|
+The Loft SLC                            |       2.0|      1|    2|
+The Vault                               |     107.4|      1|  107|
 Topsys                                  |      56.4|      0|    0|
 Tres Rojas                              |      20.0|      0|    0|
 Washington Square                       |      13.6|      0|    0|
 ----------------------------------------|----------|-------|-----|
-TOTAL                                   |          |      5|  202|
+TOTAL                                   |          |     11|  382|
 >>>
+
+
+>>>
+812ce     :  6 gigs:  84 songs
+414ce-L3  :  0 gigs:   0 songs
+814ce     :  0 gigs:   0 songs
+618e      :  2 gigs:  19 songs
+555       :  0 gigs:   0 songs
+V700      :  7 gigs:  32 songs
+

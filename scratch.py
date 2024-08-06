@@ -37,19 +37,19 @@ gig_files       = [ GigFolder + 'gigs_january_2024.docx'    ,
 gigs            = gt.read_gig_files( gig_files, repertwaar, verbose=True)
 
 
-## track plays in venue
-#VenueName   = "Michaels"
-#gt.venue_play_list(VenueName, gigs, repertwaar)
+# track plays in venue
+VenueName   = "Serenity SLC"
+gt.venue_play_list(VenueName, gigs, repertwaar)
 
 
 ## guitar report
 #gt.guitar_report(gigs, verbose=False)
 
 
-# mileage report.
-BegDate     = datetime.date( 2024, 7,  1 )      # YYYY, MM, DD
-EndDate     = datetime.date( 2024, 7, 31 )      # YYYY, MM, DD
-gt.mileage_report(gigs, BegDate, EndDate)
+## mileage report.
+#BegDate     = datetime.date( 2024, 7,  1 )      # YYYY, MM, DD
+#EndDate     = datetime.date( 2024, 7, 31 )      # YYYY, MM, DD
+#gt.mileage_report(gigs, BegDate, EndDate)
 
 
 ## Print all gigs with their energies

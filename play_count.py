@@ -7,20 +7,21 @@ import gigtools as gt
 import datetime
 
 
-# read in the repertwaar--a list of song dictionaries
-repertwaar      = gt.read_repertwaar()
-
-# read a set of DOCX files containing multiple gigs using docx,
-# and print play counts.
-GigFolder       = 'S:\\will\\documents\\OneDrive\\2024\\gigtools\\gigfiles\\'
-GigFile         = 'multi.docx'
-gig_files       = [ GigFolder + 'gigs_january_2024.docx'    ,
-                    GigFolder + 'gigs_february_2024.docx'   ,
-                    GigFolder + 'gigs_march_2024.docx'      ,
-                    GigFolder + 'gigs_april_2024.docx'      ,
-                    GigFolder + 'gigs_may_2024.docx'        ,
-                    GigFolder + 'gigs_june_2024.docx'       ]
-gigs            = gt.read_gig_files(gig_files, repertwaar)
+## read in the repertwaar--a list of song dictionaries
+#repertwaar      = gt.read_repertwaar()
+#
+## read a set of DOCX files containing multiple gigs using docx,
+## and print play counts.
+#GigFolder       = 'S:\\will\\documents\\OneDrive\\2024\\gigtools\\gigfiles\\'
+#GigFile         = 'multi.docx'
+#gig_files       = [ GigFolder + 'gigs_january_2024.docx'    ,
+#                    GigFolder + 'gigs_february_2024.docx'   ,
+#                    GigFolder + 'gigs_march_2024.docx'      ,
+#                    GigFolder + 'gigs_april_2024.docx'      ,
+#                    GigFolder + 'gigs_may_2024.docx'        ,
+#                    GigFolder + 'gigs_june_2024.docx'       ,
+#                    GigFolder + 'gigs_july_2024.docx'       ]
+#gigs            = gt.read_gig_files(gig_files, repertwaar)
 
 
 # read rehearsals.txt
