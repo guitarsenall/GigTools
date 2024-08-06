@@ -26,20 +26,24 @@ repertwaar.sort( key = lambda s: s['title'] )
 
 # read the gig history
 GigFolder       = 'S:\\will\\documents\\OneDrive\\2024\\gigtools\\gigfiles\\'
-GigFile         = 'multi.docx'
 gig_files       = [ GigFolder + 'gigs_january_2024.docx'    ,
                     GigFolder + 'gigs_february_2024.docx'   ,
                     GigFolder + 'gigs_march_2024.docx'      ,
                     GigFolder + 'gigs_april_2024.docx'      ,
                     GigFolder + 'gigs_may_2024.docx'        ,
                     GigFolder + 'gigs_june_2024.docx'       ,
-                    GigFolder + 'gigs_july_2024.docx'       ]
+                    GigFolder + 'gigs_july_2024.docx'       ,
+                    GigFolder + 'gigs_august_2024.docx'     ]
 gigs            = gt.read_gig_files( gig_files, repertwaar, verbose=True)
 
 
-# track plays in venue
-VenueName   = "Serenity SLC"
-gt.venue_play_list(VenueName, gigs, repertwaar)
+# Play Count
+gt.play_count(gigs, 'rehearsals.txt', repertwaar)
+
+
+## track plays in venue
+#VenueName   = "Serenity SLC"
+#gt.venue_play_list(VenueName, gigs, repertwaar)
 
 
 ## guitar report
