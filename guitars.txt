@@ -9,11 +9,11 @@ Strings     : 7/24/24
 
 Guitar      : 814ce
 Type        : gentle
-Strings     : 6/17/24
+Strings     : 10/8/24
 
 Guitar      : 618e
 Type        : strum
-Strings     : 7/24/24
+Strings     : 10/8/24
 
 Guitar      : 555
 Type        : strum
@@ -23,3 +23,10 @@ Guitar      : V700
 Type        : variax
 Strings     : 6/28/24
 
+Guitar      : 316ce-B6
+Type        : baritone
+Strings     : 9/18/24
+
+Guitar      : T5
+Type        : electric
+Strings     : 10/14/24

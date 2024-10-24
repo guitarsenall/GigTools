@@ -963,11 +963,61 @@ OBJECTIVES:
                                         Tuesday, August 6, 2024 (4:02 PM)
 +   Move play_count.py to gigtools.play_count()
 
+                                        Thursday, October 24, 2024 (5:28 PM)
++   gigs_by_venue() not finding both instances of "The Local Tap"
+    *   The instances are in
+            gigs_july_2024.docx     : The Local Tap 7/11/24
+            gigs_september_2024.docx: The Local Tap 9/12/24
+        But only the 7/11/24 instance is used, so the 9/12 must be discarded.
+        Also, the output section "all venue names" lists "The Local Tap"
+        Twice.
+    *   Is there a difference?
+                # print all gigs with their venue names
+                for i,gig in enumerate(gigs):
+                    print("{0:3d}: {1:<40}: {2:36}".format( i,
+                                        gig['title'], gig['venue'] ))
+        Indices 54 and 74 look the same. Are they?
+            >>> gigs[54]['venue']
+            'The Local Tap'
+            >>> gigs[54]['venue'] == gigs[74]['venue']
+            True
+    *   Verbose output:
+            venue_gigs  = gt.gigs_by_venue(gigs, verbose=True)
+        Output:
+                Number of gigs left = 46
+            Got the first the local tap. Searching for more.
+                for loop done with the local tap
+                Number of gigs left = 45
+            ....
+                Number of gigs left = 20
+            Got the first the local tap. Searching for more.
+                for loop done with the local tap
+                Number of gigs left = 19
+        But if the 1st is index 54, there should be 29 left. And if the
+        2nd is 74, there should be 9 left. No, other items have been removed.
+    *   I need to intercept the copy after the 1st instance is popped.
+        >   Copy the code to scratch.py.
+    *   I think I found the problem:
+            >>> gt.match_score( 'the local tap', 'The Local Tap' )
+            58.333333333333336
+        I am comparing lower-case with title-case and testing for a
+        score of 60.
+        IT WORKS!!!
+
 
 
 ================================================================================
 
 +   TO DO:
+    *   gigs_by_venue() not finding both "The Local Tap"
+    *   guitar_report() process 'guitar_1st' and 'guitar_2nd'
+        -   Add duration to rehearsals to estimate the number of times
+            a song is played.
+    *   ChatGPT Canvas
+            https://openai.com/index/introducing-canvas/
+    *   venue_play_list()
+        -   Sort on the last gig number so that songs that have not
+            been played in a longer time appear first.
     *   Mileage report
         -   Write to CSV
     *   Gig Energy Report

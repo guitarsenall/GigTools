@@ -1,84 +1,89 @@
-song,artist,type,guitar,genre,unplugged,technique,energy,mastery
-Addison's Walk*,Phil Keaggy,acoustic,gentle,instrumental,yes,fingerstyle,3,50
-Annie's Song,John Denver,loop w FX,strum,classic hits,yes,fingerstyle,4,20
-As Warm As Tears*,Phil Keaggy,acoustic,gentle,instrumental,yes,fingerstyle,1,50
-Beginnings,Chicago,acoustic,strum,classic hits,yes,strum,7,50
-Behind Blue Eyes,The Who,loop w FX,strum,classic hits,yes,strum,5,15
-Beyond Justice to Mercy,Susan Ashton,acoustic,gentle,christian,yes,fingerstyle,4,30
-Blackbird,Beatles,acoustic,gentle,classic hits,yes,fingerstyle,4,50
-Brandy,Looking Glass,loop w FX,variax,classic hits,no,strum,8,50
-Came The Light,Will Spicher,backtrack,gentle,original,no,fingerstyle,4,30
-Candace' Song,Will Spicher,backtrack,gentle,original,no,fingerstyle,4,40
-Cats In The Cradle,Harry Chapin,acoustic,gentle,classic hits,yes,fingerstyle,3,40
-Cheering You On,Will Spicher,loop w FX,gentle,original,no,both,7,15
-Classical Gas*,Mason Williams,acoustic,gentle,instrumental,yes,fingerstyle,4,15
-Crazy Little Thing Called Love,Queen,loop w FX,strum,classic hits,no,strum,8,30
-Del's Bells*,Phil Keaggy,acoustic,gentle,instrumental,yes,fingerstyle,3,50
-Doctor My Eyes,Jackson Browne,loop w FX,strum,classic hits,yes,strum,7,30
-Eight Days A Week,Beatles,acoustic,strum,classic hits,yes,strum,9,60
-Emmaus*,Jay Leach,acoustic,gentle,instrumental,yes,fingerstyle,3,50
-Even The Losers,Tom Petty,acoustic,strum,classic hits,yes,strum,9,50
-Everybody Wants to Rule the World,Tears for Fears,loop w FX,strum,classic hits,yes,strum,7,30
-Everything I Own,Bread,acoustic,gentle,classic hits,yes,strum,5,50
-Fare Thee Well*,Phil Keaggy,acoustic,gentle,instrumental,yes,fingerstyle,3,40
-Fire Vamp*,Will Spicher,backtrack,T5,instrumental,no,pick,7,30
-Give A Little Bit,Supertramp,backtrack,variax,classic hits,no,strum,8,40
-Heart of Worship ,Matt Redman,acoustic,strum,christian,yes,strum,3,60
-Here Comes The Sun,Beatles,loop w FX,strum,classic hits,no,strum,8,50
-"Here, There and Everywhere",Beatles,acoustic,variax,classic hits,no,fingerstyle,3,50
-Hide Your Love Away,Beatles,acoustic,strum,classic hits,yes,strum,6,60
-I Can See Clearly Now,Johnny Nash,acoustic,strum,classic hits,no,strum,8,60
-If I Needed Someone,Beatles,loop w FX,strum,classic hits,no,strum,7,30
-If You Could Read My Mind,Gordon Lightfoot,acoustic,gentle,classic hits,yes,fingerstyle,3,30
-In Your Peace / I Love You Lord*,Phil Keaggy,acoustic,gentle,instrumental,yes,fingerstyle,1,40
-Infinite Horizon / County Down*,Phil Keaggy,acoustic,gentle,instrumental,yes,fingerstyle,3,30
-It Don't Come Easy,Ringo Starr,loop w FX,variax,classic hits,no,strum,8,20
-I've Got A Name,Jim Croce,loop w FX,gentle,classic hits,yes,both,6,30
-I've Just Seen A Face,Beatles,loop w FX,variax,classic hits,no,strum,8,50
-Julia,Beatles,acoustic,gentle,classic hits,yes,fingerstyle,3,50
-Kashmir,Led Zeppelin,loop w FX,variax,classic hits,no,strum,10,15
-Leading You Home,Will Spicher,acoustic,gentle,original,yes,both,4,40
-Listen to the Music,Dooby Brothers,acoustic,strum,classic hits,yes,strum,9,20
-Love Lies Bleeding,Elton John,loop w FX,variax,classic hits,no,strum,9,30
-Love The One You're With,crosby stills and nash,acoustic,strum,classic hits,yes,strum,8,20
-Maybe I'm Amazed,Paul McCartney,loop w FX,variax,classic hits,no,strum,8,40
-Metamorphosis*,Phil Keaggy,acoustic,gentle,instrumental,yes,fingerstyle,3,50
-Misunderstanding,Genesis,acoustic,strum,classic hits,yes,strum,5,50
-Mood For A Day*,Yes,acoustic,gentle,instrumental,yes,fingerstyle,3,20
-More Today Than Yesterday,Spiral Starecase,acoustic,strum,classic hits,yes,strum,7,30
-Morning Snow*,Phil Keaggy,acoustic,gentle,instrumental,no,fingerstyle,1,50
-Nothing But The Call*,Will Spicher,acoustic,gentle,instrumental,yes,fingerstyle,4,50
-Operator,Jim Croce,acoustic,gentle,classic hits,yes,fingerstyle,4,40
-Pinball Wizard,The Who,loop w FX,strum,classic hits,yes,strum,9,30
-Rickover's Dream *,Michael Hedges,acoustic,gentle,instrumental,yes,fingerstyle,3,15
-Sailing,Christopher Cross,acoustic,gentle,classic hits,yes,fingerstyle,3,20
-Searchin' So Long,Chicago,loop w FX,strum,classic hits,no,both,7,30
-Seeking Rivendell - Acoustic,Will Spicher,acoustic,strum,original,yes,strum,6,50
-Seeking Rivendell - Electric,Will Spicher,backtrack,T5,original,no,pick,8,15
-Shilo ,Neil Diamond,acoustic,strum,classic hits,yes,strum,6,40
-Show Me The Way,Peter Frampton,loop w FX,variax,classic hits,no,strum,9,30
-Sister Golden Hair,America,acoustic,strum,classic hits,yes,strum,7,60
-Solitary Man,Neil Diamond,acoustic,strum,classic hits,yes,strum,6,60
-Something,Beatles,loop w FX,variax,classic hits,no,strum,5,30
-Still The One,Orleans,loop w FX,variax,classic hits,no,strum,10,15
-The Eyes of a Child,Will Spicher,backtrack,gentle,original,no,fingerstyle,4,30
-The Mission*,Phil Keaggy,acoustic,gentle,instrumental,yes,fingerstyle,3,60
-The Power Of Love,Huey Lewis,loop w FX,strum,classic hits,yes,strum,8,30
-The Reunion*,Phil Keaggy,acoustic,gentle,instrumental,yes,fingerstyle,4,30
-The Ride*,Will Spicher,backtrack,T5,instrumental,no,pick,9,15
-The Treasure,Frank Castanette,acoustic,gentle,christian,yes,fingerstyle,4,60
-The Wind & The Wheat*,Phil Keaggy,loop w FX,variax,instrumental,no,fingerstyle,2,20
-There She Goes,The La's,loop w FX,strum,classic hits,yes,strum,7,30
-Those Who Wait*,Tommy Emmanuel,acoustic,gentle,instrumental,yes,fingerstyle,3,30
-Time After Time,Cindi Lauper,acoustic,gentle,classic hits,yes,fingerstyle,4,30
-Time In A Bottle,Jim Croce,acoustic,gentle,classic hits,yes,fingerstyle,3,30
-Tuesday Afternoon,Moody Blues,acoustic,gentle,classic hits,yes,strum,5,50
-Two Of Us,Beatles,acoustic,strum,classic hits,yes,strum,6,20
-Under The Sun*,Will Spicher,acoustic,gentle,instrumental,yes,fingerstyle,3,50
-What I Like About You,Romantics,loop w FX,strum,classic hits,no,strum,10,15
-When My Love Awakened,Will Spicher,acoustic,strum,original,yes,strum,7,50
-When Night Falls*,Phil Keaggy,acoustic,gentle,instrumental,yes,fingerstyle,1,30
-White Christmas*,Blaine Vanderschuit,acoustic,gentle,instrumental,yes,fingerstyle,1,60
-Wild World,Cat Stevens,acoustic,strum,classic hits,yes,strum,6,60
-Yesterday,Beatles,acoustic,variax,classic hits,no,fingerstyle,3,60
-You've Got A Friend,James Taylor,acoustic,gentle,classic hits,yes,fingerstyle,3,30
+song,artist,type,guitar_1st,guitar_2nd,genre,unplugged,technique,energy,mastery
+Addison's Walk*,Phil Keaggy,acoustic,gentle,baritone,instrumental,yes,fingerstyle,3,50
+Annie's Song,John Denver,loop w FX,strum,gentle,classic hits,yes,fingerstyle,4,20
+As Warm As Tears*,Phil Keaggy,acoustic,baritone,gentle,instrumental,yes,fingerstyle,1,50
+Beginnings,Chicago,acoustic,strum,gentle,classic hits,yes,strum,7,50
+Behind Blue Eyes,The Who,loop w FX,strum,gentle,classic hits,yes,strum,5,15
+Beyond Justice to Mercy,Susan Ashton,acoustic,gentle,gentle,christian,yes,fingerstyle,4,30
+Birthday,Beatles,acoustic,baritone,variax,classic hits,yes,strum,10,50
+Blackbird,Beatles,acoustic,gentle,gentle,classic hits,yes,fingerstyle,4,50
+Brandy,Looking Glass,loop w FX,variax,variax,classic hits,no,strum,8,30
+Came The Light,Will Spicher,backtrack,gentle,gentle,original,no,fingerstyle,4,40
+Candace' Song,Will Spicher,backtrack,gentle,gentle,original,no,fingerstyle,4,40
+Cats In The Cradle,Harry Chapin,acoustic,gentle,gentle,classic hits,yes,fingerstyle,3,15
+Cheering You On,Will Spicher,loop w FX,gentle,strum,original,no,both,7,15
+Classical Gas*,Mason Williams,acoustic,baritone,gentle,instrumental,yes,fingerstyle,4,30
+Crazy Little Thing Called Love,Queen,loop w FX,strum,gentle,classic hits,no,strum,8,50
+Del's Bells*,Phil Keaggy,acoustic,gentle,baritone,instrumental,yes,fingerstyle,3,30
+Doctor My Eyes,Jackson Browne,loop w FX,strum,gentle,classic hits,yes,strum,7,60
+Dust In The Wind,Kansas,acoustic,baritone,variax,classic hits,yes,fingerstyle,5,50
+Eight Days A Week,Beatles,acoustic,strum,gentle,classic hits,yes,strum,9,50
+Emmaus*,Jay Leach,acoustic,baritone,gentle,instrumental,yes,fingerstyle,3,30
+Even The Losers,Tom Petty,acoustic,strum,gentle,classic hits,yes,strum,9,50
+Everybody Wants to Rule the World,Tears for Fears,loop w FX,strum,gentle,classic hits,yes,strum,7,40
+Everything I Own,Bread,acoustic,strum,gentle,classic hits,yes,strum,5,30
+Fare Thee Well*,Phil Keaggy,acoustic,gentle,baritone,instrumental,yes,fingerstyle,3,40
+Fire Vamp*,Will Spicher,backtrack,T5,T5,instrumental,no,pick,7,60
+Friends in Low Places,Garth Brooks,acoustic,baritone,variax,classic hits,yes,fingerstyle,5,50
+Give A Little Bit,Supertramp,backtrack,variax,twelve,classic hits,no,strum,8,50
+Heart of Worship ,Matt Redman,acoustic,strum,gentle,christian,yes,strum,3,60
+Here Comes The Sun,Beatles,loop w FX,strum,gentle,classic hits,no,strum,8,60
+"Here, There and Everywhere",Beatles,acoustic,variax,gentle,classic hits,no,fingerstyle,3,30
+Hide Your Love Away,Beatles,acoustic,strum,gentle,classic hits,yes,strum,6,30
+I Can See Clearly Now,Johnny Nash,acoustic,strum,gentle,classic hits,no,strum,8,40
+If I Needed Someone,Beatles,loop w FX,strum,gentle,classic hits,no,strum,7,30
+If You Could Read My Mind,Gordon Lightfoot,acoustic,gentle,gentle,classic hits,yes,fingerstyle,3,20
+In Your Peace / I Love You Lord*,Phil Keaggy,acoustic,baritone,gentle,instrumental,yes,fingerstyle,1,30
+Infinite Horizon / County Down*,Phil Keaggy,acoustic,gentle,baritone,instrumental,yes,fingerstyle,3,50
+It Don't Come Easy,Ringo Starr,loop w FX,variax,variax,classic hits,no,strum,8,50
+I've Got A Name,Jim Croce,loop w FX,gentle,strum,classic hits,yes,both,6,15
+I've Just Seen A Face,Beatles,loop w FX,variax,twelve,classic hits,no,strum,8,40
+Julia,Beatles,acoustic,gentle,gentle,classic hits,yes,fingerstyle,3,20
+Kashmir,Led Zeppelin,loop w FX,variax,variax,classic hits,no,strum,10,30
+Leading You Home,Will Spicher,acoustic,gentle,twelve,original,yes,both,4,20
+Listen to the Music,Dooby Brothers,acoustic,strum,gentle,classic hits,yes,strum,9,40
+Love Lies Bleeding,Elton John,loop w FX,variax,variax,classic hits,no,strum,9,50
+Love The One You're With,crosby stills and nash,acoustic,strum,gentle,classic hits,yes,strum,8,50
+Maybe I'm Amazed,Paul McCartney,loop w FX,variax,variax,classic hits,no,strum,8,20
+Metamorphosis*,Phil Keaggy,acoustic,gentle,baritone,instrumental,yes,fingerstyle,3,30
+Misunderstanding,Genesis,acoustic,strum,gentle,classic hits,yes,strum,5,50
+Mood For A Day*,Yes,acoustic,gentle,baritone,instrumental,yes,fingerstyle,3,50
+More Today Than Yesterday,Spiral Starecase,acoustic,strum,gentle,classic hits,yes,strum,7,40
+Morning Snow*,Phil Keaggy,acoustic,gentle,baritone,instrumental,no,fingerstyle,1,30
+Nothing But The Call*,Will Spicher,acoustic,baritone,gentle,instrumental,yes,fingerstyle,4,15
+Oh Darling,Beatles,acoustic,baritone,variax,classic hits,yes,strum,7,20
+Operator,Jim Croce,acoustic,gentle,gentle,classic hits,yes,fingerstyle,4,30
+Pinball Wizard,The Who,loop w FX,strum,strum,classic hits,yes,strum,9,50
+Rain & Wind,Will Spicher,backtrack,T5,T5,original,no,pick,9,15
+Rickover's Dream *,Michael Hedges,acoustic,gentle,gentle,instrumental,yes,fingerstyle,3,40
+Sailing,Christopher Cross,acoustic,gentle,gentle,classic hits,yes,fingerstyle,3,30
+Searchin' So Long,Chicago,loop w FX,strum,gentle,classic hits,no,both,7,60
+Seeking Rivendell - Acoustic,Will Spicher,acoustic,twelve,strum,original,yes,strum,6,60
+Seeking Rivendell - Electric,Will Spicher,backtrack,T5,T5,original,no,pick,8,30
+Shilo ,Neil Diamond,acoustic,strum,gentle,classic hits,yes,strum,6,15
+Show Me The Way,Peter Frampton,loop w FX,variax,variax,classic hits,no,strum,9,30
+Sister Golden Hair,America,acoustic,twelve,strum,classic hits,yes,strum,7,60
+Solitary Man,Neil Diamond,acoustic,strum,gentle,classic hits,yes,strum,6,30
+Something,Beatles,loop w FX,variax,variax,classic hits,no,strum,5,30
+Still The One,Orleans,loop w FX,variax,variax,classic hits,no,strum,10,15
+The Eyes of a Child,Will Spicher,backtrack,gentle,gentle,original,no,fingerstyle,4,60
+The Mission*,Phil Keaggy,acoustic,baritone,gentle,instrumental,yes,fingerstyle,3,20
+The Power Of Love,Huey Lewis,loop w FX,strum,gentle,classic hits,yes,strum,8,30
+The Reunion*,Phil Keaggy,acoustic,gentle,gentle,instrumental,yes,fingerstyle,4,30
+The Ride*,Will Spicher,backtrack,T5,T5,instrumental,no,pick,9,30
+The Treasure,Frank Castanette,acoustic,gentle,gentle,christian,yes,fingerstyle,4,30
+The Wind & The Wheat*,Phil Keaggy,loop w FX,variax,baritone,instrumental,no,fingerstyle,2,50
+There She Goes,The La's,loop w FX,strum,gentle,classic hits,yes,strum,7,20
+Those Who Wait*,Tommy Emmanuel,acoustic,baritone,gentle,instrumental,yes,fingerstyle,3,50
+Time After Time,Cindi Lauper,acoustic,gentle,gentle,classic hits,yes,fingerstyle,4,15
+Time In A Bottle,Jim Croce,acoustic,gentle,gentle,classic hits,yes,fingerstyle,3,50
+Tuesday Afternoon,Moody Blues,acoustic,gentle,gentle,classic hits,yes,strum,5,30
+Two Of Us,Beatles,acoustic,strum,gentle,classic hits,yes,strum,6,60
+Under The Sun*,Will Spicher,acoustic,baritone,gentle,instrumental,yes,fingerstyle,3,60
+What I Like About You,Romantics,loop w FX,strum,gentle,classic hits,no,strum,10,60
+When My Love Awakened,Will Spicher,acoustic,strum,gentle,original,yes,strum,7,30
+When Night Falls*,Phil Keaggy,acoustic,baritone,gentle,instrumental,yes,fingerstyle,1,30
+White Christmas*,Blaine Vanderschuit,acoustic,baritone,gentle,instrumental,yes,fingerstyle,1,30
+Wild World,Cat Stevens,acoustic,strum,gentle,classic hits,yes,strum,6,20
+Yesterday,Beatles,acoustic,baritone,variax,classic hits,no,fingerstyle,3,30
+You've Got A Friend,James Taylor,acoustic,gentle,gentle,classic hits,yes,fingerstyle,3,60

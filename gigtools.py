@@ -51,13 +51,14 @@ def read_repertwaar(CSVFile='music_performance_repertoire.csv'):
         csvreader = csv.DictReader(file, quotechar='"', delimiter=',',
                                     quoting=csv.QUOTE_ALL )
         for row in csvreader:
-            song    = { 'title'     : row['song']           ,
-                        'energy'    : float(row['energy'])  ,
-                        'guitar'    : row['guitar']         ,
-                        'mastery'   : float(row['mastery']) ,
-                        'playcount' : 0                     ,
-                        'playdates' : []                    ,
-                        'data'      : row                   }
+            song    = { 'title'         : row['song']           ,
+                        'energy'        : float(row['energy'])  ,
+                        'guitar_1st'    : row['guitar_1st']     ,
+                        'guitar_2nd'    : row['guitar_2nd']     ,
+                        'mastery'       : float(row['mastery']) ,
+                        'playcount'     : 0                     ,
+                        'playdates'     : []                    ,
+                        'data'          : row                   }
             repertwaar.append(song)
     return repertwaar
 
@@ -224,7 +225,7 @@ def gigs_by_venue(gigs, verbose=False):
             for j in range(len(gigs_copy)):
                 # compare gig['venue'] with VName
                 gig = gigs_copy[j]
-                s   = match_score( VName, gig['venue'].strip().title() )
+                s   = match_score( VName, gig['venue'].strip().lower() )
                 if s >= 60:
                     if verbose:
                         print(f'\t\tFound another {VName}. Popping...')
@@ -337,7 +338,7 @@ def guitar_report(gigs, verbose=False):
                     print( "\t{0:<12}: {1:<40}: {2}".format(
                             str(gig['date']), gig['venue'], gig['guitars'] ) )
                 for song in gig['songs']:
-                    if song['data']['guitar'] == guitar['type']:
+                    if song['data']['guitar_1st'] == guitar['type']:
                         SongCount   += 1
                         if verbose:
                             print(f"\t\t{song['title']}")

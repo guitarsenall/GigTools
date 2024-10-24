@@ -8,10 +8,10 @@ import datetime
 
 
 ## oil change
-#OldDate     = datetime.date( 2023, 12, 29 )      # YYYY, MM, DD
-#OldMiles    = 172617.0
-#NewDate     = datetime.date( 2024,  6, 19 )      # YYYY, MM, DD
-#NewMiles    = 175823.0
+#OldDate     = datetime.date( 2024,  7, 17)      # YYYY, MM, DD
+#OldMiles    = 151337.0
+#NewDate     = datetime.date( 2024,  8,  6 )      # YYYY, MM, DD
+#NewMiles    = 151578.0
 #delta       = NewDate - OldDate
 #DeltaString = f'{delta.days}'
 #mpd         = (NewMiles-OldMiles) / delta.days
@@ -33,27 +33,71 @@ gig_files       = [ GigFolder + 'gigs_january_2024.docx'    ,
                     GigFolder + 'gigs_may_2024.docx'        ,
                     GigFolder + 'gigs_june_2024.docx'       ,
                     GigFolder + 'gigs_july_2024.docx'       ,
-                    GigFolder + 'gigs_august_2024.docx'     ]
+                    GigFolder + 'gigs_august_2024.docx'     ,
+                    GigFolder + 'gigs_september_2024.docx'  ,
+                    GigFolder + 'gigs_october_2024.docx'    ]
 gigs            = gt.read_gig_files( gig_files, repertwaar, verbose=True)
 
 
-# Play Count
-gt.play_count(gigs, 'rehearsals.txt', repertwaar)
+## Play Count
+#gt.play_count(gigs, 'rehearsals.txt', repertwaar)
 
 
-## track plays in venue
-#VenueName   = "Serenity SLC"
-#gt.venue_play_list(VenueName, gigs, repertwaar)
+# track plays in venue.
+#   No apostrophes in name
+VenueName   = "The Local Tap"
+gt.venue_play_list(VenueName, gigs, repertwaar)
 
 
 ## guitar report
+#print()
 #gt.guitar_report(gigs, verbose=False)
 
 
-## mileage report.
-#BegDate     = datetime.date( 2024, 7,  1 )      # YYYY, MM, DD
-#EndDate     = datetime.date( 2024, 7, 31 )      # YYYY, MM, DD
+## mileage report. NEEDS DEBUGGING
+#BegDate     = datetime.date( 2024, 9,  1 )      # YYYY, MM, DD
+#EndDate     = datetime.date( 2024, 9, 30 )      # YYYY, MM, DD
 #gt.mileage_report(gigs, BegDate, EndDate)
+
+
+## print all gigs with their venue names
+#for i,gig in enumerate(second_gigs_copy):
+#    print("{0:3d}: {1:<40}: {2:36}".format( i,
+#                        gig['title'], gig['venue'] ))
+
+
+## debug gigs_by_venue(gigs, verbose=False):
+#verbose = True
+#gigs_copy       = gigs[:]
+#venue_gigs  = {}
+#while gigs_copy:                             # not empty
+#    gig                 = gigs_copy.pop()
+#    VName               = gig['venue'].strip().lower()
+#    venue_gigs[VName]   = [gig]
+#    if verbose:
+#        print(f'Got the first {VName}. Searching for more.')
+#        if VName == 'the local tap':
+#            print('breakpoint here')
+#    #   find & remove all matches
+#    c           = 0
+#    searching   = True
+#    while searching:
+#        for j in range(len(gigs_copy)):
+#            # compare gig['venue'] with VName
+#            gig = gigs_copy[j]
+#            s   = gt.match_score( VName, gig['venue'].strip().title() )
+#            if s >= 60:
+#                if verbose:
+#                    print(f'\t\tFound another {VName}. Popping...')
+#                venue_gigs[VName].append( gigs_copy.pop(j) )
+#                break                   # for loop
+#        if len(gigs_copy)==0 or len(gigs_copy)<c:
+#            searching   = False
+#            if verbose:
+#                print(f'\tfor loop done with {VName}')
+#                print(f'\tNumber of gigs left = {len(gigs_copy)}')
+#        c   += 1
+
 
 
 ## Print all gigs with their energies
@@ -154,77 +198,6 @@ gt.play_count(gigs, 'rehearsals.txt', repertwaar)
 #                song['title'].removesuffix('*'),
 #                song['playcount'], DeltaString ) )
 
-
-
-## read rehearsals.txt
-#repertwaar      = gt.read_repertwaar()
-#with open('rehearsals.txt', 'r') as file:
-#    lines = file.readlines()
-## find the date lines
-#date_idx        = []
-#rehearse_dates  = []
-#for i, line in enumerate(lines):
-#    tok = line.split(':')
-#    if len(tok) > 1 and 'date' in tok[0].lower():
-#        date_idx.append(i)
-#        datestr = tok[1]
-#        m,d,y   = datestr.split('/')
-#        RDate   = datetime.date( int(y)+2000, int(m), int(d) )
-#        rehearse_dates.append(RDate)
-#print(f'Found {len(date_idx)} dates in rehearsal.txt:')
-#for i in date_idx:
-#    print('\t' + lines[i].strip())
-#date_idx.append(len(lines)-1)   # last line
-## loop over the rehearsal sections
-#rehearsals  = []
-#for i in range(len(date_idx)-1):
-#    reh_lines   = lines[ date_idx[i] : date_idx[i+1]-1 ]
-#    title       = lines[ date_idx[i] ]
-#    print(f'Parsing Rehearsal Date: {title}')
-#    # get the song list
-#    blocks      = []
-#    this_block  = []
-#    for line in reh_lines:
-#        if line.strip() == '':
-#            blocks.append(this_block[:])    # copy the list
-#            this_block  = []
-#        else:
-#            this_block.append(line)
-#    blocks.append(this_block[:])    # last block
-#    BestBlock   = blocks[0]
-#    BestMatches = 0
-#    for block in blocks:
-#        matches = 0
-#        for line in block:
-#            score   = gt.score_line(repertwaar, line.strip())
-#            if score >= 70.0:
-#                # increment the match count
-#                matches += 1
-#        if matches > BestMatches:
-#            # song list might be found
-#            BestBlock   = block
-#            BestMatches = matches
-#            break
-#    reh_songs   = gt.match_gig_songs(repertwaar, BestBlock)
-#    print(f'\t{len(reh_songs)} songs found' )
-#    print(f'\t{len(reh_lines)} text lines' )
-#    for song in reh_songs:
-#        song['playcount']  += 1
-#        song['playdates'].append(rehearse_dates[i])
-#    rehearsal   = { 'Date'  : rehearse_dates[i]     ,
-#                    'Songs' : reh_songs             ,
-#                    'Lines' : reh_lines             }
-#    rehearsals.append(rehearsal)
-
-
-## get the venue and date from title
-#title   = 'Germantown Spring Fling 5/4/24'
-#tok     = title.rpartition(' ')
-#venue   = tok[0]
-#datestr = tok[2]
-#m,d,y   = datestr.split('/')
-#date    = dt.date( int(y)+2000, int(m), int(d) )
-#diff    = dt.date.today() - date
 
 
 ## read a set of DOCX files containing multiple gigs using docx,
