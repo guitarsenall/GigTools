@@ -317,6 +317,8 @@ def guitar_report(gigs, verbose=False):
         guitar  = { 'name'      : guitar_names[i]   ,
                     'type'      : GuitarType        ,
                     'change'    : StringDate        ,
+                    'NumGigs'   : 0                 ,
+                    'NumSongs'  : 0                 ,
                     'all lines' : guitar_lines      }
         guitars.append(guitar)
         if verbose:
@@ -325,31 +327,50 @@ def guitar_report(gigs, verbose=False):
             print(f"\tchange : {StringDate}")
     # track guitars used in gigs since a given date
     gigs.sort( key = lambda g: g['date'], reverse=False )
-    for guitar in guitars:
-        if verbose:
-            print(f"Guitar: {guitar['name']}")
-        SinceDate   = guitar['change']
-        GigCount    = 0
-        SongCount   = 0
-        for gig in gigs:
-            if gig['date'] >= SinceDate and guitar['name'] in gig['guitars']:
-                GigCount   += 1
-                if verbose:
-                    print( "\t{0:<12}: {1:<40}: {2}".format(
-                            str(gig['date']), gig['venue'], gig['guitars'] ) )
-                for song in gig['songs']:
-                    if song['data']['guitar_1st'] == guitar['type']:
-                        SongCount   += 1
+    for gig in gigs:
+        for song in gig['songs']:
+            song['claimed'] = False
+    if verbose:
+        print(f"Primary Guitars:")
+    for gig in gigs:
+        for GigGuitar in gig['guitars']:
+            for guitar in guitars:
+                if guitar['name'] == GigGuitar:
+                    SinceDate   = guitar['change']
+                    if gig['date'] >= SinceDate:
+                        guitar['NumGigs']   += 1
                         if verbose:
-                            print(f"\t\t{song['title']}")
-        if verbose:
-            print(f"{guitar['name']}: {GigCount} gigs, {SongCount} songs' "
-                    + "since string change\n")
-        else:
-            print("{0:<10}:{1:>8}:{2:>10}".format(
-                    guitar['name']              ,
-                    str(GigCount) + ' gigs'     ,
-                    str(SongCount) + ' songs'   ) )
+                            print( "\t{0:<12}: {1:<40}: {2}".format(
+                                    str(gig['date']), gig['venue'], GigGuitar ) )
+                        for song in gig['songs']:
+                            if song['data']['guitar_1st'] == guitar['type']:
+                                guitar['NumSongs']  += 1
+                                song['claimed'] = True
+                                if verbose:
+                                    print(f"\t\t{song['title']}")
+    if verbose:
+        print(f"Secondary Guitars:")
+    for gig in gigs:
+        for GigGuitar in gig['guitars']:
+            for guitar in guitars:
+                if guitar['name'] == GigGuitar:
+                    SinceDate   = guitar['change']
+                    if gig['date'] >= SinceDate:
+                        if verbose:
+                            print( "\t{0:<12}: {1:<40}: {2}".format(
+                                    str(gig['date']), gig['venue'], GigGuitar ) )
+                        for song in gig['songs']:
+                            if song['data']['guitar_2nd'] == guitar['type'] and \
+                               song['claimed'] == False:
+                                guitar['NumSongs']  += 1
+                                song['claimed'] = True
+                                if verbose:
+                                    print(f"\t\t{song['title']}")
+    for guitar in guitars:
+        print("{0:<10}:{1:>8}:{2:>10}".format(
+                guitar['name']              ,
+                str(guitar['NumGigs'])  + ' gigs'     ,
+                str(guitar['NumSongs']) + ' songs'   ) )
 
 
 def mileage_report(gigs, BegDate, EndDate):

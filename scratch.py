@@ -43,15 +43,16 @@ gigs            = gt.read_gig_files( gig_files, repertwaar, verbose=True)
 #gt.play_count(gigs, 'rehearsals.txt', repertwaar)
 
 
-# track plays in venue.
-#   No apostrophes in name
-VenueName   = "The Local Tap"
-gt.venue_play_list(VenueName, gigs, repertwaar)
+## track plays in venue.
+##   No apostrophes in name
+#VenueName   = "The Local Tap"
+#gt.venue_play_list(VenueName, gigs, repertwaar)
 
 
-## guitar report
-#print()
-#gt.guitar_report(gigs, verbose=False)
+# guitar report
+print()
+gt.guitar_report(gigs, verbose=False)
+
 
 
 ## mileage report. NEEDS DEBUGGING

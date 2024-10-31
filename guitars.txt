@@ -28,5 +28,5 @@ Type        : baritone
 Strings     : 9/18/24
 
 Guitar      : T5
-Type        : electric
+Type        : T5
 Strings     : 10/14/24
