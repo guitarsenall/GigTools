@@ -1,7 +1,7 @@
 
 Guitar      : 812ce
 Type        : gentle
-Strings     : 5/13/24
+Strings     : 12/24/24
 
 Guitar      : 414ce-L3
 Type        : gentle
@@ -25,7 +25,7 @@ Strings     : 6/28/24
 
 Guitar      : 316ce-B6
 Type        : baritone
-Strings     : 9/18/24
+Strings     : 12/23/24
 
 Guitar      : T5
 Type        : T5

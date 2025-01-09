@@ -8,10 +8,10 @@ import datetime
 
 
 ## oil change
-#OldDate     = datetime.date( 2024,  7, 17)      # YYYY, MM, DD
-#OldMiles    = 151337.0
-#NewDate     = datetime.date( 2024,  8,  6 )      # YYYY, MM, DD
-#NewMiles    = 151578.0
+#OldDate     = datetime.date( 2024,  6, 19)      # YYYY, MM, DD
+#OldMiles    = 175823
+#NewDate     = datetime.date( 2024, 12, 28 )      # YYYY, MM, DD
+#NewMiles    = 179287
 #delta       = NewDate - OldDate
 #DeltaString = f'{delta.days}'
 #mpd         = (NewMiles-OldMiles) / delta.days
@@ -35,29 +35,32 @@ gig_files       = [ GigFolder + 'gigs_january_2024.docx'    ,
                     GigFolder + 'gigs_july_2024.docx'       ,
                     GigFolder + 'gigs_august_2024.docx'     ,
                     GigFolder + 'gigs_september_2024.docx'  ,
-                    GigFolder + 'gigs_october_2024.docx'    ]
-gigs            = gt.read_gig_files( gig_files, repertwaar, verbose=True)
+                    GigFolder + 'gigs_october_2024.docx'    ,
+                    GigFolder + 'gigs_november_2024.docx'   ,
+                    GigFolder + 'gigs_december_2024.docx'   ,
+                    GigFolder + 'gigs_january_2025.docx'    ]
+gigs            = gt.read_gig_files( gig_files, repertwaar, verbose=False)
 
 
-## Play Count
-#gt.play_count(gigs, 'rehearsals.txt', repertwaar)
+# Play Count
+gt.play_count(gigs, 'rehearsals.txt', repertwaar)
 
 
-## track plays in venue.
+## track song plays in venue.
 ##   No apostrophes in name
-#VenueName   = "The Local Tap"
+#VenueName   = "Holly Brook East Peoria"
 #gt.venue_play_list(VenueName, gigs, repertwaar)
 
 
-# guitar report
-print()
-gt.guitar_report(gigs, verbose=False)
+## guitar report
+#print()
+#gt.guitar_report(gigs, verbose=False)
 
 
 
-## mileage report. NEEDS DEBUGGING
-#BegDate     = datetime.date( 2024, 9,  1 )      # YYYY, MM, DD
-#EndDate     = datetime.date( 2024, 9, 30 )      # YYYY, MM, DD
+## mileage report.
+#BegDate     = datetime.date( 2024,  1,  1 )      # YYYY, MM, DD
+#EndDate     = datetime.date( 2024, 12, 31 )      # YYYY, MM, DD
 #gt.mileage_report(gigs, BegDate, EndDate)
 
 
@@ -124,7 +127,7 @@ gt.guitar_report(gigs, verbose=False)
 
 
 ## track guitars used in gigs since a given date
-#SinceDate   = datetime.date( 2024, 5, 29 )      # YYYY, MM, DD
+#SinceDate   = datetime.date( 2024, 5, 13 )      # YYYY, MM, DD
 #gigs.sort( key = lambda g: g['date'], reverse=False )
 #for gig in gigs:
 #    if gig['date'] >= SinceDate:

@@ -5,6 +5,7 @@ import docx
 import os
 import unicodedata
 import datetime
+import re
 
 
 def fix_venue_name(VName):
@@ -126,6 +127,7 @@ def read_gig_files(gig_files, repertwaar, verbose=False):
             allText.append(unicodedata.normalize('NFKD',docpara.text))
         # find the title lines
         title_idx   = []
+        pattern     = r'2\d'
         for i, line in enumerate(allText):
             if 'Performance #' in line:
                 #print(f'Found one at {i}: {line}')
@@ -134,7 +136,8 @@ def read_gig_files(gig_files, repertwaar, verbose=False):
                     if i-b < 0:
                         print(f'Missing title for line {i}: {line}')
                         break
-                    if '/24' in allText[i-b]:
+                    # if '/24' in allText[i-b]:
+                    if re.search(r'/2[0-9]', allText[i-b]):
                         title_idx.append(i-b)
                         #print(f'\tTitle: {allText[i-b]}')
                         break
@@ -509,10 +512,15 @@ def play_count(gigs, RehearsalFile, repertwaar):
             delta       = CurDate - gig_dates[0]
             DeltaString = f'{delta.days}'
             CurDate     = gig_dates[0]
+            i   = 0
             for gigdate in gig_dates[1:]:
                 delta       = CurDate - gigdate
-                DeltaString += f',{delta.days}'
+                if i<9:
+                    DeltaString += f',{delta.days}'
+                elif i==9:
+                    DeltaString += ',...'
                 CurDate     = gigdate
+                i   += 1
         else:
             DeltaString = ''
         print( '\t{0:<40} ({1:2d}, {2:3d}%): {3}'.format(
