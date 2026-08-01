@@ -7,21 +7,22 @@ import gigtools as gt
 import datetime
 
 
-## oil change
-#OldDate     = datetime.date( 2024,  6, 19)      # YYYY, MM, DD
-#OldMiles    = 175823
-#NewDate     = datetime.date( 2024, 12, 28 )      # YYYY, MM, DD
-#NewMiles    = 179287
+## oil change --> rotate tires
+#OldDate     = datetime.date( 2025,  6, 12)      # YYYY, MM, DD
+#OldMiles    = 183504
+#NewDate     = datetime.date( 2026,  3, 30)      # YYYY, MM, DD
+#NewMiles    = 189103
 #delta       = NewDate - OldDate
 #DeltaString = f'{delta.days}'
 #mpd         = (NewMiles-OldMiles) / delta.days
-#NextDate    = NewDate + datetime.timedelta(days = 3000.0/mpd)
+#NextDate    = NewDate + datetime.timedelta(days = 5000.0/mpd)
 #print(f'Miles per day = {mpd}')
 #print(f'Next change on {NextDate}')
 
 
 # read in the repertwaar--a list of song dictionaries
-repertwaar      = gt.read_repertwaar()
+CSVFile         = r'S:\will\documents\OneDrive\\2026\gigs\music_performance_repertoire.csv'
+repertwaar      = gt.read_repertwaar(CSVFile=CSVFile, Christmas=False)
 repertwaar.sort( key = lambda s: s['title'] )
 
 # read the gig history
@@ -38,29 +39,46 @@ gig_files       = [ GigFolder + 'gigs_january_2024.docx'    ,
                     GigFolder + 'gigs_october_2024.docx'    ,
                     GigFolder + 'gigs_november_2024.docx'   ,
                     GigFolder + 'gigs_december_2024.docx'   ,
-                    GigFolder + 'gigs_january_2025.docx'    ]
+                    GigFolder + 'gigs_january_2025.docx'    ,
+                    GigFolder + 'gigs_february_2025.docx'   ,
+                    GigFolder + 'gigs_march_2025.docx'      ,
+                    GigFolder + 'gigs_april_2025.docx'      ,
+                    GigFolder + 'gigs_may_2025.docx'        ,
+                    GigFolder + 'gigs_june_2025.docx'       ,
+                    GigFolder + 'gigs_july_2025.docx'       ,
+                    GigFolder + 'gigs_august_2025.docx'     ,
+                    GigFolder + 'gigs_september_2025.docx'  ,
+                    GigFolder + 'gigs_october_2025.docx'    ,
+                    GigFolder + 'gigs_november_2025.docx'   ,
+                    GigFolder + 'gigs_december_2025.docx'   ,
+                    GigFolder + 'gigs_january_2026.docx'    ,
+                    GigFolder + 'gigs_february_2026.docx'   ,
+                    GigFolder + 'gigs_march_2026.docx'      ,
+                    GigFolder + 'gigs_april_2026.docx'      ,
+                    GigFolder + 'gigs_may_2026.docx'        ,
+                    GigFolder + 'gigs_june_2026.docx'       ,
+                    GigFolder + 'gigs_july_2026.docx'       ]
 gigs            = gt.read_gig_files( gig_files, repertwaar, verbose=False)
 
 
-# Play Count
-gt.play_count(gigs, 'rehearsals.txt', repertwaar)
-
-
-## track song plays in venue.
-##   No apostrophes in name
-#VenueName   = "Holly Brook East Peoria"
-#gt.venue_play_list(VenueName, gigs, repertwaar)
-
-
+## Rehearsal freshness
+#gt.play_count(gigs, 'rehearsals.txt', repertwaar)
+#
 ## guitar report
 #print()
 #gt.guitar_report(gigs, verbose=False)
 
 
+# track song plays in venue.
+#   No apostrophes in name
+VenueName   = "Holly Brook Morton"
+gt.venue_play_list(VenueName, gigs, repertwaar)
+
+
 
 ## mileage report.
-#BegDate     = datetime.date( 2024,  1,  1 )      # YYYY, MM, DD
-#EndDate     = datetime.date( 2024, 12, 31 )      # YYYY, MM, DD
+#BegDate     = datetime.date( 2026,  1,  1 )      # YYYY, MM, DD
+#EndDate     = datetime.date( 2026,  6, 30 )      # YYYY, MM, DD
 #gt.mileage_report(gigs, BegDate, EndDate)
 
 

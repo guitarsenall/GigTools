@@ -12,7 +12,9 @@ import sys
 FileName = sys.argv[1]
 
 # read the Repertwaar CSV file into repertwaar, a list of dictionaries
-repertwaar  = gt.read_repertwaar()
+CSVFile         = r'S:\will\documents\OneDrive\\2026\gigs\music_performance_repertoire.csv'
+repertwaar      = gt.read_repertwaar(CSVFile=CSVFile, Christmas=True)
+
 
 gig_songs   = gt.read_gig_songs(repertwaar, SongFile=FileName)
 

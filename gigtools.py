@@ -6,7 +6,7 @@ import os
 import unicodedata
 import datetime
 import re
-
+from difflib import SequenceMatcher
 
 def fix_venue_name(VName):
     ''' removes the apostrophe from a venue name '''
@@ -44,7 +44,7 @@ def score_line(repertwaar, line):
     return ThisScore
 
 
-def read_repertwaar(CSVFile='music_performance_repertoire.csv'):
+def read_repertwaar(CSVFile='music_performance_repertoire.csv', Christmas=False):
     ''' read the repertwaar from CSV file into a list of dictionaries '''
     import csv
     repertwaar   = []    # a list of dictionaries
@@ -57,10 +57,15 @@ def read_repertwaar(CSVFile='music_performance_repertoire.csv'):
                         'guitar_1st'    : row['guitar_1st']     ,
                         'guitar_2nd'    : row['guitar_2nd']     ,
                         'mastery'       : float(row['mastery']) ,
+                        'context'       : row['context']        ,
                         'playcount'     : 0                     ,
                         'playdates'     : []                    ,
                         'data'          : row                   }
-            repertwaar.append(song)
+            if song['context']=='Christmas':
+                if Christmas:
+                    repertwaar.append(song)
+            else:
+                repertwaar.append(song)
     return repertwaar
 
 
@@ -69,7 +74,7 @@ def read_gig_songs(repertwaar, SongFile='songlist.txt'):
         The name indicates I might want to include more than one
         previous gig. '''
     gig_songs       = []
-    ScoreThreshold  = 70.0
+    ScoreThreshold  = 50.0
     with open(SongFile, 'r') as file:
         lines = []
         for line in file.readlines():
@@ -229,7 +234,15 @@ def gigs_by_venue(gigs, verbose=False):
                 # compare gig['venue'] with VName
                 gig = gigs_copy[j]
                 s   = match_score( VName, gig['venue'].strip().lower() )
-                if s >= 60:
+
+                # chatgpt 8/1/2026 <<<<<
+                last1 = VName.split()[-1]
+                last2 = gig['venue'].strip().lower().split()[-1]
+                last_score = SequenceMatcher(None, last1, last2).ratio() * 100
+                # chatgpt 8/1/2026 >>>>>
+
+                if s >= 60 and last_score >= 70:
+                #if s >= 60:
                     if verbose:
                         print(f'\t\tFound another {VName}. Popping...')
                     venue_gigs[VName].append( gigs_copy.pop(j) )
@@ -265,7 +278,7 @@ def venue_play_list(VenueName, gigs, repertwaar):
         PlayString  = ' ('
         played      = False
         for i, gig in enumerate(v_gigs):
-            if i > 9:
+            if i >= 9:
                 break
             # get song titles
             gig_song_titles = []
@@ -397,11 +410,12 @@ def mileage_report(gigs, BegDate, EndDate):
                 NGigs   += 1
         TotalGigs   += NGigs
         TotalMiles  += NGigs*GigMileage
-        print( "{0:<40}|{1:10.1f}|{2:7d}|{3:5.0f}|".format(
-                    VenueName           ,
-                    GigMileage          ,
-                    NGigs               ,
-                    NGigs*GigMileage    ) )
+        if NGigs > 0:
+            print( "{0:<40}|{1:10.1f}|{2:7d}|{3:5.0f}|".format(
+                        VenueName           ,
+                        GigMileage          ,
+                        NGigs               ,
+                        NGigs*GigMileage    ) )
     print( "{0:<40}|{1:>10}|{2:>7}|{3:>5}|".format(
                 '-'*40, '-'*10, '-'*7, '-'*5 ) )
     print( "{0:<40}|{1:>10}|{2:7d}|{3:5.0f}|".format(

@@ -147,4 +147,756 @@ Guitars : 814ce
     You've Got A Friend
     Cheering You On
 
+Date    : 1/9/25
+Guitars : 814ce, 618e
+
+    Tuesday Afternoon
+    Leading You Home
+    Two Of Us
+    Behind Blue Eyes
+    Hush
+    There She Goes
+    Time In A Bottle
+    Pinball Wizard
+    Everybody Wants to Rule the World
+    What I Like About You
+
+Date    : 1/22/25
+Guitars : 812ce
+
+    Hush
+    Operator
+    I've Got A Name
+    The Eyes of a Child
+    Fare Thee Well
+    Came The Light
+    Candace' Song
+    Leading You Home
+    Sailing
+
+Date    : 1/23/25
+Guitars : V700
+
+    Show Me The Way
+    Still The One
+    Birthday
+    Give A Little Bit
+    It Don't Come Easy
+    Maybe I'm Amazed
+    Love Lies Bleeding
+    The Wind & The Wheat
+    Kashmir
+
+Date    : 2/6/25
+Guitars : 618e, 812ce
+
+    Ventura Highway
+    Behind Blue Eyes
+    There She Goes
+    What I Like About You
+    In The Light of Common Day
+
+Date    : 2/10/25
+Guitars : 618e, 812ce
+
+    Ventura Highway
+    Everybody Wants to Rule the World
+    Crazy Little Thing Called Love
+    Doctor My Eyes
+    In The Light of Common Day
+    Shilo
+    Love The One You're With
+
+Date    : 2/16/25
+Guitars : 814ce, V700
+
+    Ventura Highway
+    Hush
+    In The Light of Common Day
+    Friends In Low Places
+    Oh Darling
+    Birthday
+    Those Who Wait
+
+Date    : 2/18/25
+Guitars : 316ce-B6, 814ce, V700
+
+    Linus And Lucy
+    Birthday
+    Friends in Low Places
+    Oh Darling
+    Ventura Highway
+    Tuesday Afternoon
+    Hush
+    Leading You Home
+    Candace' Song
+    Cheering You On
+    The Treasure
+    Give A Little Bit
+    Kashmir
+    Love Lies Bleeding
+
+Date    : 2/20/25
+Guitars : 316ce-B6, 814ce, V700
+
+	Cats In The Cradle
+	Misunderstanding
+	Beyond Justice to Mercy
+	I've Got A Name
+	If I Needed Someone
+	The Power Of Love
+	Hush
+	Ventura Highway
+
+Date    : 3/5/25
+Guitars : 714ce
+
+	Behind Blue Eyes
+	Shilo
+	Two Of Us
+	Even The Losers
+	Annie's Song
+	Sailing
+	Addison's Walk
+	The Power Of Love
+	If I Needed Someone
+	What I Like About You
+	Leading You Home
+	Crazy Little Thing Called Love
+
+
+Date    : 3/6/25
+Guitars : 316ce-B6, 714ce, V700
+
+	Friends in Low Places
+	Birthday
+	Dust In The Wind
+	Oh Darling
+	Hush
+	Ventura Highway
+	Still The One
+	Kashmir
+
+
+Date    : 3/7/25
+Guitars : 714ce
+
+    As Warm As Tears*
+    Classical Gas*
+    Del's Bells*
+    Fare Thee Well*
+    In The Light of Common Day
+    Mood For A Day*
+    The Mission*
+    The Wind & The Wheat*
+    Those Who Wait*
+    When Night Falls*
+
+Date    : 4/2/25
+Guitars : 812ce, 618e
+
+	You've Got A Friend
+	In The Light of Common Day
+	Hush
+	Julia
+	When My Love Awakened
+	Listen to the Music
+	Love The One You're With
+	Behind Blue Eyes
+	Two Of Us
+	What I Like About You
+
+Date    : 4/7/25
+Guitars : 812ce, 618e
+
+	Ventura Highway
+	Pinball Wizard
+	Everybody Wants to Rule the World
+
+Date    : 4/14/25
+Guitars : 714ce
+
+	Addison's Walk
+	Sailing
+	Infinite Horizon / County Down
+	In The Light of Common Day
+
+Date    : 4/15/25
+Guitars : 812ce, 618e, V700
+
+    Hush
+    Still The One
+    Brandy
+    Ventura Highway
+    Behind Blue Eyes
+    Misunderstanding
+    Doctor My Eyes
+    Everybody Wants to Rule the World
+
+Date    : 5/1/25
+Guitars : 714ce, 618e
+
+    I’ll Have To Say I Love You In A Song
+    Fire And Rain
+    I've Got A Name
+    Hush
+    Del's Bells
+    Those Who Wait
+    Linus And Lucy
+    In The Light of Common Day
+    Behind Blue Eyes
+    Ventura Highway
+
+Date    : 5/9/25
+Guitars : 714ce
+
+    Fare Thee Well
+    Came The Light
+    Candace' Song
+    The Eyes of a Child
+    Mood For A Day
+    Cheering You On
+
+
+Date    : 5/11/25
+Guitars : V700
+
+    Kashmir
+    I've Just Seen A Face
+    Give A Little Bit
+    Still The One
+
+Date    : 5/21/25
+Guitars : 714ce
+
+	In The Light of Common Day
+	Morning Snow
+	Classical Gas
+	As Warm As Tears
+	In Your Peace / I Love You Lord
+
+Date    : 6/9/25
+Guitars : 316ce-B6
+
+    Birthday
+    The Wind & The Wheat
+    Friends in Low Places
+    In The Light of Common Day
+    Metamorphosis
+    Dust In The Wind
+    Annie's Song
+    Hush
+
+Date    : 6/29/25
+Guitars : 316ce-B6, 814ce
+
+	Friends in Low Places
+	Oh Darling
+	Dust In The Wind
+	Old Man
+	Yesterday
+	Beginnings
+	Pinball Wizard
+	Fire And Rain
+
+Date    : 7/4/25
+Guitars : 618e
+
+    Two Of Us
+    Hush
+    Even The Losers
+    There She Goes
+    If I Needed Someone
+    Ventura Highway
+    Tuesday Afternoon
+    When My Love Awakened
+    Love The One You're With
+
+Date    : 7/5/25
+Guitars : 414ce-L3
+
+    Julia
+    Mood For A Day
+    Beyond Justice to Mercy
+    When Night Falls
+    Classical Gas
+    I've Got A Name
+    Cheering You On
+    Leading You Home
+    Del's Bells
+    Those Who Wait
+
+Date    : 7/5/25
+Guitars : 414ce-L3, 618e
+
+    Julia
+    The Treasure
+    Leading You Home
+    Hush
+    If I Needed Someone
+
+Date    : 7/5/25
+Guitars : 316ce-B6, 618e
+
+    Hush
+    Love The One You're With
+    Two Of Us
+    Old Man
+    Birthday
+    Friends in Low Places
+
+Date    : 7/23/25
+Guitars : 618e
+
+    Ventura Highway
+    Behind Blue Eyes
+    What I Like About You
+
+Date    : 7/24/25
+Guitars : V700
+
+    Kashmir
+
+
+Date    : 8/7/25
+Guitars : 618e, V700, 414ce-L3
+
+    Hush
+    Ventura Highway
+    Old Man
+    Cheering You On
+    Cats In The Cradle
+    Fare Thee Well
+    Came The Light
+    Beyond Justice to Mercy
+    Searchin' So Long
+    In The Light of Common Day
+    The Eyes of a Child
+
+Date    : 8/9/25
+Guitars : 414ce-L3, V700
+
+    Those Who Wait
+    The Wind & The Wheat
+    When Night Falls
+    I've Got A Name
+    Del's Bells
+    You've Got A Friend
+    Mood For A Day
+    As Warm As Tears
+    Classical Gas
+    Blackbird
+
+Date    : 9/3/25
+Guitars : 812ce, 618e, V700
+
+    Rikki Don't Lose That Number
+    Ventura Highway
+    Hush
+    Behind Blue Eyes
+    Old Man
+    Love Lies Bleeding
+    It Don't Come Easy
+    Friends in Low Places
+
+Date    : 10/2/25
+Guitars : 714ce, 618e, V700
+
+    Rikki Don't Lose That Number
+    Hush
+    Ventura Highway
+    Kashmir
+    Still The One
+    Love The One You're With
+    What I Like About You
+    Crazy Little Thing Called Love
+    The Power Of Love
+
+Date    : 11/1/25
+Guitars : 714ce, 618e, 316ce-B6
+
+    Don't You Forget About Me
+    Ventura Highway
+    Hush
+    Rikki Don't Lose That Number
+    Beyond Justice to Mercy
+    In The Light of Common Day
+    Cheering You On
+    Old Man
+    Dust In The Wind
+
+Date    : 11/6/25
+Guitars : 714ce
+
+    Emmaus
+    When Night Falls
+    Those Who Wait
+    Del's Bells
+    Fire And Rain
+    Cats In The Cradle
+    I'll Have To Say I Love You In A Song
+    Metamorphosis
+    Morning Snow
+    The Wind & The Wheat
+    You've Got A Friend
+    Linus And Lucy
+    Mood For A Day
+    Rikki Don't Lose That Number
+    Don't You Forget About Me
+    Annie's Song
+
+Date    : 11/10/25
+Guitars : 714ce, 618e
+
+    Doctor My Eyes
+    Beginnings
+    If I Needed Someone
+    There She Goes
+    Behind Blue Eyes
+    Don't You Forget About Me
+    Rikki Don't Lose That Number
+    Searchin' So Long
+
+Date    : 11/12/25
+Guitars : 714ce, 618e
+
+    Don't You Forget About Me
+    Pinball Wizard
+    Misunderstanding
+    What I Like About You
+    I've Got A Name
+
+Date    : 11/17/25
+Guitars : 414ce-L3
+
+    Leading You Home
+    Tuesday Afternoon
+    Still The One
+    Kashmir
+    Fare Thee Well
+
+Date    : 11/18/25
+Guitars : 414ce-L3, 618e
+
+    Came The Light
+    Don't You Forget About Me
+    When My Love Awakened
+    Listen to the Music
+
+Date    : 1/3/26
+Guitars : 714ce, 618e
+
+    Hush
+    Don't You Forget About Me
+    Shilo
+    The Power Of Love
+    Fare Thee Well
+    Came The Light
+
+Date    : 1/4/26
+Guitars : 714ce, 316ce-B6
+
+    Came The Light
+    Leading You Home
+    Fire And Rain
+    Rikki Don't Lose That Number
+    Old Man
+    Friends in Low Places
+    Birthday
+    Oh Darling
+    Dust In The Wind
+
+Date    : 1/4/26
+Guitars : 812ce, 618e, 316ce-B6
+
+    Hush
+    Old Man
+    Beyond Justice to Mercy
+
+Date    : 3/13/26
+Guitars : 714ce, 618e, V700
+
+    Fire And Rain
+    Cats In The Cradle
+    Time In A Bottle
+    Time After Time
+    Blackbird
+    Beginnings
+    Hide Your Love Away
+    Sister Golden Hair
+    Ventura Highway
+    Everybody Wants to Rule the World
+    Here Comes The Sun
+    Hush
+    Crazy Little Thing Called Love
+    Misunderstanding
+    Behind Blue Eyes
+    Doctor My Eyes
+    The Eyes of a Child
+    Brandy
+    Friends in Low Places
+    It Don't Come Easy
+    Show Me The Way
+    Something
+    Leading You Home
+    Love The One You're With
+    I've Got A Name
+
+Date    : 3/20/26
+Guitars : 814ce
+
+    Ventura Highway
+    Hush
+    Rikki Don't Lose That Number
+    Don't You Forget About Me
+
+Date    : 3/23/26
+Guitars : 618e, V700
+
+    Still The One
+    Kashmir
+    There She Goes
+    Love Lies Bleeding
+    Give A Little Bit
+    Maybe I'm Amazed
+    I've Just Seen A Face
+    What I Like About You
+    Pinball Wizard
+
+Date    : 3/26/26
+Guitars : 618e, 714ce
+
+    If You Could Read My Mind
+    Fare Thee Well
+    Came The Light
+    Beyond Justice to Mercy
+    Rikki Don't Lose That Number
+    Tuesday Afternoon
+    Two Of Us
+    Listen to the Music
+    Don't You Forget About Me
+    Ventura Highway
+
+Date    : 4/3/26
+Guitars : 316ce-B6
+
+    Birthday
+	Old Man
+	Oh Darling
+    Yesterday
+
+Date    : 4/7/26
+Guitars : 618e, 714ce, V700
+
+    In The Light of Common Day
+    Mood For A Day
+    Classical Gas
+    Rikki Don't Lose That Number
+    Two Of Us
+    Love The One You're With
+    It Don't Come Easy
+    Still The One
+
+Date    : 4/13/26
+Guitars : 618e, 714ce, 316ce-B6
+
+    You've Got A Friend
+    Operator
+    Annie's Song
+    I've Got A Name
+    Old Man
+    Friends in Low Places
+    Birthday
+    Dust In The Wind
+    Crazy Little Thing Called Love
+    Love The One You're With
+
+Date    : 4/19/26
+Guitars : 812ce
+
+    Addison's Walk
+    Infinite Horizon / County Down
+    The Reunion
+    Mood For A Day
+
+Date    : 4/20/26
+Guitars : 714ce, 618e, V700
+
+    I'll Have To Say I Love You In A Song
+    There She Goes
+    If I Needed Someone
+    Everybody Wants to Rule The World
+    I've Just Seen A Face
+    It Don't Come Easy
+    Still The One
+    Fare Thee Well
+    Came The Light
+    Pinball Wizard
+    The Power Of Love
+
+Date    : 4/30/26
+Guitars : 714ce, 618e
+
+    Behind Blue Eyes
+    Shilo
+    Ventura Highway
+    Love The One You're With
+    Hush
+    Don't You Forget About Me
+    Everybody Wants to Rule The World
+    Rikki Don't Lose That Number
+    Fire And Rain
+    Julia
+    Cats In The Cradle
+    Time After Time
+    Classical Gas
+    Sailing
+    Linus And Lucy
+    Del's Bells
+    What I Like About You
+
+Date    : 5/6/26
+Guitars : 714ce
+
+    The Wind & The Wheat
+    Fire And Rain
+    Leading You Home
+    Beyond Justice to Mercy
+    Cheering You On
+
+Date    : 5/6/26
+Guitars : 618e
+
+    Love The One You're With
+    Don't You Forget About Me
+
+Date    : 5/12/26
+Guitars : 714ce, 618e
+
+    Under The Sun
+    Nothing But The Call
+    The Eyes of a Child
+    In The Light of Common Day
+    Doctor My Eyes
+    Behind Blue Eyes
+    If I Needed Someone
+    The Power Of Love
+    Love The One You're With
+    Rikki Don't Lose That Number
+    Old Man
+    Oh Darling
+
+Date    : 5/20/26
+Guitars : 714ce, 618e
+
+    The Eyes of a Child
+    The Treasure
+    If I Needed Someone
+    Don't You Forget About Me
+    Crazy Little Thing Called Love
+    Classical Gas
+    Everybody Wants to Rule The World
+    Hush
+    Love The One You're With
+    Cheering You On
+
+
+Date    : 5/26/26
+Guitars : 812ce
+
+    Christmas Time Is Here
+    Classical Gas
+    Del's Bells
+    In The Light of Common Day
+    Mood For A Day
+
+Date    : 5/27/26
+Guitars : 714ce
+
+    Came The Light
+    Fare Thee Well
+    Del's Bells
+    Under The Sun
+
+Date    : 6/10/26
+Guitars : 714ce, 618e, V700
+
+    I've Got A Name
+    Julia
+    Here, There and Everywhere
+    Sailing
+    There She Goes
+    Tuesday Afternoon
+    Don't You Forget About Me
+    Kashmir
+
+Date    : 6/11/26
+Guitars : 714ce, V700
+
+    Leading You Home
+    Still The One
+    Love Lies Bleeding
+    Give A Little Bit
+    Kashmir
+
+Date    : 6/16/26
+Guitars : 714ce, 618e
+
+    Hush
+    Crazy Little Thing Called Love
+    Don't You Forget About Me
+    Candace' Song
+    Rikki Don't Lose That Number
+    Two Of Us
+
+Date    : 6/22/26
+Guitars : 714ce, 618e, V700
+
+    Linus And Lucy
+    Classical Gas
+    Love The One You're With
+    Behind Blue Eyes
+    Everybody Wants to Rule The World
+    Still The One
+    Everything I Own
+
+Date    : 7/14/26
+Guitars : 814ce, 316ce-B6
+
+    Old Man
+    In The Light of Common Day
+    Love The One You're With
+    Rikki Don't Lose That Number
+    Friends in Low Places
+    Behind Blue Eyes
+    Oh Darling
+    Hush
+    Classical Gas
+    Crazy Little Thing Called Love
+
+Date    : 7/21/26
+Guitars : 812ce
+
+    In The Light of Common Day
+    Under The Sun
+    When Night Falls
+    Those Who Wait
+    Mood For A Day
+
+Date    : 7/22/26
+Guitars : 618e, 316ce-B6
+
+    Love The One You're With
+    Hide Your Love Away
+    Searchin' So Long
+    Don't You Forget About Me
+    Leading You Home
+    Here, There and Everywhere
+    Morning Snow
+    The Treasure
+    Even The Losers
+    Dust In The Wind
+    Birthday
+
+
 
